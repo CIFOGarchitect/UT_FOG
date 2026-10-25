@@ -19,12 +19,11 @@ on Oct 24, 2026; content is being filled in as it is confirmed.
 **Section status:** Populated below = Utah Regions, 700 MHz Interop
 Talkgroups and Channels (summary + companion file), Radio Template
 Programming Requirements (carried forward from v3.0 — VERIFY, to be
-updated by the SWIC over winter 2026-27). All other sections
+updated by the SWIC over winter 2026-27), National Interoperability Channels (NIFOG) (CISA public source). All other sections
 from the v3.0 table of contents remain placeholders pending content
 review: Establishing Interoperability, Introduction, State Maps,
 Interoperability and Incident Management, Communications Unit (COMU),
-Requests for Communications Assets, National Interoperability Channels
-(NIFOG), Federal Interoperability Channel Plan, PSAP Information, Nationwide Interop Channel
+Requests for Communications Assets, Federal Interoperability Channel Plan, PSAP Information, Nationwide Interop Channel
 Capabilities, Statewide Interop Channel Capabilities, Interoperable
 Repeaters, Gateways, Transportable Repeaters, Radio Caches, Data
 Communications Devices.
@@ -496,6 +495,114 @@ Field Operations Guide Ver 3.0​
 
 November 2022
 
+---
+
+## National Interoperability Channels (NIFOG) (POPULATED — CISA PUBLIC SOURCE — Oct 24, 2026)
+
+**Source:** CISA, National Interoperability Field Operations Guide (NIFOG) v2.01 (public). Channel names follow the ANSI/APCO/NPSTC standard channel nomenclature. This section covers the non-federal national interoperability channels. Federal Incident Response (IR) and Law Enforcement (LE) channels are in the full NIFOG; as a convention, analog federal channels transmit CTCSS 167.9 Hz with carrier squelch receive, and P25 federal channels use NAC $68F.
+
+**Conventions.** A "D" suffix means direct (simplex) operation on the repeater output frequency. Calling channels are for initial contact — move to a tactical channel after contact. Use requires proper FCC authorization/licensing (see cover licensing note).
+
+### VHF — simplex
+
+Tone 156.7 Hz CTCSS on all channels below.
+
+| Channel | Receive (MHz) | Transmit (MHz) | Use |
+|---|---|---|---|
+| VCALL10 | 155.7525 | Simplex | Calling |
+| VTAC11 | 151.1375 | Simplex | Tactical |
+| VTAC12 | 154.4525 | Simplex | Tactical |
+| VTAC13 | 158.7375 | Simplex | Tactical |
+| VTAC14 | 159.4725 | Simplex | Tactical |
+| VFIRE21 | 154.2800 | Simplex | Fire |
+| VFIRE22 | 154.2650 | Simplex | Fire |
+| VFIRE23 | 154.2950 | Simplex | Fire |
+| VFIRE24 | 154.2725 | Simplex | Fire |
+| VFIRE25 | 154.2875 | Simplex | Fire |
+| VFIRE26 | 154.3025 | Simplex | Fire |
+| VMED28 | 155.3400 | Simplex | EMS |
+| VMED29 | 155.3475 | Simplex | EMS |
+| VLAW31 | 155.4750 | Simplex | Law enforcement |
+| VLAW32 | 155.4825 | Simplex | Law enforcement |
+
+### VHF — repeater pairs
+
+Tone 156.7 Hz CTCSS.
+
+| Channel | Receive (MHz) | Transmit (MHz) | Use |
+|---|---|---|---|
+| VTAC17 | 161.8500 | 157.2500 | Tactical repeater (limited to 33 inland areas) |
+| VTAC17D | 161.8500 | Simplex | Tactical direct (limited to 33 inland areas) |
+| VTAC33 | 159.4725 | 151.1375 | Tactical repeater |
+| VTAC34 | 158.7375 | 154.4525 | Tactical repeater |
+| VTAC35 | 159.4725 | 158.7375 | Tactical repeater |
+| VTAC36 | 151.1375 | 159.4725 | Tactical repeater |
+| VTAC37 | 154.4525 | 158.7375 | Tactical repeater |
+| VTAC38 | 158.7375 | 159.4725 | Tactical repeater |
+
+### VHF low band
+
+Tone 156.7 Hz CTCSS.
+
+| Channel | Receive (MHz) | Transmit (MHz) | Use |
+|---|---|---|---|
+| LLAW1 | 39.4600 | 45.8600 | Law enforcement |
+| LFIRE2 | 39.4800 | 45.8800 | Fire |
+| LLAW3 | 45.8600 | 39.4600 | Law enforcement |
+| LFIRE4 | 45.8800 | 39.4800 | Fire |
+
+### UHF
+
+Tone 156.7 Hz CTCSS, narrowband FM. Each channel below also has a D direct variant on the output frequency.
+
+| Channel | Receive (MHz) | Transmit (MHz) | Use |
+|---|---|---|---|
+| UCALL40 | 453.2125 | 458.2125 | Calling |
+| UTAC41 | 453.4625 | 458.4625 | Tactical |
+| UTAC42 | 453.7125 | 458.7125 | Tactical |
+| UTAC43 | 453.8625 | 458.8625 | Tactical |
+
+### 700 MHz
+
+P25 digital only, NAC $293; analog operation is not permitted. Each repeater channel below also has a D direct variant on the output frequency.
+
+| Channel | Receive (MHz) | Transmit (MHz) | Use |
+|---|---|---|---|
+| 7CALL50 | 769.24375 | 799.24375 | Primary calling |
+| 7TAC51 | 769.14375 | 799.14375 | General public safety |
+| 7TAC52 | 769.64375 | 799.64375 | General public safety |
+| 7TAC53 | 770.14375 | 800.14375 | General public safety |
+| 7TAC54 | 770.64375 | 800.64375 | General public safety |
+| 7TAC55 | 769.74375 | 799.74375 | General public safety |
+| 7TAC56 | 770.24375 | 800.24375 | General public safety |
+| 7GTAC57 | 770.99375 | 800.99375 | Other public service |
+| 7MOB59 | 770.89375 | 800.89375 | Mobile repeater |
+| 7LAW61 | 770.39375 | 800.39375 | Law enforcement |
+| 7LAW62 | 770.49375 | 800.49375 | Law enforcement |
+| 7FIRE63 | 769.89375 | 799.89375 | Fire |
+| 7FIRE64 | 769.99375 | 799.99375 | Fire |
+| 7MED65 | 769.39375 | 799.39375 | EMS |
+| 7MED66 | 769.49375 | 799.49375 | EMS |
+| 7DATA69 | 770.74375 | 800.74375 | Mobile data |
+| 7CALL70 | 773.25625 | 803.25625 | Secondary calling |
+| 7TAC71 | 773.10625 | 803.10625 | General public safety |
+
+Note: NIFOG lists additional 700 MHz channels (7TAC72–76, 7GTAC77, 7MOB79, 7LAW81–82, 7FIRE83–84, 7MED86–87, 7DATA89) — see the full NIFOG for those.
+
+### 800 MHz
+
+Tone 156.7 Hz CTCSS. Each channel below also has a D direct variant on the output frequency.
+
+| Channel | Receive (MHz) | Transmit (MHz) | Use |
+|---|---|---|---|
+| 8CALL90 | 851.0125 | 806.0125 | Calling |
+| 8TAC91 | 851.5125 | 806.5125 | Tactical |
+| 8TAC92 | 852.0125 | 807.0125 | Tactical |
+| 8TAC93 | 852.5125 | 807.5125 | Tactical |
+| 8TAC94 | 853.0125 | 808.0125 | Tactical |
+
+**Full reference.** The complete NIFOG (v2.01) is available free from CISA's SAFECOM field operations guides page and as the eNIFOG mobile app (works offline).
+
 ## What we know (filled in) vs. what still needs verification
 
 **Filled in from known information:**
@@ -503,6 +610,7 @@ November 2022
 - Utah Regions section (8-region structure)
 - 700 MHz section rename + organized fleet listing + summary counts
 - 700 MHz talkgroup governance and stewardship (from the governance program, per SWIC direction Oct 24)
+- National Interoperability Channels (NIFOG) (CISA NIFOG v2.01, public source)
 - Radio Template Programming Requirements (carried forward from v3.0, marked VERIFY — SWIC update over winter 2026-27)
 
 **Still to verify / fill:**
