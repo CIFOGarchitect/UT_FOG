@@ -31,6 +31,11 @@
   .status { display:inline-block; margin-top:8px; padding:3px 10px; border-radius:12px; font-size:12px; font-weight:bold; background:var(--amber); color:#111; }
   .note { color:var(--muted); font-size:14px; }
   footer { color:var(--muted); font-size:13px; text-align:center; padding:20px; }
+  html { scroll-behavior:smooth; }
+  .index { display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:8px; margin-top:12px; }
+  .index a { display:block; background:var(--card); border:1px solid #2a3a5c; border-radius:8px; padding:10px 12px; color:var(--text); text-decoration:none; }
+  .index a:hover { border-color:var(--gold); }
+  .index a small { display:block; color:var(--muted); font-size:12px; margin-top:3px; }
 </style>
 </head>
 <body>
@@ -49,10 +54,31 @@
 </div>
 
 <main>
-  <h2>Contents</h2>
-  <p class="note">Utah Regions &bull; Establishing Interoperability &bull; Introduction &bull; State Maps &bull; Interoperability and Incident Management &bull; Communications Unit (COMU) &bull; Requests for Communications Assets &bull; National Interoperability Channels (NIFOG) &bull; Federal Interoperability Channel Plan &bull; PSAP Information &bull; 700 MHz Interop Talkgroups and Channels &bull; Radio Template Programming Requirements &bull; Nationwide Interop Channel Capabilities &bull; Statewide Interop Channel Capabilities &bull; Interoperable Repeaters &bull; Gateways &bull; Transportable Repeaters &bull; Radio Caches &bull; Data Communications Devices</p>
+  <h2 id="index">Index</h2>
+  <p class="note">Select a section to jump directly to it.</p>
+  <nav class="index">
+    <a href="#utah-regions">Utah Regions <small>Populated</small></a>
+    <a href="#sec-establishing">Establishing Interoperability <small>Pending review</small></a>
+    <a href="#sec-introduction">Introduction <small>Pending review</small></a>
+    <a href="#sec-state-maps">State Maps <small>Pending review</small></a>
+    <a href="#sec-incident-mgmt">Interoperability and Incident Management <small>Pending review</small></a>
+    <a href="#sec-comu">Communications Unit (COMU) <small>Pending review</small></a>
+    <a href="#sec-requests">Requests for Communications Assets <small>Pending review</small></a>
+    <a href="#sec-nifog">National Interoperability Channels (NIFOG) <small>Pending review</small></a>
+    <a href="#sec-federal-plan">Federal Interoperability Channel Plan <small>Pending review</small></a>
+    <a href="#sec-psap">PSAP Information <small>Pending review</small></a>
+    <a href="#700-mhz">700 MHz Interop Talkgroups and Channels <small>Populated — full listing</small></a>
+    <a href="#radio-templates">Radio Template Programming Requirements <small>Carried forward — verify</small></a>
+    <a href="#sec-nationwide">Nationwide Interop Channel Capabilities <small>Pending review</small></a>
+    <a href="#sec-statewide">Statewide Interop Channel Capabilities <small>Pending review</small></a>
+    <a href="#sec-repeaters">Interoperable Repeaters <small>Pending review</small></a>
+    <a href="#sec-gateways">Gateways <small>Pending review</small></a>
+    <a href="#sec-transportable">Transportable Repeaters <small>Pending review</small></a>
+    <a href="#sec-caches">Radio Caches <small>Pending review</small></a>
+    <a href="#sec-data-devices">Data Communications Devices <small>Pending review</small></a>
+  </nav>
 
-  <h2>Utah Regions</h2>
+  <h2 id="utah-regions">Utah Regions</h2>
   <p class="note">Updated from the seven Homeland Security Regions in v3.0 to the current eight-region structure.</p>
   <table>
     <tr><th>Code</th><th>Region</th><th>Counties</th></tr>
@@ -67,7 +93,8 @@
   </table>
   <p class="note">29 counties total.</p>
 
-  <h2>700 MHz Interop Talkgroups and Channels</h2>
+  <p class="note"><a href="#index" style="color:#c9a227;">↑ Back to index</a></p>
+<h2 id="700-mhz">700 MHz Interop Talkgroups and Channels</h2>
   <p class="note">Renamed from the v3.0 "800 MHz Interop Talkgroups and Channels" section, per SWIC direction, October 2026. The full organized listing is embedded below. Values are preserved verbatim from the source file; blank fields are shown as —.</p>
   <div class="stats">
     <div class="stat"><div class="num">2,102</div><div class="lbl">Talkgroups</div></div>
@@ -105,28 +132,190 @@
   renderTG();
   </script>
 
-  <h2>Remaining sections</h2>
+  <p class="note"><a href="#index" style="color:#c9a227;">↑ Back to index</a></p>
+<h2 id="radio-templates">Radio Template Programming Requirements</h2>
+<p class="note"><strong>Carried forward from v3.0 — VERIFY:</strong> starting draft, to be updated by the SWIC over winter 2026-27. Do not treat as current until verified. v3.0 page footers have been stripped; content is otherwise verbatim.</p>
+<p>Requirements LICENSING DISCLAIMER</p>
+<p>RA FT</p>
+<p>Nothing in this document shall be construed to serve as authorization for any agency or individual to operate equipment on radio channels without the proper authorization or licensing by the Federal Communications Commission (FCC).</p>
+<h3>MINIMUM RECOMMENDED CHANNELS</h3>
+<p>The channels listed in the following tables consist of the minimum recommended radio channels to provide for public safety interoperable communications.</p>
+<p>Utah Minimum Recommended VHF Channels</p>
+<p>Table 19: VHF Programming Template - All Disciplines</p>
+<p>MINIMUM RECOMMENDED CHANNELS – All Disciplines</p>
+<p>CHANNEL NAME</p>
+<h3>MOB RECV</h3>
+<h3>MOB XMIT</h3>
+<h3>FREQ</h3>
+<h3>FREQ</h3>
+<p>A D</p>
+<h3>NOTES</h3>
+<p>Page | 63 70 -</p>
+<p>​</p>
+<h3>TONE</h3>
+<p>​</p>
+<h3>TONE</h3>
+<p>Utah Interoperable Communications Field Operations Guide Ver 3.0​</p>
+<p>November 2022</p>
+<p>MINIMUM RECOMMENDED CHANNELS – All Disciplines MOB RECV</p>
+<h3>MOB XMIT</h3>
+<p>A D</p>
+<h3>NOTES</h3>
+<p>RA FT</p>
+<p>CHANNEL NAME</p>
+<p>All channels are Narrowband, Analog, Conventional</p>
+<p>Table 20: VHF Programming Template – Law Enforcement</p>
+<p>MINIMUM RECOMMENDED CHANNELS – Law Enforcement</p>
+<p>CHANNEL NAME</p>
+<h3>MOB RECV</h3>
+<h3>MOB XMIT</h3>
+<h3>FREQ</h3>
+<h3>FREQ</h3>
+<h3>TONE</h3>
+<h3>TONE</h3>
+<p>A D</p>
+<h3>NOTES</h3>
+<p>All channels are Narrowband, Analog, Conventional Channels listed above are in addition to those listed in the ALL-DISCIPLINES programming table</p>
+<p>Table 21: VHF Programming Template – Fire/EMA/First Responder</p>
+<p>MINIMUM RECOMMENDED CHANNELS – Fire/EMA/First Responder</p>
+<p>CHANNEL NAME</p>
+<h3>MOB RECV</h3>
+<h3>MOB XMIT</h3>
+<h3>FREQ</h3>
+<h3>FREQ</h3>
+<p>A D</p>
+<h3>NOTES</h3>
+<p>Page | 64 70 -</p>
+<p>​</p>
+<h3>TONE</h3>
+<p>​</p>
+<h3>TONE</h3>
+<p>Utah Interoperable Communications Field Operations Guide Ver 3.0​</p>
+<p>November 2022</p>
+<p>MINIMUM RECOMMENDED CHANNELS – Fire/EMA/First Responder CHANNEL NAME</p>
+<h3>MOB RECV</h3>
+<h3>MOB XMIT</h3>
+<p>A D</p>
+<h3>NOTES</h3>
+<p>RA FT</p>
+<p>All channels are Narrowband, Analog, Conventional Channels listed above are in addition to those listed in the ALL-DISCIPLINES programming table</p>
+<p>Table 22: Programming Template - EMS</p>
+<h3>MINIMUM RECOMMENDED CHANNELS – EMS</h3>
+<p>CHANNEL NAME</p>
+<h3>MOB RECV</h3>
+<h3>MOB XMIT</h3>
+<h3>FREQ</h3>
+<h3>FREQ</h3>
+<h3>TONE</h3>
+<h3>TONE</h3>
+<p>A D</p>
+<h3>NOTES</h3>
+<p>– VMED28 formerly known as Hospital Emergency Ambulance Radio (HEAR)</p>
+<p>All channels are Narrowband, Analog, Conventional Channels listed above are in addition to those listed in the ALL-DISCIPLINES programming table</p>
+<p>Utah Minimum Recommended UHF Channels</p>
+<p>Table 23: UHF Programming Template - All Disciplines</p>
+<p>MINIMUM RECOMMENDED CHANNELS – All Disciplines</p>
+<p>CHANNEL NAME</p>
+<h3>MOB RECV</h3>
+<h3>MOB XMIT</h3>
+<h3>FREQ</h3>
+<h3>FREQ</h3>
+<p>A D</p>
+<h3>NOTES</h3>
+<p>Page | 65 70 -</p>
+<p>​</p>
+<h3>TONE</h3>
+<p>​</p>
+<h3>TONE</h3>
+<p>Utah Interoperable Communications Field Operations Guide Ver 3.0​</p>
+<p>November 2022</p>
+<p>MINIMUM RECOMMENDED CHANNELS – All Disciplines CHANNEL NAME UTAC43D</p>
+<h3>MOB RECV</h3>
+<p>453.8625</p>
+<p>156.7</p>
+<h3>MOB XMIT</h3>
+<p>453.8625</p>
+<p>A D</p>
+<p>156.7</p>
+<p>NOTES A</p>
+<p>Incident Coordination</p>
+<p>RA FT</p>
+<p>●​ Base station channel use requires an FCC license. ●​ Mobile/portable use under blanket authorization by the FCC. ●​ All channels are Narrowband, Analog, Conventional</p>
+<p>Table 24: UHF Programming Template</p>
+<p>MINIMUM RECOMMENDED CHANNELS – All Disciplines</p>
+<p>CHANNEL NAME</p>
+<h3>MOB RECV</h3>
+<h3>MOB XMIT</h3>
+<h3>FREQ</h3>
+<h3>FREQ</h3>
+<p>A D</p>
+<h3>NOTES</h3>
+<p>Page | 66 70 -</p>
+<p>​</p>
+<h3>TONE</h3>
+<p>​</p>
+<h3>TONE</h3>
+<p>Utah Interoperable Communications Field Operations Guide Ver 3.0​</p>
+<p>November 2022</p>
+<p>Utah Minimum Recommended 700 MHz Channels Table 25: 700 MHz Programming Template - All Disciplines</p>
+<p>MINIMUM RECOMMENDED CHANNELS – All Disciplines MOB RECV</p>
+<h3>MOB XMIT</h3>
+<h3>FREQ</h3>
+<h3>FREQ</h3>
+<h3>TONE</h3>
+<h3>TONE</h3>
+<p>A D</p>
+<h3>NOTES</h3>
+<p>RA FT</p>
+<p>CHANNEL NAME</p>
+<p>●​ Base station channel use requires an FCC license. ●​ Mobile/portable use under blanket authorization by the FCC. ●​ All channels are Narrowband, Digital P-25 Phase I Conventional ●​ Refer to FCC Region 3 700 MHz Plan for additional details and frequency listings</p>
+<p>​</p>
+<p>​</p>
+<p>Page | 67 70 -</p>
+<p>Utah Interoperable Communications Field Operations Guide Ver 3.0​</p>
+<p>November 2022</p>
+<p>Utah Minimum Recommended 800 MHz Channels Table 26: 800 MHz Programming Template - All Disciplines</p>
+<p>MINIMUM RECOMMENDED CHANNELS – All Disciplines MOB RECV</p>
+<h3>MOB XMIT</h3>
+<h3>FREQ</h3>
+<h3>FREQ</h3>
+<h3>TONE</h3>
+<h3>TONE</h3>
+<p>A D</p>
+<h3>NOTES</h3>
+<p>RA FT</p>
+<p>CHANNEL NAME</p>
+<p>●​ Base station channel use requires an FCC license. ●​ Mobile/portable use under blanket authorization by the FCC. ●​ All channels are Wideband, Analog, Conventional</p>
+<p>​</p>
+<p>​</p>
+<p>Page | 68 70 -</p>
+<p>Utah Interoperable Communications Field Operations Guide Ver 3.0​</p>
+<p>November 2022</p>
+
+<p class="note"><a href="#index" style="color:#c9a227;">↑ Back to index</a></p>
+<h2>Remaining sections</h2>
   <p class="note">Placeholders pending content review.</p>
   <div class="cards">
-    <div class="card"><h3>Establishing Interoperability</h3><p>How interoperable communications are established.</p><span class="status">Content pending review</span></div>
-    <div class="card"><h3>Introduction</h3><p>Purpose and use of this guide.</p><span class="status">Content pending review</span></div>
-    <div class="card"><h3>State Maps</h3><p>Statewide maps supporting interoperable communications.</p><span class="status">Content pending review</span></div>
-    <div class="card"><h3>Interoperability and Incident Management</h3><p>Interoperability within incident management.</p><span class="status">Content pending review</span></div>
-    <div class="card"><h3>Communications Unit (COMU)</h3><p>Communications Unit roles and organization.</p><span class="status">Content pending review</span></div>
-    <div class="card"><h3>Requests for Communications Assets</h3><p>How to request communications assets.</p><span class="status">Content pending review</span></div>
-    <div class="card"><h3>National Interoperability Channels (NIFOG)</h3><p>National interoperability channels.</p><span class="status">Content pending review</span></div>
-    <div class="card"><h3>Federal Interoperability Channel Plan</h3><p>Federal interoperability channel plan.</p><span class="status">Content pending review</span></div>
-    <div class="card"><h3>PSAP Information</h3><p>Public Safety Answering Point information.</p><span class="status">Content pending review</span></div>
-    <div class="card"><h3>Radio Template Programming Requirements</h3><p>Requirements for radio template programming.</p><span class="status">Content pending review</span></div>
-    <div class="card"><h3>Nationwide Interop Channel Capabilities</h3><p>Nationwide interoperability channel capabilities.</p><span class="status">Content pending review</span></div>
-    <div class="card"><h3>Statewide Interop Channel Capabilities</h3><p>Statewide interoperability channel capabilities.</p><span class="status">Content pending review</span></div>
-    <div class="card"><h3>Interoperable Repeaters</h3><p>Interoperable repeater resources.</p><span class="status">Content pending review</span></div>
-    <div class="card"><h3>Gateways</h3><p>Gateway resources.</p><span class="status">Content pending review</span></div>
-    <div class="card"><h3>Transportable Repeaters</h3><p>Transportable repeater resources.</p><span class="status">Content pending review</span></div>
-    <div class="card"><h3>Radio Caches</h3><p>Radio cache resources.</p><span class="status">Content pending review</span></div>
-    <div class="card"><h3>Data Communications Devices</h3><p>Data communications devices.</p><span class="status">Content pending review</span></div>
+    <div class="card" id="sec-establishing"><h3>Establishing Interoperability</h3><p>How interoperable communications are established.</p><span class="status">Content pending review</span></div>
+    <div class="card" id="sec-introduction"><h3>Introduction</h3><p>Purpose and use of this guide.</p><span class="status">Content pending review</span></div>
+    <div class="card" id="sec-state-maps"><h3>State Maps</h3><p>Statewide maps supporting interoperable communications.</p><span class="status">Content pending review</span></div>
+    <div class="card" id="sec-incident-mgmt"><h3>Interoperability and Incident Management</h3><p>Interoperability within incident management.</p><span class="status">Content pending review</span></div>
+    <div class="card" id="sec-comu"><h3>Communications Unit (COMU)</h3><p>Communications Unit roles and organization.</p><span class="status">Content pending review</span></div>
+    <div class="card" id="sec-requests"><h3>Requests for Communications Assets</h3><p>How to request communications assets.</p><span class="status">Content pending review</span></div>
+    <div class="card" id="sec-nifog"><h3>National Interoperability Channels (NIFOG)</h3><p>National interoperability channels.</p><span class="status">Content pending review</span></div>
+    <div class="card" id="sec-federal-plan"><h3>Federal Interoperability Channel Plan</h3><p>Federal interoperability channel plan.</p><span class="status">Content pending review</span></div>
+    <div class="card" id="sec-psap"><h3>PSAP Information</h3><p>Public Safety Answering Point information.</p><span class="status">Content pending review</span></div>
+    
+    <div class="card" id="sec-nationwide"><h3>Nationwide Interop Channel Capabilities</h3><p>Nationwide interoperability channel capabilities.</p><span class="status">Content pending review</span></div>
+    <div class="card" id="sec-statewide"><h3>Statewide Interop Channel Capabilities</h3><p>Statewide interoperability channel capabilities.</p><span class="status">Content pending review</span></div>
+    <div class="card" id="sec-repeaters"><h3>Interoperable Repeaters</h3><p>Interoperable repeater resources.</p><span class="status">Content pending review</span></div>
+    <div class="card" id="sec-gateways"><h3>Gateways</h3><p>Gateway resources.</p><span class="status">Content pending review</span></div>
+    <div class="card" id="sec-transportable"><h3>Transportable Repeaters</h3><p>Transportable repeater resources.</p><span class="status">Content pending review</span></div>
+    <div class="card" id="sec-caches"><h3>Radio Caches</h3><p>Radio cache resources.</p><span class="status">Content pending review</span></div>
+    <div class="card" id="sec-data-devices"><h3>Data Communications Devices</h3><p>Data communications devices.</p><span class="status">Content pending review</span></div>
   </div>
 </main>
+<p class="note"><a href="#index" style="color:#c9a227;">↑ Back to index</a></p>
 <footer>Preview only — private, controlled working draft. Not for distribution. The full talkgroup listing is embedded above (controlled content — authorized users only). Companion CSV: utfog-v4-700mhz-talkgroups-organized.csv.</footer>
 </body>
 </html>
