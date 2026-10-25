@@ -67,7 +67,7 @@
     <a href="#sec-nifog">National Interoperability Channels (NIFOG) <small>Pending review</small></a>
     <a href="#sec-federal-plan">Federal Interoperability Channel Plan <small>Pending review</small></a>
     <a href="#sec-psap">PSAP Information <small>Pending review</small></a>
-    <a href="#700-mhz">700 MHz Interop Talkgroups and Channels <small>Populated — full listing</small></a>
+    <a href="#sec-700-mhz">700 MHz Interop Talkgroups and Channels <small>Populated — full listing</small></a>
     <a href="#radio-templates">Radio Template Programming Requirements <small>Carried forward — verify</small></a>
     <a href="#sec-nationwide">Nationwide Interop Channel Capabilities <small>Pending review</small></a>
     <a href="#sec-statewide">Statewide Interop Channel Capabilities <small>Pending review</small></a>
@@ -94,7 +94,7 @@
   <p class="note">29 counties total.</p>
 
   <p class="note"><a href="#index" style="color:#c9a227;">↑ Back to index</a></p>
-<h2 id="700-mhz">700 MHz Interop Talkgroups and Channels</h2>
+<h2 id="sec-700-mhz">700 MHz Interop Talkgroups and Channels</h2>
   <p class="note">Renamed from the v3.0 "800 MHz Interop Talkgroups and Channels" section, per SWIC direction, October 2026. The full organized listing is embedded below. Values are preserved verbatim from the source file; blank fields are shown as —.</p>
   <div class="stats">
     <div class="stat"><div class="num">2,102</div><div class="lbl">Talkgroups</div></div>
@@ -317,5 +317,13 @@
 </main>
 <p class="note"><a href="#index" style="color:#c9a227;">↑ Back to index</a></p>
 <footer>Preview only — private, controlled working draft. Not for distribution. The full talkgroup listing is embedded above (controlled content — authorized users only). Companion CSV: utfog-v4-700mhz-talkgroups-organized.csv.</footer>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click', function(e){
+    var t = document.getElementById(a.getAttribute('href').slice(1));
+    if (t) { e.preventDefault(); t.scrollIntoView({behavior:'smooth', block:'start'}); }
+  });
+});
+</script>
 </body>
 </html>
