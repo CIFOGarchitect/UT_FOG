@@ -19,10 +19,9 @@ on Oct 24, 2026; content is being filled in as it is confirmed.
 **Section status:** Populated below = Utah Regions, 700 MHz Interop
 Talkgroups and Channels (summary + companion file), Radio Template
 Programming Requirements (carried forward from v3.0 — VERIFY, to be
-updated by the SWIC over winter 2026-27), National Interoperability Channels (NIFOG) (CISA public source), Statewide Interop Channel Capabilities (Utah-specific), State Maps (regional maps), Gateways (TICP sources), Radio Caches (TICP sources), PSAP Information (2024 contact list), Interoperable Repeaters (TICP sources), Establishing Interoperability (State PACE Plan 2026), Federal Interoperability Channel Plan (FED_OPS + federal programs). All other sections
+updated by the SWIC over winter 2026-27), National Interoperability Channels (NIFOG) (CISA public source), Statewide Interop Channel Capabilities (Utah-specific), State Maps (regional maps), Gateways (TICP sources), Radio Caches (TICP sources), PSAP Information (2024 contact list), Interoperable Repeaters (TICP sources), Establishing Interoperability (State PACE Plan 2026), Federal Interoperability Channel Plan (FED_OPS + federal programs), Communications Unit (COMU) (ESF #2 vs COML + positions). All other sections
 from the v3.0 table of contents remain placeholders pending content
-review: Introduction, Interoperability and Incident Management, Communications Unit (COMU),
-Requests for Communications Assets, Nationwide Interop Channel
+review: Introduction, Interoperability and Incident Management, Requests for Communications Assets, Nationwide Interop Channel
 Capabilities, Transportable Repeaters, Data
 Communications Devices.
 
@@ -1025,6 +1024,83 @@ The state–federal VHF PACE element (ST_EOC) is described in Establishing Inter
 
 **Currency note.** Talkgroup assignments, program details, and directory materials change — verify before operational use.
 
+---
+
+## Communications Unit (COMU) (POPULATED — ESF #2 vs COML briefing + program structure — Oct 24, 2026)
+
+**Sources:** FEMA Region 2 briefing, "Communications Role in Disaster Response and Recovery: Understanding the differences in the Roles and Responsibilities between ESF #2 and COML" (April 9, 2024); Utah COMU program records (COMT/COML rosters, student verification) held by the SWIC office. Individual roster and qualification records are NOT reproduced in this guide. This section is controlled content (see cover distribution).
+
+### Why this section exists
+
+During disaster events, ESF #2 members and COMLs work in the same space, and sometimes may be expected to fill both roles. The goal of this section is a holistic understanding of ESF #2 and COML functions and responsibilities, so members understand which role they are fulfilling when presenting data to leadership and leading their respective teams. Scope: Stafford Act events and State COML programs. For Stafford Act events, the federal COML role is filled by Mobile Emergency Response Support (MERS) detachments.
+
+### COMU positions (ICS organization)
+
+Historical ICS organization: Incident Commander → Logistics Section → Services Branch → COML, with COMT, THSP, INCM, RADO, INTD, and AUXC under the COML.
+
+ICT Branch concept: Logistics Section → Support Branch → ICT Branch → COML (COMT, INCM, RADO, INTD, AUXC, THSP), plus ITSL (IT Support Specialist), a Unified Help Desk, and a Cyber Unit (Leader, Planner, Support Specialist, Coordinator). The ICT Branch is a concept, not the historical structure.
+
+| Position | Title | Function |
+|---|---|---|
+| COML | Communications Unit Leader | Leads the Communications Unit; designs and manages incident communications (see below). |
+| COMT | Communications Technician | Technician supporting the COML in establishing and maintaining incident communications. |
+| INCM | Incident Communications Center Manager | Manages the incident communications center. |
+| RADO | Radio Operator | Operates radio equipment in support of incident communications. |
+| INTD | Incident Tactical Dispatcher | Dispatches tactical communications for incident operations. |
+| AUXC | Auxiliary Communicator | Auxiliary (volunteer/amateur) communications support. |
+| THSP | Technical Specialist | Technical specialty support to the Communications Unit. |
+| ITSL | Information Technology Service Leader | Leads IT services (ICT Branch concept). |
+
+### ESF #2 — Communications
+
+**Purpose.** ESF #2 – Communications supports the restoration of communications infrastructure, coordinates communications support to response efforts, facilitates the delivery of information to emergency management decision makers, and assists in the stabilization and reestablishment of systems and applications during incidents.
+
+**Responsibilities.**
+
+- Provides disaster emergency communications: the technical means and modes required to provide and maintain operable and interoperable voice and data communications in an incident area.
+- Supports the temporary reestablishment of the basic public safety communications infrastructure and assists in the initial restoration of the commercial telecommunications infrastructure.
+- Coordinates the provisioning of priority and other telecommunications services at incident support facilities, provides capabilities and services to aid response and short-term recovery operations, and ensures a smooth transition to long-term recovery efforts.
+- Leads communications planning, training, exercising, and coordination of the enterprise capabilities of the Federal Government to support a whole-of-government approach to disaster response.
+- Facilitates the delivery of mission-critical information to maintain situational awareness for emergency management decision makers and support elements.
+- Develops and maintains a cyber and communications common operating picture with Federal, state, and industry partners.
+- Develops cyber and communications restoration priorities during disasters.
+- Coordinates and deconflicts incident radio frequencies in disaster event areas of operation.
+
+**Deployment and domain.** Reporting differs by organization, typically to the Operations Director. ESF #2 is found at the local, state, and federal level, typically in an EOC, JFO, or other coordination facility. The qualification process varies by jurisdiction; some agencies have memos designating members as ESF #2. Tools: laptop computer, cell or sat phone, portable radio. ESF #2 members must be adept in Emergency Management, work with infrastructure (wireline, wireless carriers, cable systems, broadcasters, internet providers), manage Alerts & Warnings, IPAWS, WEA, and EAS, support 9-1-1 and public safety dispatch, first responder communications, and Finance, Banking Services, and Electronic Payment Processing.
+
+**EOC/ECC context.** An EOC/ECC is a building, physical or virtual room, or other location set up to coordinate emergency response and recovery, business continuity, and crisis communications. It manages lines of communication and coordinates the distribution of resources, and has a role in all phases of Emergency Management: Mitigation, Preparedness, Response, and Recovery. It can be organized according to ESF or discipline, by Community Lifelines, or using ICS. In EOC/ECC organizations, ESF #2 appears as the Communications Group; the Communications Unit appears as a distinct unit alongside IT.
+
+### COML — Communications Unit Leader
+
+**Responsibilities (tactical).** The COML focuses on specific responder operations: participates in disaster response operations by creating a plan and system for responders to use for a specific incident or group of incidents; facilitates communications between responders, response teams, and command elements; works with the Communications Coordination Element (ESF #2) to obtain resources needed for specific operations.
+
+**Deployment and domain.** The COML is located under the Logistics Section and reports to the Logistics Section Chief, Service Branch Director, or ICT Branch Director. Incident complexity and geography dictate communications needs. The COML may be part of the IMT, a Strike Team or Task Force, or assigned to a discipline or agency. Tools: laptop, cell phone, radios, antennas, gateways, satellite terminals, cell modems. The COML must be adept in response operations: establishing operable communications for the IMT and incident responders; designing a communications system that supports achieving the incident objectives; facilitating communications between responders, supervisors, IC, EOC, and the local dispatch center; managing communications personnel and resources; supporting incident planning activities.
+
+### The distinction
+
+- **ESF #2** is the broader framework, responsible for coordinating communication resources and services at the national level during emergencies. It provides the overarching framework for coordination and support.
+- **COML** is the on-the-ground position within the incident management structure, focusing on managing communication resources and facilitating effective communication channels during incidents. The COML's role aligns with the specific needs of the incident.
+
+### Open coordination questions
+
+These questions are posed by the source briefing and are not answered here — they belong to the program to resolve:
+
+- Can a member switch between or fill more than one role?
+- If the State needs more COMLs or ESF #2 members, where can they request them?
+- How does the Federal Government bring in additional ESF #2 members or COMLs to a Stafford Act event?
+
+### History (brief)
+
+**Disaster communications and ESF #2.** September 1982, Executive Order 12382 established the National Security Telecommunications Advisory Committee (NSTAC) to advise the President. April 1984, Executive Order 12472 established National Security and Emergency Preparedness (NS/EP) telecommunications functions, specifically the National Communications System (NCS). December 2004, the National Response Plan established Emergency Support Functions (ESF), including ESF #2. January 2008, the National Response Framework improved the National Response Plan by also focusing on preparedness and introducing ESF and Support Annexes.
+
+**ICS and the COML.** Formalized incident management started with the Large Fire Organization (LFO) after World War II. FIRESCOPE was created in 1973 after the devastation of the 1970 wildfire season, with first official use in 1978. The National Wildfire Coordinating Group (NWCG) conducted a parallel effort, leading to creation of the National Interagency Incident Management System (NIMS). In 1983, FEMA began inclusion of ICS in curriculum at the National Fire Academy. NWCG created the COML position and task book. HSPD-5 post-9/11, and NIMS in 2004, formalized the use of ICS in all-hazard incidents.
+
+### Utah program note
+
+Utah maintains COMT and COML rosters and student verification/qualification records through the SWIC office (program files 2022–2024). No individual roster or qualification records are reproduced in this guide. The COML role also appears in this guide's Gateways procedures (request, deployment, activation, deactivation) and Radio Caches procedures (activation and deactivation). How COMU support is requested will live in Requests for Communications Assets (pending).
+
+**Currency note.** Source briefing April 2024; program records 2022–2024. Positions, structures, and qualification processes change — verify before operational use.
+
 ## What we know (filled in) vs. what still needs verification
 
 **Filled in from known information:**
@@ -1041,6 +1117,7 @@ The state–federal VHF PACE element (ST_EOC) is described in Establishing Inter
 - Interoperable Repeaters (regional VHF repeaters + Bear River amateur/RACES repeaters + county inventory summary, from TICP sources)
 - Establishing Interoperability (State PACE Plan 2026: PACE table, reference frequencies, gateway)
 - Federal Interoperability Channel Plan (FED_OPS talkgroups + UHF IR note + NAWAS/SHARES/FNARS programs)
+- Communications Unit (COMU) (ESF #2 vs COML roles, COMU positions, history, Utah program note)
 - Radio Template Programming Requirements (carried forward from v3.0, marked VERIFY — SWIC update over winter 2026-27)
 
 **Still to verify / fill:**
