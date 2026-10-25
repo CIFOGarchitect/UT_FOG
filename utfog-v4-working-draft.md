@@ -19,11 +19,10 @@ on Oct 24, 2026; content is being filled in as it is confirmed.
 **Section status:** Populated below = Utah Regions, 700 MHz Interop
 Talkgroups and Channels (summary + companion file), Radio Template
 Programming Requirements (carried forward from v3.0 — VERIFY, to be
-updated by the SWIC over winter 2026-27), National Interoperability Channels (NIFOG) (CISA public source), Statewide Interop Channel Capabilities (Utah-specific), State Maps (regional maps), Gateways (TICP sources), Radio Caches (TICP sources), PSAP Information (2024 contact list), Interoperable Repeaters (TICP sources), Establishing Interoperability (State PACE Plan 2026), Federal Interoperability Channel Plan (FED_OPS + federal programs), Communications Unit (COMU) (ESF #2 vs COML + positions). All other sections
+updated by the SWIC over winter 2026-27), National Interoperability Channels (NIFOG) (CISA public source), Statewide Interop Channel Capabilities (Utah-specific), State Maps (regional maps), Gateways (TICP sources), Radio Caches (TICP sources), PSAP Information (2024 contact list), Interoperable Repeaters (TICP sources), Establishing Interoperability (State PACE Plan 2026), Federal Interoperability Channel Plan (FED_OPS + federal programs), Communications Unit (COMU) (ESF #2 vs COML + positions), Data Communications Devices (Satellite phones), Interoperability and Incident Management (RECCWG + IPAWS + NORS/DIRS), Wildland Fire Communications (Radio Guide + NIFC cache + ordering). All other sections
 from the v3.0 table of contents remain placeholders pending content
-review: Introduction, Interoperability and Incident Management, Requests for Communications Assets, Nationwide Interop Channel
-Capabilities, Transportable Repeaters, Data
-Communications Devices.
+review: Introduction, Requests for Communications Assets, Nationwide Interop Channel
+Capabilities, Transportable Repeaters.
 
 ---
 
@@ -981,6 +980,36 @@ The gateway provides infrastructure-independent communication for the State of U
 
 ST_EOC on the VHF side is part of the PACE plan with Camp Williams, Draper HQ, Roland Wright Air Base, HAFB, UTTR, and Dugway.
 
+### Priority services: GETS and WPS
+
+This subsection expands the WPS/GETS entry in the PACE table's Data Alternate layer (cellular data plus priority voice/data during congestion).
+
+CISA Priority Telecommunications Services (PTS) is a suite of services that enable subscribers to communicate with priority when networks are degraded or congested. PTS is often used in emergencies but can also be used proactively: to maintain essential communications, ensure continuity of operations, expand communications capability, deploy first response teams rapidly, place coordination calls, contact field personnel, and discuss information not appropriate for radio broadcast. GETS and WPS both provide end-to-end priority (call setup, processing, and transmission), interoperable priority across carrier network domains including dedicated emergency response networks, and exemption from carrier network management controls.
+
+**GETS — Government Emergency Telecommunications Service.** GETS provides priority access and processing on landline telephone networks during emergency incidents. It improves call completion across carrier networks, provides resiliency at no cost, and leverages existing technologies and equipment. GETS gives priority over wireline commercial networks and some priority over WPS-enabled cellular networks. A PIN card allows users to use the service from any landline phone. GETS calls generally achieve greater than a 95% completion rate and are interoperable with government networks (DSN, DTS, EIS, FSN).
+
+How to use GETS: ensure you have a dial tone; dial the universal GETS Access Number (1-710-627-4387) or an alternate GETS Access Number from any phone (landline, cellular, satellite, facsimile); after the tone, enter your PIN; when prompted, enter the destination number (area code + number). The PTS Dialer app can store the PIN and streamline the call. The GETS card carried by the user shows the access number and the dialing steps; the PIN itself is the user's own credential and is never written into this guide.
+
+**WPS — Wireless Priority Service.** WPS provides priority cellular calling during periods of network congestion or disruption, with priority between the user's cellular device and the cell tower and priority processing in the core wireless networks. It is an add-on feature to existing cellular service, available on all nationwide and some regional carriers (AT&T Mobility, AT&T FirstNet, T-Mobile, Verizon Wireless, plus Cellcom, C Spire, U.S. Cellular, GCI Wireless (Alaska), and Claro (Puerto Rico)). WPS calls generally achieve greater than a 95% completion rate. WPS calls do NOT preempt calls in progress or deny the general public's use of the cellular network.
+
+How to make a WPS call: confirm the WPS-subscribed cell phone is in range of signal (one or more bars — you must have service to make a WPS call); dial *272 and the destination number, then push SEND (green button). The network routes the call; it may take 30 seconds or longer during heavy congestion, and intervals of ringing and/or silence are normal. On most phones the screen displays *272 and the destination number; some phones display call status messages such as "call queued" and/or audible tones indicating the call has been queued. If the first attempt does not complete, end the call and retry. WPS calls can be made to cell phones, landline phones, and satellite phones; the destination device does not need the WPS feature. Answering an incoming WPS call is the same as answering any other call; there is no special indication.
+
+Do NOT use WPS for 911: you receive no benefit by dialing *272 911, and the call loses the location information that would have been provided to the 911 center (PSAP).
+
+WPS limits and notes: WPS cannot be provisioned on pre-paid cellular phones. Roaming works as long as a WPS roaming agreement is in place between the home provider and the roaming network; roaming charges depend on the service plan and are normally incorporated into the monthly bill. WPS charges are billed on the existing cellular invoice, payable to the provider (federal users via the GSA schedule; WPS on FirstNet, Frontline, and Connecting Heroes phones is free). If you change carriers, your organizational point of contact (POC) must submit an online transfer request via the GETS/WPS system; the new carrier cannot accept a request directly from the user. If the display reads "Emergency Service Only," the phone has accessed another carrier without a roaming agreement (weak home signal or a temporary fault) — while displayed, you cannot make normal or WPS calls, but you can make 911 calls and calls to customer care (611). If a *272 call fails (rare, usually extreme congestion or network damage), test from numerous locations and call 800-818-GETS (4387) for assistance or to open a trouble ticket.
+
+**PTS Dialer app.** Free from the Apple App Store, Google Play, and the FirstNet store. It streamlines dialing by automatically prepending *272 before the destination number (from Contacts, Recents, Frequent Calls, or Keypad), can place WPS + GETS calls, and can be used for GETS calling only without a WPS subscription. Pre-programming the GETS PIN in the app minimizes dialing errors. Requires iOS 13.0+ or Android 9.0+.
+
+**TSP — Telecommunications Service Priority (companion service).** TSP provides priority installation and restoration of voice and data circuits, directing providers to give preferential treatment to program users for circuit restoration and provisioning. It is a mandatory requirement for all FCC-regulated telecommunications companies, with tariffed rates approved by state utility regulators. Established by FCC Report and Order 88-341 (1988); updated by R&O 22-36 (May 19, 2022). Approximate cost ranges (regulated by the respective state's public utilities commission): provisioning $50 up to $416 (non-recurring); restoration set-up fee $14 up to $358; recurring restoration $0 up to $9.35 monthly; change of restoration priority level $2.91 up to $131.
+
+**Who should have priority services / eligibility.** Essential organizations: all levels of government (federal, state, local, tribal, territorial), the private sector, and non-governmental organizations, across the 16 critical infrastructure sectors (Chemical, Commercial Facilities, Communications, Critical Manufacturing, Dams, Defense Industrial Base, Emergency Services, Energy, Financial Services, Food and Agriculture, Government Facilities including school districts and higher education, Healthcare and Public Health, Information Technology, Nuclear Reactors/Materials/Waste, Transportation Systems, Water and Wastewater Systems). Essential personnel are those necessary to an organization's continuity of operations, at all levels — executive leadership, media relations, emergency management personnel, continuity planning staff, department heads and managers, subject matter experts, and front-line personnel (all fire/rescue and law enforcement personnel, regardless of rank, should be enrolled). The Priority Telecommunications Service Center determines eligibility and assigns each WPS subscriber a category, which carriers may use to further triage users in severe congestion: executive personnel and policy makers; disaster response, military command and control personnel; public health, public safety, and law enforcement personnel; public services/utilities, public welfare, and critical infrastructure protection personnel; disaster recovery personnel.
+
+**Enrollment.** Each organization has a POC that manages its WPS accounts. If the organization is already enrolled, contact the POC and request WPS on the work cellphone; a text message confirms enrollment. If the organization is not enrolled, begin by calling the CISA Priority Telecommunications Service Center at 866-627-2255 or emailing ecd@cisa.dhs.gov. The process: the organization establishes a POC; the POC fills out an online application or calls the service center; Service Center staff contact the POC; registration is confirmed by email. The request form (October 2014 template; POCs now enter information online) collects organization and group, NS/EP mission criteria, user type, sector, WPS provider/account/phone, name and name to appear on the card, NS/EP title or function, work address, email, phones, the first 8 digits of an existing GETS card if any, international calling, and continuity. Note: WPS is an additional cost on the cellular account and must be coordinated with the organization's cellular accounts manager before submitting. Service Center contacts: 866-627-2255 (account support, Monday–Friday 8 am–6 pm EST) and 800-818-4387 (24-hour assistance); gets-wps@cisa.dhs.gov.
+
+**Best practices.** Download and use the PTS Dialer app; practice using WPS and GETS; make test calls frequently and incorporate them into training exercises (the WPS procedure recommends test calls quarterly, and from numerous locations); add an Alternate POC on the organization's account; report problems when trying to make a WPS or GETS call.
+
+**Sources.** CISA GETS Overview; WPS FAQ (November 2023); Priority Services Eligibility; Making a WPS Call (May 2013); GETS Card; UEMA "Stay Connected When It Matters Most" (May 2024); GETS/WPS Request Form (October 2014). Core procedures (*272 dialing, GETS access number) are confirmed across the 2013–2024 sources.
+
 **Currency note.** The State PACE Plan is a 2026 update. Numbers, frequencies, and assignments change — verify before operational use.
 
 ---
@@ -1018,9 +1047,35 @@ The state–federal VHF PACE element (ST_EOC) is described in Establishing Inter
 
 **NAWAS — National Warning System.** FEMA-operated dedicated warning network linking federal warning points, state warning points, the National Weather Service, and military installations. Used to disseminate warnings for attack, natural disaster, and other emergencies. Utah participates through the state warning point.
 
-**SHARES — Shared Resources HF Radio Program.** Operated by CISA's Emergency Communications Division. SHARES provides a backup capability to exchange critical national security and emergency preparedness (NS/EP) information among federal entities and partners by HF radio in crisis situations, using existing HF resources of government, critical infrastructure, and key partner organizations. Participation is voluntary; the program is available 24 hours a day with no prior coordination or activation required, and participants consult the SHARES Directory for stations, frequencies, and ALE addresses. Program objectives: extended HF coverage at no added cost, an enduring backup to vulnerable telecommunications, the SHARES flag word to expedite emergency traffic, standardized message procedures, and a workaround to jamming through allocated frequencies. Authority: Executive Orders 12472 and 13961, and 47 CFR 216 (NCS Directive 3-3). Source: CISA SHARES Operations Handbook v1.0 (October 2026, effective October 12, 2026). Utah use, per the State PACE Plan: Emergency voice (HF) and Emergency data (Winlink relay); move to SHARES when State HF channels are saturated or reaching federal/inter-state partners is the priority. SHARES directory materials marked FOUO/SBU are safeguarded and are not reproduced in this guide.
+**SHARES — Shared Resources HF Radio Program.** Operated by CISA's Emergency Communications Division. SHARES provides a backup capability to exchange critical national security and emergency preparedness (NS/EP) information among federal entities and partners by HF radio in crisis situations, using existing HF resources of government, critical infrastructure, and key partner organizations. Participation is voluntary; the program is available 24 hours a day with no prior coordination or activation required, and participants consult the SHARES Directory for stations, frequencies, and ALE addresses. Program objectives: extended HF coverage at no added cost, an enduring backup to vulnerable telecommunications, the SHARES flag word to expedite emergency traffic, standardized message procedures, and a workaround to jamming through allocated frequencies. Authority: Executive Orders 12472 and 13961, and 47 CFR 216 (NCS Directive 3-3). Source: CISA SHARES Operations Handbook v1.0 (October 2026, effective October 12, 2026).
 
-**FNARS — FEMA National Radio System.** FEMA's HF radio network for emergency communications, providing continuity when other systems fail. Utah use, per the State PACE Plan: Emergency voice backup, via the dedicated FNARS terminal in the Comms Room.
+**Who participates.** Federal departments and agencies, with SHARES nodes at government owned or operated facilities; officials operating elsewhere register with the SHARES Program Management Office (PMO) for the SHARES Auxiliary. Non-federal government affiliates — state, local, tribal, and territorial governments and subordinate organizations with a requirement to interoperate with a federal agency for mutual NS/EP requirements, usually upon Presidential declaration of a major disaster or emergency — are approved through the PMO; their officials generally participate only in an official capacity from a government facility. AUXCOMM members are eligible only with a CISA AUXCOMM course certificate, a completed AUXC Position Task Book, and a position assignment in the affiliate's emergency management organization. Critical infrastructure partners (16 designated sectors) join through partnership agreements with the PMO.
+
+**Entity Point of Contact (EPOC).** Each participating entity designates an EPOC who reviews and authorizes the entity's elements for participation, disseminates program information, identifies HF stations for the SHARES Directory, designates key operators, protects government information and controls access to operational details, and conducts periodic reviews and audits of stations and operator assignments.
+
+**Voluntary roles.** Beyond the Program Manager, Deputy, and Program Management Office, SHARES relies on volunteers serving in roles (such as Working Group Chairs) under limited delegated administrative, execution, or operational authority.
+
+Utah use, per the State PACE Plan: Emergency voice (HF) and Emergency data (Winlink relay); move to SHARES when State HF channels are saturated or reaching federal/inter-state partners is the priority. SHARES directory materials marked FOUO/SBU are safeguarded and are not reproduced in this guide.
+
+**FNARS — FEMA National Radio System.** FEMA's HF radio network for emergency communications, providing continuity when other systems fail.
+
+**The Utah station.** The FNARS radio is an HF transmitter and receiver capable of communicating with FEMA Region VIII and other FEMA Regions via HF (shortwave). It is located inside the DEM Emergency Communications Center in the State Office building, in three parts: the operator console (computer terminal controlling the radio plus the DSP unit) and the transmitter/receiver in a rack beside the console. The radio remains on at all times and is capable of Automatic Link Establishment (ALE), which lets radio systems link and establish communications parameters automatically with little or no operator intervention. Utah's station callsign is WGY998; Denver Region VIII is WGY908.
+
+**Operating the radio.** Wake the monitor, then log in via the RCC User icon to reach the RCC software that controls the radio. The interface shows the ALE address and user (left), system and radio status (center), and the station callsign and a help number (right). In Scan Listening mode (shown green) the radio scans the pre-programmed FEMA channels, squelched (silent). Station resources shown include FC0FEM, FC6FEM, FC8FEM, and ANY_ADDR; the resource currently used is FC8FEM, representing FEMA Region 8. Hardware controls on the main radio are preset and need no adjusting; speaker and handset audio are controlled from the DSP unit volume knobs, and the yellow LEDs beside the RADIO pushbuttons must be lit or no audio will be heard.
+
+**Receiving a call.** The operator must be in the Communications Room close enough to hear the speaker. When another station links, the ALE system establishes the channel and the bottom panel shows the link (Utah station symbol, channel in use, Region VIII symbol). The caller states our callsign then theirs; reply in kind, then proceed. Either station may close the link.
+
+**Initiating a call.** Double-click the FC8FEM icon to call FEMA Region VIII in Denver; the radio determines the best channel, establishes the ALE link, and opens squelch on both radios.
+
+**Ending a call.** Click "Return To Scan [End Call]"; the radio terminates the ALE link and returns to Scan Listening. Advanced features are covered in the Operations Training Guide kept in the cabinet above the operating position.
+
+**Weekly training net.** Utah participates in the FEMA Region VIII Wednesday HF training net: Utah's slot is 10:30 Mountain, linking via the ALE "FC8FEM1" icon. Tests alternate weekly between "HF CHAT" data mode and phone patch, with holiday exceptions noted in the annual schedule. (The schedule covers stations beyond Region 8; this guide gives Utah's slot and pattern, not the full multi-state table.)
+
+**Logging.** Utah keeps a FNARS station log (date/time UTC, Region 8 station, mode, channel, results, remarks, operator initials) and a 2026 test log (date, test type, completion) following the Wednesday schedule. No log rows are reproduced in this guide.
+
+Utah use, per the State PACE Plan: Emergency voice backup, via the dedicated FNARS terminal in the Comms Room.
+
+**Sources.** Utah DEM FNARS Radio SOP (August 2023); FEMA Region VIII Wednesday training schedule (2026); Utah FNARS station log (2023) and test log (2026).
 
 **Currency note.** Talkgroup assignments, program details, and directory materials change — verify before operational use.
 
@@ -1101,6 +1156,126 @@ Utah maintains COMT and COML rosters and student verification/qualification reco
 
 **Currency note.** Source briefing April 2024; program records 2022–2024. Positions, structures, and qualification processes change — verify before operational use.
 
+---
+
+## Data Communications Devices (POPULATED — Satellite phones — Oct 24, 2026)
+
+**Sources:** Iridium satellite phone quick reference; Salt Lake City satellite phone list (February 2023, dialing and test procedure); DEM, DPS/Governor's Office, UTNG, FEMA Region 8, and cabinet staff satellite phone lists (2016–2026, scope only). No directory entries (names, assignments, numbers, billing) are reproduced in this guide. This section is controlled content (see cover distribution).
+
+Satellite phones provide voice (and short text) beyond terrestrial networks — the path when LMR, cellular, and landline are all unavailable. In the State PACE Plan, the fixed sat phone sits in the Emergency voice layer (see Establishing Interoperability). Satellite terminals are also part of COML toolkits (see Communications Unit (COMU)). The source set covers Iridium handsets.
+
+### Operating an Iridium handset
+
+This is a quick reference, not the handset manual — view the manual included in the package for full details before leaving for a trip.
+
+- **Placing a call:** power on; position the antenna vertically, fully extended, with full visibility to the sky; dial the destination number and press the green OK key. Some prepaid services use an access prefix before the destination number; follow the service's instructions for the handset in hand.
+- **Receiving a call:** when the phone rings, press the green OK key.
+- **Registration:** the display shows Searching (attempting connection), then Registering, then Registered when complete. If signal is weak, move to an open space with clear line of sight. Force registration manually: press the up arrow key, then the 8 key. Calls must be made outdoors with a clear line of sight to the satellites.
+- **Text messaging (SMS):** the handset can send and receive short text messages of up to 160 characters each. Email can be sent to a handset at (satellite phone number)@msg.iridium.com.
+- **Voicemail:** included with the satellite service; normal airtime charges accrue while calling voicemail. To access it, dial your own satellite phone number, press * to interrupt the outgoing message, and enter the last seven digits of the satellite phone number, then follow the prompts. You may also call 8816-629-90000 and follow the prompts.
+
+### Calling a satellite phone
+
+- **From the US:** dial 011-8816 (or 8817) and the eight digits of the satellite phone number.
+- **From outside the US and Canada:** dial 00-8816 (or 8817); a call to a satellite phone is dialed the same as an international call, with 8816 (or 8817) acting as the country code. Some countries have different dialing requirements.
+- **Satellite phone to satellite phone:** dial 00-8816-XXX-XXXXX.
+- **Satellite phone to cell or landline:** hold down 0 until "+" appears, then dial 1-area code-number.
+- **Cell or landline to satellite phone (low-cost routing):** dial 1-480-768-2500 and, when prompted, enter the satellite phone number (8816-XXX-XXXXX). This saves the caller international rates; a per-minute charge is billed to the satellite phone. Calling a satellite phone direct from a landline or cellphone is often very expensive for the caller.
+
+### Monthly test call (no charge)
+
+- Go outside, extend the antenna, and power on the phone.
+- Wait for the green LED network indicator.
+- Dial 00-1-480-752-5105 and press the green button to start the call.
+- After completing the call, press the red button and power off the phone.
+- Test monthly.
+
+### Troubleshooting
+
+- **Unable to make calls:** make sure power is on; SIM card inserted correctly; antenna pushed in all the way (not flopping around), fully extended, with clear line of sight, outdoors; check the signal strength meter; force registration (up arrow, then 8); make sure there is no error message.
+- **Unable to receive calls:** verify all of the above; check the ringer is not turned off (menu key → Phone set-up → Adjust Ring Volume; up arrow to increase, down arrow to decrease).
+- **Display messages:** Searching — attempting to establish connection to the satellite network. Rotate Antenna / Orient Antenna — a tone sounds; extend the antenna upward and make sure you have a clear line of sight to the sky. Registering — registering with the network; when complete you will see Registered. Insert Card — power off, make sure the SIM card is inserted properly, then power on again. Check Card — the SIM card is damaged or inserted incorrectly. Access Denied / Unregistered SIM — service to the handset has been denied.
+- **Battery messages:** Not Available — no battery installed; the phone is operating on external power. Charging Battery — the battery is being charged (icon flashes if powered on; no icon if off). Fast Charge Completed — charging complete; the icon stops flashing. Invalid Battery — an unapproved battery is inserted; you may not recharge it.
+- **RF signal interference:** all wireless devices are susceptible to RF interference from other wireless devices. An Iridium handset within 10 meters to 52 meters of an operational non-Iridium satellite terminal (including all types of non-Iridium satellite dishes and antennas) will likely experience degraded performance; the specific position of the terminal relative to the handset determines the amount of degradation. Symptoms often resemble those of an obstructed view of the sky: erratic or no signal strength indicators, dropped calls, warbled voice, Iridium logo missing on the LCD. Symptoms may be intermittent or persistent depending on the interference source, distance, strength, and frequency of broadcast.
+
+### Inventory scope
+
+Satellite phone holdings are documented across DEM, DPS/Governor's Office, UTNG, Salt Lake City and Salt Lake County, FEMA Region 8 contacts, and cabinet staff lists, spanning 2016–2026. No directory entries are reproduced here — names, assignments, numbers, and billing are excluded. Verify current assignments before operational use. How a satellite phone is requested or issued will live in Requests for Communications Assets (pending).
+
+**Currency note.** Iridium quick reference (vendor); Salt Lake City list February 2023; inventory lists 2016–2026. Verify before operational use.
+
+---
+
+## Interoperability and Incident Management (POPULATED — RECCWG + IPAWS + NORS/DIRS — Oct 24, 2026)
+
+**Sources:** FEMA Region 8 RECCWG Annual Report CY2023 (February 2024) and CISA Emergency Communications Coordination Program Region 8 graphic (March 2022, snapshot); Utah DEM Administrative Policy 16, IPAWS (revised October 5, 2023); FEMA IPAWS Training Deck (September 2024) and IPAWS TIP 33 (January 2021); Utah DEM NORS/DIRS request letter (February 3, 2025) and FCC certification form (OMB 3060-0484, August 2022 edition). This section is controlled content (see cover distribution).
+
+### Communications within the Region: RECCWG
+
+Utah is a member of FEMA Region 8 (Colorado, Montana, North Dakota, South Dakota, Utah, Wyoming). The Regional Emergency Communications Coordination Working Group (RECCWG) is the member-driven forum for regional emergency communications coordination across the whole community, representing a diverse group of stakeholders. By statute, each RECCWG reports annually on the status of building robust and sustainable interoperable emergency communications networks; a combined report of all 10 regions is distributed to CISA, the Federal Communications Commission, and the Department of Commerce.
+
+The RECCWG's three statutory duties:
+
+- Assess the survivability, sustainability, and interoperability of local emergency communications systems to meet the goals of the National Emergency Communications Plan.
+- Ensure a process for the coordination of effective multijurisdictional, multi-agency emergency communications networks for use during natural disasters, acts of terrorism, and other man-made disasters, through the expanded use of emergency management and public safety communications mutual aid agreements.
+- Coordinate the establishment of federal, state, local, and tribal support services and networks designed to address the immediate and critical human needs in responding to natural disasters, acts of terrorism, and other human-caused disasters.
+
+CISA's Emergency Communications Coordination Program supports the RECCWG (Sector Chief, Coordinators, Regional Office, Regional Emergency Communications Coordinator). Utah participates through the SWIC office. Note: the Region 8 graphic is a March 2022 snapshot — state systems and priorities have evolved since (for example, its note about Utah's 800 MHz system predates the current 700 MHz system documented in this guide). FEMA-approved equipment cache lists (Type I and Type IV) are maintained as a regional resource; no catalog data is reproduced here.
+
+### Statewide Communications: IPAWS
+
+Utah maintains a statewide public mass notification and emergency messaging system (Policy 16) that provides statewide coverage, a full interface with the Integrated Public Alert and Warning System (IPAWS) for alerting via Wireless Emergency Alerts (WEA), the Emergency Alert System (EAS), and NOAA Weather Radio All Hazards, and mass notification of the public via phone (landline, VoIP, and wireless), Native SMS via SMPP and MMS messaging, email, fax, and social media. The system is available for use by state and county officials. The purpose of alerting is to get the public's attention, provide protective actions, and direct the public to more complete information. Uses: disaster messaging, public warnings, and AMBER Alerts.
+
+**Pathways and protocol.** IPAWS is FEMA's national system for local alerting, delivering authenticated emergency and life-saving information to the public: WEA to mobile phones, EAS to radio and television (including cable), and Non Weather Emergency Messages (NWEM) to NOAA weather radios. COG-to-COG messaging sends messages directly to other IPAWS-approved government entities. Messages use the Common Alerting Protocol (CAP). A Collaborative Operating Group (COG) is an authorized government agency acting as originator or receiver of emergency messages.
+
+**Interfaces and access.** AlertSense is the primary interface for reaching IPAWS; DASEOC (a Digital Alert Systems encoder box, "the box," owned by DEM) is a secondary device. WebEOC is DEM's platform for managing incident information and for launching the IPAWS interface. Only designated and authorized people have access to the IPAWS interface in WebEOC: access is granted only to a person who has completed IPAWS training online and submitted the completion certificate to the DEM IPAWS contacts. The required course is IS-247.a (IPAWS for Alerting Originators); IS-251 (IPAWS for Alerting Administrators) is recommended. DEM may authorize up to 10 people for access, and the Bureau of Criminal Identification (BCI) up to two; DEM and BCI sign a memorandum of agreement before access is granted.
+
+**Groups.** DEM maintains an IPAWS admin group to oversee administration of IPAWS for state government, troubleshoot technical issues, and maintain compliance with FEMA; it meets regularly to train, exercise, and test the system. A stakeholder group (DEM director and admin group, Utah Broadcasters Association, KSL, others as invited) meets at least twice a year on IPAWS issues. A users group within the Department of Public Safety (DEM and BCI authorized users plus at least one supervisor representative from each agency) meets regularly to build familiarity and relationships and to train and exercise.
+
+**Alerting practice.** DEM assumes most alerts will be statewide, though the system is capable of local alerts, and local alerts may be sent on behalf of a requesting agency. DEM conducts regular tests of the system. Alerts follow strict guidelines to maintain the integrity of the system and to avoid wearying the public with too many alerts; alert workflow procedures are in the Communications, Alerts, and Notification Plan. Alert types: WEA, EAS, NWEM, COG-to-COG. Responsible agencies: AMBER Alerts — BCI (through the National Center for Missing and Exploited Children); natural disaster — DEM; statewide health warnings — Utah Department of Health; miscellaneous planned events and emergency incidents — IPAWS support as needed. Policy 16 is reviewed once a year and updated as necessary.
+
+**Support and proficiency.** The IPAWS Lab Technical Support Services Facility (TSSF) operates 24/7/365 to help Alerting Authorities with troubleshooting and emergency management expertise, including technical failures issuing a live alert, troubleshooting errant alerts and error codes, proficiency demonstrations and practice alerts, alerting best practices, webinars (business hours), and exercise participation. The TSSF does not replace a vendor helpdesk. Contact: 1-844-IPAWSLAB. Alerting Authorities must send a monthly practice message to the TSSF demonstration environment (Monthly Proficiency Demonstration, scenario-based); the purpose is proficiency and confidence and lessening the risk of errant messages, and failure to perform the demonstrations may result in loss of alerting authority access. Training resources: IS-247 and IS-251 (free, online via EMI), the Best Practices Guide, the Message Design Dashboard (50+ hazards with vetted impact statements and protective actions), and the Program Planning Toolkit.
+
+**Known limitations.** WEA: spotty coverage; the public can opt out of local WEA messages; average delivery is approximately 90%; some phones outside the target area may receive an alert, and some may receive it more than once (especially when traveling). EAS: may not be effective during daytime hours or overnight; stations may choose not to broadcast; not likely to reach visitors.
+
+**Lessons from a 2026 Utah incident review (generalized).** Draw a localized polygon, not a whole-county template, for a localized incident. Do not paste duplicate text blocks across multiple software fields — duplicates cause text-to-speech loops and over-alerting. Verify the message before sending. Systems perform as instructed by the transmitted data: when an alert goes wrong, the cause is usually an origination error, not a gateway failure. (Incident specifics are not reproduced here.)
+
+### Interop and incident management reporting: NORS and DIRS
+
+Utah DEM participates in (read-only access to) the Federal Communications Commission's Network Outage Reporting System (NORS) and Disaster Information Reporting System (DIRS) filings. The purpose is situational awareness of essential elements of information (EEIs) for the Communications Lifeline, tracked within the State Emergency Operations Center (SEOC). This information affects the response and recovery priorities and objectives of any incident or planned event, and includes nationwide cellular outage awareness, which affects resource accountability. Access was requested in February 2025 for two personnel, so a line of succession is identified for continuity planning, under Utah Code Annotated Section 53-2a (DEM's official emergency management and first responder duties).
+
+Certification terms (FCC form, OMB 3060-0484): each user account is assigned to a single employee and promptly reassigned as the roster of designated employees changes; passwords are changed and reasonable measures taken so credentials are not used by non-designated individuals; NORS and DIRS filings and information are sensitive and presumed confidential for national security and commercial competitiveness reasons, and are treated as confidential under federal and state Freedom of Information Act statutes — not disclosed absent a finding by the Commission allowing disclosure. No NORS or DIRS filing data is reproduced in this guide.
+
+### Pending: requesting communications assets
+
+How communications assets are requested through WebEOC under the ESF-2 annex will be documented from the state Emergency Operations Plan, which has not yet been loaded. That process is queued and is not built in this section.
+
+**Currency note.** Policy 16 (October 2023, annual review); RECCWG annual report CY2023 (February 2024) and Region 8 graphic (March 2022, snapshot); NORS/DIRS request (February 2025). Verify before operational use.
+
+---
+
+## Wildland Fire Communications (POPULATED — Radio Guide + NIFC cache + ordering — Oct 24, 2026)
+
+**Sources:** 2025 Utah & Great Basin Radio Guide (73 pages); National Interagency Fire Center (NIFC) visit notes, Boise, August 27 (FEMA Region 8 RECCWG); ICS-213 General Message overhead-request template (draft). Channel tables from the Radio Guide are NOT duplicated here — the Radio Guide is the authoritative channel reference. This section is controlled content (see cover distribution).
+
+### The Utah & Great Basin Radio Guide (2025)
+
+The 2025 Utah & Great Basin Radio Guide is the wildland fire channel reference for Utah and the Great Basin, covering 48 zones: Utah county zones, dispatch repeater zones, tactical and air-to-ground zones (including Utah Tactical & Air to Ground Frequencies and an Interoperability zone), plus Idaho and Nevada zones. Each zone table lists channel alias, receive and transmit frequency, receive and transmit tone (guard), and bandwidth (narrow). A zone typically combines common national channels, air-to-ground channels, and local repeaters with their tones. Use the Radio Guide itself for channel assignments; this guide does not reprint its tables, so the Radio Guide's edition stays authoritative and this guide does not carry a stale copy.
+
+### NIFC radio cache
+
+The National Interagency Fire Center radio shop oversees approximately $25 million worth of radios: about 11,000 handheld radios and over 300 portable repeaters, each with antennas, coax, and mast. These assets are ordered and sent out as needed by each event. The COMT or COML orders what they think they will use and adjusts those needs as the event progresses. The entire cache is meant to support up to 32,000 firefighters on up to 53 major wildfires or events at a time. The NIFC radio shop has a 4-hour turnaround time on equipment once received back to the warehouse before it is ready to go back out on the next event. (Contrast the state swap caches in Radio Caches, which are state and county holdings — the NIFC cache is the national wildland cache.)
+
+### Incident weather: IRAWS
+
+Remote Automated Weather Stations (RAWS) are found throughout the US and upload weather data to the GOES satellite; the data is accessible to NIFC RAWS HQ and via the WX website. These units are battery-powered with solar charging and work for up to 1 week on battery without sun. When used temporarily with a fire they are referred to as Incident RAWS (IRAWS). While on a fire, ground personnel within range of the IRAWS can use their radio, tune to 163.350, and by utilizing DTMF codes activate the IRAWS to transmit local weather information across the VHF radio and get live data on demand.
+
+### Ordering communications overhead (ICS-213)
+
+On a wildland incident, overhead and position requests go to Ordering via ICS-213 General Message. The request template carries: the position requested (with a critical-need and safety justification — the template notes the position has received multiple UTFs, i.e., unable-to-fill responses); name and mobile; CA and ECC identifiers; ECC contact number; approvals (FRA, rental car, POV, AOV); request time; and request location (Incident Command Post). Route overhead requests through Ordering; the COML/COMT ordering role is described in Communications Unit (COMU). (Incident-specific details from the template source are not reproduced here.)
+
+**Currency note.** Radio Guide 2025 edition; NIFC cache figures from the August 2024 visit. Verify before operational use.
+
 ## What we know (filled in) vs. what still needs verification
 
 **Filled in from known information:**
@@ -1115,9 +1290,12 @@ Utah maintains COMT and COML rosters and student verification/qualification reco
 - Radio Caches (swap-cache procedures + Salt Lake appendix inventory + Carbon caches, from TICP sources)
 - PSAP Information (2024 PSAP directory + continuity concepts, from contact list + TTX talking points)
 - Interoperable Repeaters (regional VHF repeaters + Bear River amateur/RACES repeaters + county inventory summary, from TICP sources)
-- Establishing Interoperability (State PACE Plan 2026: PACE table, reference frequencies, gateway)
+- Establishing Interoperability (State PACE Plan 2026: PACE table, reference frequencies, gateway + GETS/WPS priority services)
 - Federal Interoperability Channel Plan (FED_OPS talkgroups + UHF IR note + NAWAS/SHARES/FNARS programs)
 - Communications Unit (COMU) (ESF #2 vs COML roles, COMU positions, history, Utah program note)
+- Data Communications Devices (Satellite phones: Iridium operation, dialing, monthly test, troubleshooting, inventory scope)
+- Interoperability and Incident Management (RECCWG regional coordination, IPAWS statewide communications, NORS/DIRS participation)
+- Wildland Fire Communications (2025 UT & GB Radio Guide, NIFC radio cache, IRAWS weather, ICS-213 overhead ordering)
 - Radio Template Programming Requirements (carried forward from v3.0, marked VERIFY — SWIC update over winter 2026-27)
 
 **Still to verify / fill:**
