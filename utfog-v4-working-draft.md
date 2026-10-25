@@ -19,7 +19,7 @@ on Oct 24, 2026; content is being filled in as it is confirmed.
 **Section status:** Populated below = Utah Regions, 700 MHz Interop
 Talkgroups and Channels (summary + companion file), Radio Template
 Programming Requirements (carried forward from v3.0 — VERIFY, to be
-updated by the SWIC over winter 2026-27), National Interoperability Channels (NIFOG) (CISA public source), Statewide Interop Channel Capabilities (Utah-specific), State Maps (regional + wildland + UHP maps), Gateways (TICP sources), Radio Caches (TICP sources), PSAP Information (2024 contact list), Interoperable Repeaters (TICP sources + amateur directory), Establishing Interoperability (State PACE Plan 2026), Federal Interoperability Channel Plan (FED_OPS + federal programs), Communications Unit (COMU) (ESF #2 vs COML + positions), Data Communications Devices (Satellite phones), Interoperability and Incident Management (RECCWG + IPAWS + NORS/DIRS), Wildland Fire Communications (Radio Guide + NIFC cache + ordering), Nationwide Interop Channel Capabilities (v3.0 matrix — verify), Transportable Repeaters (wildland portable/SOA + Comms truck), Introduction (ESF-2 + EOP framework), Requests for Communications Assets (EOP request process + WebEOC). All 20 sections are now populated; remaining work is verification and currency updates (see the notes in each section).
+updated by the SWIC over winter 2026-27), National Interoperability Channels (NIFOG) (CISA public source), Statewide Interop Channel Capabilities (Utah-specific), State Maps (regional + wildland + UHP maps), Gateways (TICP sources), Radio Caches (TICP sources), PSAP Information (2024 contact list), Interoperable Repeaters (TICP sources + amateur directory), Establishing Interoperability (State PACE Plan 2026), Federal Interoperability Channel Plan (FED_OPS + federal programs), Communications Unit (COMU) (ESF #2 vs COML + positions), Data Communications Devices (Satellite phones), Interoperability and Incident Management (RECCWG + IPAWS + NORS/DIRS), Wildland Fire Communications (Radio Guide + NIFC cache + ordering), Nationwide Interop Channel Capabilities (v3.0 matrix — verify), Transportable Repeaters (wildland portable/SOA + Comms truck), Introduction (ESF-2 + EOP framework), Requests for Communications Assets (EOP + Requesting a Resource SOP). All 20 sections are now populated; remaining work is verification and currency updates (see the notes in each section).
 
 ---
 
@@ -1464,7 +1464,7 @@ Utah Code 63H Chapter 7a Section 502 (UCA Interoperability Division coordination
 
 ---
 
-## Requests for Communications Assets (POPULATED — EOP request process + WebEOC — Oct 24, 2026)
+## Requests for Communications Assets (POPULATED — EOP + Requesting a Resource SOP — Oct 24, 2026)
 
 **Sources:** State of Utah Emergency Operations Plan 2025–2029 (Mission and Resource Support section, revised 2024; Center Support section); State Emergency Operations Plan, ESF #2 – Communications annex (revised November 27, 2018). This section is controlled content (see cover distribution).
 
@@ -1536,7 +1536,31 @@ The asset sections of this guide describe what exists; the request pathway above
 
 The full support-agency roster, including private-sector and volunteer organizations, is in the ESF #2 annex; this section lists the communications-relevant providers.
 
-**Procedure note.** The step-by-step Requesting a Resource SOP is referenced by the EOP but is not reproduced in the EOP itself. Obtain that SOP for the full click-by-click WebEOC procedure; the flow, format, approval, sourcing, and tracking rules above are the EOP's own content.
+### Step-by-step: the SEOC request process (SOP LOG-2019-003)
+
+The SEOC's Standard Operating Procedure for resource requests, sourcing, and fulfillment (LOG-2019-003, approved February 19, 2025, updated June 2026) adds the routing and lifecycle detail to the EOP flow above.
+
+**Before you request.** The SEOC provides resource support when an incident exceeds a jurisdiction's capabilities and all other local and regional mutual aid resources have been exhausted. Cities request through their county: if a city contacts the SEOC directly, the SEOC coordinates with the county emergency manager to avoid duplication. Tribal jurisdictions may request directly from the SEOC, or from city/county governments, another tribe or state, non-profit organizations, or FEMA; the SEOC tracks a tribal request only when it is escalated from a city or county or requested directly from the SEOC, coordinating through the county emergency manager, the regional DEM liaison officer (LNO), the Tribal LNO, the SEOC Liaison and/or SEOC Tribal Liaison, and the FEMA Tribal Liaison. State agencies may request directly from the SEOC when a mission exceeds their available resources; a local agency that contacts a state counterpart directly should have that state agency inform the SEOC for overall tracking. Activated SERT members submit through the MARS Section.
+
+**The four request channels.** County emergency managers or designees, tribal jurisdictions, and state agencies may request from the SEOC via: (1) their appropriate liaison — county jurisdictions contact their regional DEM LNO or backup LNO, tribal jurisdictions contact the DPS/DEM Tribal LNO, state agencies contact the DEM State Agency LNO; (2) WebEOC or the established crisis management system; (3) the SEOC 24/7 phone number (see the SOP for the number); (4) 700 MHz radio on channel ST_EOC_1. If a liaison receives a request, the liaison calls the SEOC 24/7 number to relay it and is responsible for entering it into WebEOC. If the SEOC receives a request directly, MARS informs the appropriate LNO and enters it into WebEOC. Throughout the request lifecycle, the SEOC and the appropriate LNO coordinate to keep each other and the requestor informed of status, via the regional Signal chat, the SEOC 24/7 number, or other methods the personnel involved determine.
+
+**Governor's Office requests.** Requests from the Governor's Office are routed through the Department of Public Safety Commissioner to the Division of Emergency Management Director, then to the SEOC.
+
+**Review and assignment.** Requests go to the on-call or activated MARS Section Chief for review and approval, then are tasked to the Mission Assignment Unit (if activated) to assign to the respective SERT member. Assigned SERT members keep the MARS Section informed of resource status. If a request is denied or needs additional information, the MARS Section Chief or designee follows up with the requestor. If a resource cannot be sourced through SERT partners, existing state contracts, or other established methods, the request may be forwarded to the Resource Coordination Unit for fulfillment or purchase.
+
+**SERT fulfillment.** Once assigned, the SERT member or group sees the request through completion: locating the resource through the agency's inventory or fixed assets, existing contracts or memorandums of understanding, or other state agencies, and assisting the requesting jurisdiction with receiving it. If SERT cannot locate the resource, it may ask MARS to procure it; if the agency cannot purchase under its own authorities, it coordinates with the MARS Section for an SEOC purchase. If SERT purchases a resource and will request reimbursement, a local declaration is needed to activate the State Disaster Recovery Restricted Account (see below).
+
+**Accessing Utah National Guard resources.** All Utah National Guard assistance must have a mission number from the SEOC and is available only when: the State EOC has determined it cannot provide the resource or capability through its contracts or memorandums of understanding; all other resources are unavailable from another source, including the private sector; the Guard can perform the mission more efficiently and effectively than any other agency; and the Guard is not needed elsewhere for other priorities. When those conditions are met, the SEOC MARS Section contacts the Guard Liaison or Joint Operations Center for internal Guard approval by the Adjutant General, who then seeks final approval from the Governor. Following approval, the MARS Section Chief notifies the SEOC Policy Group and the DPS Commissioner. A mission and mission number are assigned through WebEOC, if available, and followed up with verbal confirmation; the mission is tracked at the State EOC and updated by the Guard Liaison or assigned personnel.
+
+**Declared vs. non-declared incidents.** To use the State Disaster Recovery Restricted Account to reimburse state agencies, or the Local Disaster Recovery Restricted Account to reimburse local agencies, a local, state, or federal emergency declaration must be in effect. To request resources via EMAC, a state or federal declaration must be in effect; to request federal resources, a federal declaration must be in effect. Without declarations, the SDRRA or LDRA may not be used for reimbursement: non-declared incidents still receive state support through coordination of state resources or statewide mutual aid assets, but the requesting jurisdiction is responsible for all incident costs. Statewide mutual aid (Utah Code 53-2a Part 3) and other non-EMAC interstate mutual aid agreements may be used without declarations.
+
+**Tracking and demobilization.** The SERT member over the resource tracks what is being delivered, when it is received and signed for, where it is located (GIS-mapped), and how many days it is needed. The Resource Coordination Unit maintains overall tracking, ensuring updates have been made and maintaining situational awareness on deployed resources through demobilization. When a resource is no longer needed and is released by local officials, it goes back to the MARS Section for demobilization or reassignment — a released resource has not yet been demobilized by the state and should expect reassignment if it is still needed elsewhere. Once cleared for demobilization by the SEOC, the resource follows the SEOC Demobilization Procedure.
+
+**Emergency procurement.** Under Utah Procurement Code 63g-6a-803(2), a procurement official may authorize emergency procurement without a standard process when necessary to avoid a lapse in a critical government service, mitigate a circumstance likely to harm public health, safety, welfare, or property (including a natural disaster), or protect a public entity's legal interests. The SEOC Finance Unit coordinates with the Mission and Resource Support Section and the DPS Budget Manager. Changes to the law in 2021 require the following to be made publicly available on a state agency's website within 14 days of an emergency procurement: a written document describing the specific emergency, the name of the highest-ranking government official who approved it, and each related written contract. Persons authorized to approve an emergency procurement for SEOC operations include the DEM Director, the DPS Budget Director, and the DPS Commissioner or Deputy Commissioner. All procurements during response and recovery should follow FEMA standards for public and individual assistance to qualify for reimbursement.
+
+**Source note.** This subsection is drawn from SOP LOG-2019-003 (SEOC Resource Request, Sourcing, and Fulfillment Process). The SOP remains the authoritative procedure; this section summarizes it for field use.
+
+
 
 ## What we know (filled in) vs. what still needs verification
 
@@ -1561,7 +1585,7 @@ The full support-agency roster, including private-sector and volunteer organizat
 - Nationwide Interop Channel Capabilities (v3.0 agency×nationwide-channel matrix, band-family level — VERIFY)
 - Transportable Repeaters (NIFC portable cache, Radio Guide portable + SOA channels, DPS/DEM Comms truck, v3.0 Washington Co entry — VERIFY)
 - Introduction (ESF-2 annex purpose/scope, DTS+UCA co-leads, SWIC database, SCIP/TICP framework, authorities)
-- Requests for Communications Assets (EOP MARS/MA/Resource Coordination/Communications Units, CSALTT format, approval + sourcing order, WebEOC + RID board, ESF-2 provider list)
+- Requests for Communications Assets (EOP MARS/MA/Resource Coordination/Communications Units, CSALTT format, approval + sourcing order, WebEOC + RID board, ESF-2 provider list, SOP LOG-2019-003 step-by-step: channels, routing, SERT fulfillment, UTNG access, declarations, tracking, demobilization)
 - Radio Template Programming Requirements (carried forward from v3.0, marked VERIFY — SWIC update over winter 2026-27)
 
 **Still to verify / fill:**
@@ -1573,7 +1597,6 @@ The full support-agency roster, including private-sector and volunteer organizat
 - Blank-field cleanup (455 missing talkgroup IDs, 3 missing aliases,
   2 missing restricted flags)
 - Restricted-row handling under CUI (include as CUI vs. hold back)
-- WebEOC procedure detail: the EOP gives the request flow, CSALTT format, and WebEOC as the documentation tool; the step-by-step Requesting a Resource SOP is referenced but not reproduced — obtain it for the full click-by-click procedure
 - ESF-2 annex currency (November 2018): system names and organizations have evolved since (notably the 700 MHz system); verify organizational details before operational use
 
 ---
