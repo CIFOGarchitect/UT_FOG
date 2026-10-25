@@ -17,13 +17,14 @@ on Oct 24, 2026; content is being filled in as it is confirmed.
 - Marking: CUI replaces FOUO throughout (per SWIC direction, Oct 24)
 
 **Section status:** Populated below = Utah Regions, 700 MHz Interop
-Talkgroups and Channels (summary + companion file). All other sections
+Talkgroups and Channels (summary + companion file), Radio Template
+Programming Requirements (carried forward from v3.0 — VERIFY, to be
+updated by the SWIC over winter 2026-27). All other sections
 from the v3.0 table of contents remain placeholders pending content
 review: Establishing Interoperability, Introduction, State Maps,
 Interoperability and Incident Management, Communications Unit (COMU),
 Requests for Communications Assets, National Interoperability Channels
-(NIFOG), Federal Interoperability Channel Plan, PSAP Information, Radio
-Template Programming Requirements, Nationwide Interop Channel
+(NIFOG), Federal Interoperability Channel Plan, PSAP Information, Nationwide Interop Channel
 Capabilities, Statewide Interop Channel Capabilities, Interoperable
 Repeaters, Gateways, Transportable Repeaters, Radio Caches, Data
 Communications Devices.
@@ -90,12 +91,393 @@ distributed edition.
 
 ---
 
+---
+
+## Radio Template Programming Requirements (CARRIED FORWARD FROM V3.0 — VERIFY)
+
+**Status:** Carried forward from Version 3.0 (November 2022) as a starting draft. To be updated by the SWIC over winter 2026-27. Do not treat as current until verified. v3.0 page footers/markings have been stripped; content is otherwise verbatim.
+
+Requirements
+LICENSING DISCLAIMER
+
+RA
+FT
+
+Nothing in this document shall be construed to serve as
+authorization for any agency or individual to operate equipment
+on radio channels without the proper authorization or licensing
+by the Federal Communications Commission (FCC).
+
+MINIMUM RECOMMENDED CHANNELS
+
+The channels listed in the following tables consist of the
+minimum recommended radio channels to provide for public
+safety interoperable communications.
+
+Utah Minimum Recommended VHF Channels
+
+Table 19: VHF Programming Template - All Disciplines
+
+MINIMUM RECOMMENDED CHANNELS – All Disciplines
+
+CHANNEL
+NAME
+
+MOB RECV
+
+MOB XMIT
+
+FREQ
+
+FREQ
+
+A
+D
+
+NOTES
+
+Page | 63 70 -
+
+​
+
+TONE
+
+​
+
+TONE
+
+Utah Interoperable Communications
+Field Operations Guide Ver 3.0​
+
+November 2022
+
+MINIMUM RECOMMENDED CHANNELS – All Disciplines
+MOB RECV
+
+MOB XMIT
+
+A
+D
+
+NOTES
+
+RA
+FT
+
+CHANNEL
+NAME
+
+All channels are Narrowband, Analog, Conventional
+
+Table 20: VHF Programming Template – Law Enforcement
+
+MINIMUM RECOMMENDED CHANNELS – Law Enforcement
+
+CHANNEL
+NAME
+
+MOB RECV
+
+MOB XMIT
+
+FREQ
+
+FREQ
+
+TONE
+
+TONE
+
+A
+D
+
+NOTES
+
+All channels are Narrowband, Analog, Conventional
+Channels listed above are in addition to those listed in the ALL-DISCIPLINES programming
+table
+
+Table 21: VHF Programming Template – Fire/EMA/First Responder
+
+MINIMUM RECOMMENDED CHANNELS – Fire/EMA/First Responder
+
+CHANNEL
+NAME
+
+MOB RECV
+
+MOB XMIT
+
+FREQ
+
+FREQ
+
+A
+D
+
+NOTES
+
+Page | 64 70 -
+
+​
+
+TONE
+
+​
+
+TONE
+
+Utah Interoperable Communications
+Field Operations Guide Ver 3.0​
+
+November 2022
+
+MINIMUM RECOMMENDED CHANNELS – Fire/EMA/First Responder
+CHANNEL
+NAME
+
+MOB RECV
+
+MOB XMIT
+
+A
+D
+
+NOTES
+
+RA
+FT
+
+All channels are Narrowband, Analog, Conventional
+Channels listed above are in addition to those listed in the ALL-DISCIPLINES programming
+table
+
+Table 22: Programming Template - EMS
+
+MINIMUM RECOMMENDED CHANNELS – EMS
+
+CHANNEL
+NAME
+
+MOB RECV
+
+MOB XMIT
+
+FREQ
+
+FREQ
+
+TONE
+
+TONE
+
+A
+D
+
+NOTES
+
+– VMED28 formerly known as Hospital Emergency Ambulance Radio (HEAR)
+
+All channels are Narrowband, Analog, Conventional
+Channels listed above are in addition to those listed in the ALL-DISCIPLINES programming
+table
+
+Utah Minimum Recommended UHF Channels
+
+Table 23: UHF Programming Template - All Disciplines
+
+MINIMUM RECOMMENDED CHANNELS – All Disciplines
+
+CHANNEL
+NAME
+
+MOB RECV
+
+MOB XMIT
+
+FREQ
+
+FREQ
+
+A
+D
+
+NOTES
+
+Page | 65 70 -
+
+​
+
+TONE
+
+​
+
+TONE
+
+Utah Interoperable Communications
+Field Operations Guide Ver 3.0​
+
+November 2022
+
+MINIMUM RECOMMENDED CHANNELS – All Disciplines
+CHANNEL
+NAME
+UTAC43D
+
+MOB RECV
+
+453.8625
+
+156.7
+
+MOB XMIT
+
+453.8625
+
+A
+D
+
+156.7
+
+NOTES
+A
+
+Incident Coordination
+
+RA
+FT
+
+●​ Base station channel use requires an FCC license.
+●​ Mobile/portable use under blanket authorization by the FCC.
+●​ All channels are Narrowband, Analog, Conventional
+
+Table 24: UHF Programming Template
+
+MINIMUM RECOMMENDED CHANNELS – All Disciplines
+
+CHANNEL
+NAME
+
+MOB RECV
+
+MOB XMIT
+
+FREQ
+
+FREQ
+
+A
+D
+
+NOTES
+
+Page | 66 70 -
+
+​
+
+TONE
+
+​
+
+TONE
+
+Utah Interoperable Communications
+Field Operations Guide Ver 3.0​
+
+November 2022
+
+Utah Minimum Recommended 700 MHz Channels
+Table 25: 700 MHz Programming Template - All Disciplines
+
+MINIMUM RECOMMENDED CHANNELS – All Disciplines
+MOB RECV
+
+MOB XMIT
+
+FREQ
+
+FREQ
+
+TONE
+
+TONE
+
+A
+D
+
+NOTES
+
+RA
+FT
+
+CHANNEL
+NAME
+
+●​ Base station channel use requires an FCC license.
+●​ Mobile/portable use under blanket authorization by the FCC.
+●​ All channels are Narrowband, Digital P-25 Phase I Conventional
+●​ Refer to FCC Region 3 700 MHz Plan for additional details and frequency listings
+
+​
+
+​
+
+Page | 67 70 -
+
+Utah Interoperable Communications
+Field Operations Guide Ver 3.0​
+
+November 2022
+
+Utah Minimum Recommended 800 MHz Channels
+Table 26: 800 MHz Programming Template - All Disciplines
+
+MINIMUM RECOMMENDED CHANNELS – All Disciplines
+MOB RECV
+
+MOB XMIT
+
+FREQ
+
+FREQ
+
+TONE
+
+TONE
+
+A
+D
+
+NOTES
+
+RA
+FT
+
+CHANNEL
+NAME
+
+●​ Base station channel use requires an FCC license.
+●​ Mobile/portable use under blanket authorization by the FCC.
+●​ All channels are Wideband, Analog, Conventional
+
+​
+
+​
+
+Page | 68 70 -
+
+Utah Interoperable Communications
+Field Operations Guide Ver 3.0​
+
+November 2022
+
 ## What we know (filled in) vs. what still needs verification
 
 **Filled in from known information:**
 - Cover, version, authority, publisher, distribution (Controlled/CUI)
 - Utah Regions section (8-region structure)
 - 700 MHz section rename + organized fleet listing + summary counts
+- Radio Template Programming Requirements (carried forward from v3.0, marked VERIFY — SWIC update over winter 2026-27)
 
 **Still to verify / fill:**
 - PSAP Information currency and contact details
