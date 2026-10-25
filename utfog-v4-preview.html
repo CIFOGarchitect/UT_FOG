@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Utah Interoperable Communications Field Operations Guide — v4.0 (Preview)</title>
+<style>
+  :root { --navy:#0a2a5e; --navy2:#071d3b; --gold:#c9a227; --bg:#0b1220; --card:#141f33;
+    --amber:#f5b301; --text:#e8edf5; --muted:#9aa7bd; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:Arial, Helvetica, sans-serif; background:var(--bg); color:var(--text); }
+  .preview-banner { background:#3a2a00; color:#ffd970; text-align:center; padding:10px 12px; font-weight:bold; }
+  .preview-banner small { display:block; font-weight:normal; opacity:.9; margin-top:2px; }
+  .cover { background:linear-gradient(180deg, var(--navy), var(--navy2)); border-bottom:3px solid var(--gold); padding:32px 20px; text-align:center; }
+  .cover h1 { margin:0 0 12px; font-size:32px; }
+  .cover p { margin:6px 0; color:#cdd6e4; font-size:15px; }
+  .cover .ver { font-size:20px; color:#fff; font-weight:bold; }
+  main { max-width:1000px; margin:0 auto; padding:18px; }
+  h2 { font-size:21px; border-bottom:1px solid #2a3a5c; padding-bottom:6px; margin-top:32px; }
+  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:15px; }
+  th, td { border:1px solid #2a3a5c; padding:8px 10px; text-align:left; }
+  th { background:#1d2c4d; }
+  .stats { display:grid; grid-template-columns:repeat(auto-fill, minmax(180px, 1fr)); gap:12px; margin:12px 0; }
+  .stat { background:var(--card); border:1px solid #2a3a5c; border-radius:8px; padding:14px; text-align:center; }
+  .stat .num { font-size:28px; font-weight:bold; }
+  .stat .lbl { color:var(--muted); font-size:13px; margin-top:4px; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:12px; margin-top:12px; }
+  .card { background:var(--card); border:1px solid #2a3a5c; border-radius:8px; padding:14px; }
+  .card h3 { margin:0 0 6px; font-size:16px; }
+  .card p { margin:4px 0; color:var(--muted); font-size:14px; }
+  .status { display:inline-block; margin-top:8px; padding:3px 10px; border-radius:12px; font-size:12px; font-weight:bold; background:var(--amber); color:#111; }
+  .note { color:var(--muted); font-size:14px; }
+  footer { color:var(--muted); font-size:13px; text-align:center; padding:20px; }
+</style>
+</head>
+<body>
+<div class="preview-banner">PREVIEW — Working draft
+  <small>Private, controlled document. Not for distribution. This page shows the guide's look with the sections populated so far.</small>
+</div>
+
+<div class="cover">
+  <h1>Utah Interoperable Communications<br>Field Operations Guide</h1>
+  <p class="ver">Version 4.0 — January 2027</p>
+  <p>Authority: Statewide Interoperability Coordinator, under the direction of the Statewide Interoperability Executive Committee.</p>
+  <p>Published by: Statewide Interoperability Coordinator, Utah Division of Emergency Management, Department of Public Safety (DPS/DEM).</p>
+  <p>Distribution: Controlled (CUI) — authorized users only.</p>
+  <p>Supersedes: Version 3.0 (November 2022).</p>
+  <p class="note">Licensing note: Nothing in this guide shall be construed to serve as authorization for any agency or individual to operate equipment on radio channels without first obtaining proper authorization or licensing by the Federal Communications Commission (FCC).</p>
+</div>
+
+<main>
+  <h2>Contents</h2>
+  <p class="note">Utah Regions &bull; Establishing Interoperability &bull; Introduction &bull; State Maps &bull; Interoperability and Incident Management &bull; Communications Unit (COMU) &bull; Requests for Communications Assets &bull; National Interoperability Channels (NIFOG) &bull; Federal Interoperability Channel Plan &bull; PSAP Information &bull; 700 MHz Interop Talkgroups and Channels &bull; Radio Template Programming Requirements &bull; Nationwide Interop Channel Capabilities &bull; Statewide Interop Channel Capabilities &bull; Interoperable Repeaters &bull; Gateways &bull; Transportable Repeaters &bull; Radio Caches &bull; Data Communications Devices</p>
+
+  <h2>Utah Regions</h2>
+  <p class="note">Updated from the seven Homeland Security Regions in v3.0 to the current eight-region structure.</p>
+  <table>
+    <tr><th>Code</th><th>Region</th><th>Counties</th></tr>
+    <tr><td>BR</td><td>Bear River</td><td>Box Elder, Cache, Rich</td></tr>
+    <tr><td>WF</td><td>Wasatch Front</td><td>Weber, Davis, Morgan</td></tr>
+    <tr><td>OQ</td><td>Oquirrh</td><td>Tooele, Salt Lake</td></tr>
+    <tr><td>MT</td><td>Mountain</td><td>Summit, Wasatch, Utah, Juab</td></tr>
+    <tr><td>NE</td><td>Northeast</td><td>Daggett, Duchesne, Uintah</td></tr>
+    <tr><td>CN</td><td>Central</td><td>Millard, Sanpete, Sevier, Piute, Wayne</td></tr>
+    <tr><td>SW</td><td>Southwest</td><td>Beaver, Iron, Washington, Garfield, Kane</td></tr>
+    <tr><td>SE</td><td>Southeast</td><td>Carbon, Emery, Grand, San Juan</td></tr>
+  </table>
+  <p class="note">29 counties total.</p>
+
+  <h2>700 MHz Interop Talkgroups and Channels</h2>
+  <p class="note">Renamed from the v3.0 "800 MHz Interop Talkgroups and Channels" section, per SWIC direction, October 2026. The full organized listing lives in the companion file (utfog-v4-700mhz-talkgroups-organized.csv) — it is not embedded here.</p>
+  <div class="stats">
+    <div class="stat"><div class="num">2,102</div><div class="lbl">Talkgroups</div></div>
+    <div class="stat"><div class="num">150</div><div class="lbl">Prefix groups</div></div>
+    <div class="stat"><div class="num">141</div><div class="lbl">Secure (encrypted)</div></div>
+    <div class="stat"><div class="num">1,961</div><div class="lbl">Clear</div></div>
+    <div class="stat"><div class="num">986</div><div class="lbl">Agency-restricted (~47%)</div></div>
+  </div>
+  <p class="note">Data-quality notes: 463 rows are missing a talkgroup ID, 3 are missing a display alias, and 2 are missing a restricted flag. Restricted-row handling under CUI is still to be confirmed before distribution.</p>
+
+  <h2>Remaining sections</h2>
+  <p class="note">Placeholders pending content review.</p>
+  <div class="cards">
+    <div class="card"><h3>Establishing Interoperability</h3><p>How interoperable communications are established.</p><span class="status">Content pending review</span></div>
+    <div class="card"><h3>Introduction</h3><p>Purpose and use of this guide.</p><span class="status">Content pending review</span></div>
+    <div class="card"><h3>State Maps</h3><p>Statewide maps supporting interoperable communications.</p><span class="status">Content pending review</span></div>
+    <div class="card"><h3>Interoperability and Incident Management</h3><p>Interoperability within incident management.</p><span class="status">Content pending review</span></div>
+    <div class="card"><h3>Communications Unit (COMU)</h3><p>Communications Unit roles and organization.</p><span class="status">Content pending review</span></div>
+    <div class="card"><h3>Requests for Communications Assets</h3><p>How to request communications assets.</p><span class="status">Content pending review</span></div>
+    <div class="card"><h3>National Interoperability Channels (NIFOG)</h3><p>National interoperability channels.</p><span class="status">Content pending review</span></div>
+    <div class="card"><h3>Federal Interoperability Channel Plan</h3><p>Federal interoperability channel plan.</p><span class="status">Content pending review</span></div>
+    <div class="card"><h3>PSAP Information</h3><p>Public Safety Answering Point information.</p><span class="status">Content pending review</span></div>
+    <div class="card"><h3>Radio Template Programming Requirements</h3><p>Requirements for radio template programming.</p><span class="status">Content pending review</span></div>
+    <div class="card"><h3>Nationwide Interop Channel Capabilities</h3><p>Nationwide interoperability channel capabilities.</p><span class="status">Content pending review</span></div>
+    <div class="card"><h3>Statewide Interop Channel Capabilities</h3><p>Statewide interoperability channel capabilities.</p><span class="status">Content pending review</span></div>
+    <div class="card"><h3>Interoperable Repeaters</h3><p>Interoperable repeater resources.</p><span class="status">Content pending review</span></div>
+    <div class="card"><h3>Gateways</h3><p>Gateway resources.</p><span class="status">Content pending review</span></div>
+    <div class="card"><h3>Transportable Repeaters</h3><p>Transportable repeater resources.</p><span class="status">Content pending review</span></div>
+    <div class="card"><h3>Radio Caches</h3><p>Radio cache resources.</p><span class="status">Content pending review</span></div>
+    <div class="card"><h3>Data Communications Devices</h3><p>Data communications devices.</p><span class="status">Content pending review</span></div>
+  </div>
+</main>
+<footer>Preview only — private, controlled working draft. Not for distribution. The full talkgroup listing is held in the companion CSV, not in this page.</footer>
+</body>
+</html>
