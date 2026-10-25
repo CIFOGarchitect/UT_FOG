@@ -19,12 +19,12 @@ on Oct 24, 2026; content is being filled in as it is confirmed.
 **Section status:** Populated below = Utah Regions, 700 MHz Interop
 Talkgroups and Channels (summary + companion file), Radio Template
 Programming Requirements (carried forward from v3.0 — VERIFY, to be
-updated by the SWIC over winter 2026-27), National Interoperability Channels (NIFOG) (CISA public source). All other sections
+updated by the SWIC over winter 2026-27), National Interoperability Channels (NIFOG) (CISA public source), Statewide Interop Channel Capabilities (Utah-specific). All other sections
 from the v3.0 table of contents remain placeholders pending content
 review: Establishing Interoperability, Introduction, State Maps,
 Interoperability and Incident Management, Communications Unit (COMU),
 Requests for Communications Assets, Federal Interoperability Channel Plan, PSAP Information, Nationwide Interop Channel
-Capabilities, Statewide Interop Channel Capabilities, Interoperable
+Capabilities, Interoperable
 Repeaters, Gateways, Transportable Repeaters, Radio Caches, Data
 Communications Devices.
 
@@ -603,6 +603,96 @@ Tone 156.7 Hz CTCSS. Each channel below also has a D direct variant on the outpu
 
 **Full reference.** The complete NIFOG (v2.01) is available free from CISA's SAFECOM field operations guides page and as the eNIFOG mobile app (works offline).
 
+---
+
+## Statewide Interop Channel Capabilities (POPULATED — Utah-specific — Oct 24, 2026)
+
+**Sources:** Utah 800 MHz conventional channels workbook (8TAC site list and notes, revised June 2017) and the VHF interop (SRS) sheet. Utah-specific capabilities complement the nationwide NIFOG channels. This section is controlled content (see cover distribution).
+
+### Utah 800 MHz 8TAC repeaters
+
+**Purpose.** The primary purpose of these repeaters is to provide 800 MHz coverage where there is no trunked system coverage.
+
+**Names.** The national standard names are 8CALL90, 8TAC91, 8TAC92, 8TAC93, and 8TAC94. Older ICALL/ITAC 1–4 names may still display on radios until reprogramming is complete.
+
+**Tone note.** All user radios should be programmed with tone 156.7 Hz (the national standard). Per the source notes, currently no UCA repeaters have been toned.
+
+**State mutual aid repeaters.** Five channels (ST Rptr 1–5) exist mainly for deployable repeaters for special operations and coverage, with a couple of exceptions noted in the source. Site details for those channels remain in the source notes and are not tabulated here.
+
+Frequencies below are shown with the source sheet's base-station labels (Base RX / Base TX), exactly as listed. Two incomplete source rows without a site name were omitted, and the source sheet's Radio Info column (equipment detail) was not carried over.
+
+| Site | County | Coverage Area | Label | Base RX | RX Tone | Base TX | TX Tone | Dispatch Center | Connectivity |
+|---|---|---|---|---|---|---|---|---|---|
+| Dunn Peak | Box Elder | North Box Elder County | — | 807.7 | — | 857.7 | — | Box Elder | — |
+| Logan Peak | Cache | Cache County, Logan Canyon | 8TAC91 / ITAC1 | — | — | — | — | — | — |
+| Bruin | Carbon | Carbon County, Duchesne County | 8TAC93 / ITAC3 | — | — | — | — | — | — |
+| Dutch John | Daggett | Flaming Gorge, Daggett County | 8CALL90 / ICALL | — | — | — | — | Vernal | Microwave |
+| East Park | Daggett | Flaming Gorge, Daggett County | STRPT3 | — | — | — | — | Vernal | — |
+| Steamboat | Duchesne | Duchesne County, Highway 40 | 8CALL90 / ICALL | — | — | — | — | Vernal | Microwave |
+| Tabby Mtn | Duchesne | Duchesne County, Highway 40, Tabiona | 8TAC93 / ITAC3 | — | — | — | — | Vernal | — |
+| Cedar Mtn Emery | Emery | NW Emery County, Carbon County | 8TAC91 / ITAC1 | — | — | — | — | Price | Microwave |
+| Green River | Emery | Emery County | 8TAC92 / ITAC2 | — | — | — | — | Price | Microwave |
+| Horn Mtn | Emery | Emery County | 8TAC94 / ITAC4 | — | — | — | — | — | — |
+| Barney Top | Garfield | Garfield County | 8TAC93 / ITAC3 | — | — | — | — | Richfield | Microwave |
+| Copper Ridge | Garfield | Eastern Garfield County | — | — | — | — | — | — | — |
+| South Creek | Garfield | Eastern Garfield County | — | — | — | — | — | — | — |
+| Book Cliffs | Grand | North Grand County, South Uintah County | STRPT1 | — | — | — | — | — | — |
+| Willow | Grand | Grand County, Highway 70 | 8TAC94 / ITAC4 | — | — | — | — | Grand | Microwave |
+| Rudds Roost | Iron | Iron County | 8TAC92 / ITAC2 | — | — | — | — | Iron County | — |
+| Mill Creek | Salt Lake | Mill Creek Canyon | 8TAC4 / ITAC4 | — | — | — | — | VECC, TOC | RF Control from Rampton |
+| University of Utah | Salt Lake | Salt Lake City | 8TAC91 / ITAC1 | — | — | — | — | — | — |
+| Abajo | San Juan | San Juan County | 8TAC93 / ITAC3 | — | — | — | — | San Juan County | Microwave |
+| Monroe Peak | Sevier | Sevier County | 8TAC94 / ITAC4 | — | — | — | — | Richfield | — |
+| Bald Mtn | Summit | Mirror Lake Highway | 8TAC91 / ITAC1 | — | — | — | — | Summit, Wasatch | Microwave |
+| Humpy | Summit | North West slope Uintah range | 8TAC94 | — | — | — | — | Summit | Microwave |
+| Lewis Peak | Summit | Summit County | 8TAC93 / ITAC3 | — | — | — | — | Summit | Microwave |
+| Poison Mountain | Summit | North East Slope Uintah Range | — | — | — | — | — | Summit | RF Control |
+| Asphalt Ridge | Uintah | Vernal, Roosevelt | 8TAC91 / ITAC1 | — | — | — | — | Vernal | Microwave |
+| Grizzly Ridge | Uintah | Uintah County, Daggett County | 8TAC2 / ITAC 2 | — | — | — | — | Vernal | Microwave |
+| Little Mtn Vernal | Uintah | Uintah County, Duchesne County | 8TAC94 / ITAC4 | — | — | — | — | Vernal | Microwave |
+| Cedar Fort | Utah | Eagle Mountain, Utah County Resource | — | — | — | — | — | — | — |
+| West Mountain | Utah | Utah County | 8TAC93 / ITAC3 | — | — | — | — | — | — |
+| Wolf Creek Pass | Wasatch | Wasatch County, Highway 35 | STRPT4 | — | — | — | — | Wasatch | RF Control |
+| Yellow Lake | Wasatch | Wasatch County | STRPT5 | — | — | — | — | USFS Dispatch | — |
+| Toquerville | Washington | Washington County | 8CALL90 / ICALL | — | — | — | — | St. George Dispatch | — |
+| Utah Hill | Washington | St. George | 8TAC93 / ITAC3 | — | — | — | — | Cedar Dispatch | — |
+| Virgin River Gorge | Washington | Virgin River Gorge | — | 807.7 | — | 852.7 | — | — | — |
+| Webb Hill | Washington | St. George | 8TAC94 / ITAC4 | — | — | — | — | St. George Dispatch | — |
+| Huntsville | Weber | Pineview Reservoir | STRPT1 | — | — | — | — | Weber | — |
+| Liberty | Weber | Liberty, Huntsville area | — | — | — | — | — | Weber | — |
+| Monte | Weber | Monte Cristo, Highway 39 | — | — | — | — | — | Weber | — |
+
+### Utah VHF interop repeaters (SRS)
+
+Source sheet: VHF interop (SRS). Receive/transmit shown as listed in the source; tones are CTCSS (PL).
+
+| Name | Receive (MHz) | Transmit (MHz) | RX Tone | TX Tone |
+|---|---|---|---|---|
+| ABAJO SRS | 155.085 | 159.3 | 151.4 | 151.4 |
+| ANTELOPE SRS | 151.13 | 159.165 | 203.5 | 203.5 |
+| ASP RIDGE SRS | 155.73 | 159.165 | 203.5 | 203.5 |
+| BALD MESA SRS | 155.145 | 159.405 | 203.5 | 203.5 |
+| BARNEY TOP SRS | 151.13 | 159.165 | 203.5 | 203.5 |
+| CEDAR MNT SRS | 153.86 | 159.075 | 203.5 | 203.5 |
+| DELLE SRS | 151.055 | 159.135 | 151.4 | 151.4 |
+| FORD RIDGE SRS | 154.815 | 159.285 | 151.4 | 151.4 |
+| FRISCO PK SRS | 154.7325 | 159.24 | 146.2 | 151.4 |
+| GREEN RVR SRS | 154.7625 | 159.075 | 203.5 | 203.5 |
+| LAKE MNT SRS | 151.085 | 159.045 | 151.4 | 151.4 |
+| LEWIS PEAK SRS | 151.04 | 159.075 | 151.4 | 151.4 |
+| LOGAN PEAK SRS | 151.235 | 159.42 | 151.4 | 151.4 |
+| LT MNT OGD SRS | 151.28 | 159.24 | 151.4 | 151.4 |
+| MONROE PK SRS | 151.145 | 159.42 | 203.5 | 203.5 |
+| PROVO CYN SRS | 151.055 | 159.135 | 203.5 | 203.5 |
+| RED SPUR | 151.19 | 159.24 | 203.5 | 203.5 |
+| SHEPARD PK SRS | 151.415 | 159.285 | 203.5 | 203.5 |
+| TABBY MTN SRS | 155.1 | 159.24 | 151.4 | 151.4 |
+| UTAH HILL SRS | 151.37 | 159.405 | 203.5 | 203.5 |
+| WHITEPINE SRS | 151.025 | 159.015 | 203.5 | 203.5 |
+| WINDY RDG SRS | 151.085 | 159.045 | 146.2 | 151.4 |
+
+**Not included here (by design).** The source workbook also contains an 800 MHz frequency inventory, trunked site control frequencies, site coordinates, and a VHF license inventory. Those are system and license records, not field-guide channel content, so they were not tabulated in this section.
+
 ## What we know (filled in) vs. what still needs verification
 
 **Filled in from known information:**
@@ -611,6 +701,7 @@ Tone 156.7 Hz CTCSS. Each channel below also has a D direct variant on the outpu
 - 700 MHz section rename + organized fleet listing + summary counts
 - 700 MHz talkgroup governance and stewardship (from the governance program, per SWIC direction Oct 24)
 - National Interoperability Channels (NIFOG) (CISA NIFOG v2.01, public source)
+- Statewide Interop Channel Capabilities (Utah 8TAC sites + VHF SRS repeaters)
 - Radio Template Programming Requirements (carried forward from v3.0, marked VERIFY — SWIC update over winter 2026-27)
 
 **Still to verify / fill:**
