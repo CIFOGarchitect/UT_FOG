@@ -19,10 +19,7 @@ on Oct 24, 2026; content is being filled in as it is confirmed.
 **Section status:** Populated below = Utah Regions, 700 MHz Interop
 Talkgroups and Channels (summary + companion file), Radio Template
 Programming Requirements (carried forward from v3.0 — VERIFY, to be
-updated by the SWIC over winter 2026-27), National Interoperability Channels (NIFOG) (CISA public source), Statewide Interop Channel Capabilities (Utah-specific), State Maps (regional maps), Gateways (TICP sources), Radio Caches (TICP sources), PSAP Information (2024 contact list), Interoperable Repeaters (TICP sources), Establishing Interoperability (State PACE Plan 2026), Federal Interoperability Channel Plan (FED_OPS + federal programs), Communications Unit (COMU) (ESF #2 vs COML + positions), Data Communications Devices (Satellite phones), Interoperability and Incident Management (RECCWG + IPAWS + NORS/DIRS), Wildland Fire Communications (Radio Guide + NIFC cache + ordering). All other sections
-from the v3.0 table of contents remain placeholders pending content
-review: Introduction, Requests for Communications Assets, Nationwide Interop Channel
-Capabilities, Transportable Repeaters.
+updated by the SWIC over winter 2026-27), National Interoperability Channels (NIFOG) (CISA public source), Statewide Interop Channel Capabilities (Utah-specific), State Maps (regional + wildland + UHP maps), Gateways (TICP sources), Radio Caches (TICP sources), PSAP Information (2024 contact list), Interoperable Repeaters (TICP sources + amateur directory), Establishing Interoperability (State PACE Plan 2026), Federal Interoperability Channel Plan (FED_OPS + federal programs), Communications Unit (COMU) (ESF #2 vs COML + positions), Data Communications Devices (Satellite phones), Interoperability and Incident Management (RECCWG + IPAWS + NORS/DIRS), Wildland Fire Communications (Radio Guide + NIFC cache + ordering), Nationwide Interop Channel Capabilities (v3.0 matrix — verify), Transportable Repeaters (wildland portable/SOA + Comms truck), Introduction (ESF-2 + EOP framework), Requests for Communications Assets (EOP request process + WebEOC). All 20 sections are now populated; remaining work is verification and currency updates (see the notes in each section).
 
 ---
 
@@ -716,6 +713,14 @@ Carbon County and surrounding counties (Sanpete, Utah, Duchesne, Uintah, Emery, 
 **Note.** Other TICP documents in the set contain cover graphics that are not maps (for example, a tribal seal on the Eastern Utah cover and a repeater-system diagram in the Carbon County plan). Those were not placed here; the repeater diagram is used as the illustration in the Interoperable Repeaters section.
 
 ---
+### Great Basin dispatch area map (wildland fire)
+
+From the 2025 Utah & Great Basin Radio Guide: the Great Basin dispatch area map, showing dispatch unit boundaries across Utah, Nevada, Idaho, and Wyoming, labeled with unit codes as printed (not expanded here — the guide does not expand them). Standalone file: utfog-v4-map-great-basin.png. See also Wildland Fire Communications for the Radio Guide's zone structure.
+
+### Utah Highway Patrol patrol sections (2022)
+
+From the 2022 UHP Section Map (36x48 poster, Esri ArcGIS Pro): Utah Highway Patrol patrol sections across the state, with geographic Sections 1–14 labeled on the map and additional specialized sections in the map's Section Listing. Note: UHP patrol sections are a law-enforcement organization and are distinct from this guide's 8 interop regions — do not confuse the two boundary sets. Standalone files: utfog-v4-map-uhp-sections.jpg (rendered view) and utfog-v4-map-uhp-sections.pdf (full poster).
+
 
 ## Gateways (POPULATED — TICP sources — Oct 24, 2026)
 
@@ -921,6 +926,43 @@ Amateur-band repeaters listed in the Bear River plan's radio resource section. T
 **Currency note.** TICP sources span multiple years (Wasatch Front 2011, Carbon draft, Eastern Utah, Bear River). Repeater status, frequencies, and tones should be verified as current before operational use.
 
 ---
+### Amateur repeaters: Utah VHF Society directory
+
+The Utah VHF Society (UVHFS) repeater list (utahvhfs.org/rptr.html, generated October 21, 2026) is the authoritative, up-to-date amateur repeater directory for Utah. It is generated automatically from the Utah Frequency Coordinator's database — the same data used for the ARRL Repeater Directory and the UVHFS booklet. Note: ARRL and RF Finder data may lag the UVHFS page, because updates to those sources are manual. The list also includes a few repeaters in adjacent states that must be taken into account for frequency coordination, because signals cross state lines. The live page is the authoritative source; verify current listings before operational use.
+
+The directory holds about 395 entries across the bands: 6-meter (3), 2-meter (about 131), 1.25-meter (about 23), 70-centimeter (about 213), 33-centimeter (5), 23-centimeter (8), amateur television (3), and beacons (9). Each entry gives frequency, location, area, site name, callsign, sponsor, tone, info flags, and links. Info flags: O = open (available for all to use); C = closed; X = wide area coverage; A = autopatch (most autopatches are closed except to members of the supporting organization, even if the repeater itself is open); Ca = closed autopatch; Rb = remote base; Snp = shared, no protection; I = internet-linked (IRLP, EchoLink, and similar); P = portable. Note: an open system may include a closed autopatch, and frequencies used for control and linking purposes are not made public — neither is reproduced here.
+
+The table below carries the interop core of the directory: repeaters marked "Intertie" in the Links column (the statewide linked system) and repeaters sponsored by Amateur Radio Emergency Service groups (SLCOARES, UTCOARES). The full directory lives at utahvhfs.org; this guide does not reprint all 395 entries, so the live page stays authoritative and this guide does not carry a stale copy.
+
+| Freq. | Location | Site Name | Call | Sponsor | Tone | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| 145.21 | Sedgewick, ID | Sedgewick | WA7FDR | UVHFS | 100.0 | Intertie |
+| 145.27 | Brighton | Scotts Hill | K7JL | — | 100.0 | Intertie |
+| 145.27 | Burley, ID | Mt Harrison | WA7FDR | — | 100.0 | Intertie |
+| 145.27 | Levan Peak | Levan Peak State site | K7JL | — | 103.5 | Intertie |
+| 145.35 | Morgan | Morgan TV Site | WA7VHF | UVHFS | 100.0 | Intertie |
+| 146.84 | Richfield | Monroe Peak | WA7VHF | UVHFS | 100.0 | Intertie |
+| 146.86 | Evanston, WY | Medicine Butte | K7JL | UVHFS | 100.0 | Intertie |
+| 146.94 | Milford | Frisco Peak | WR7AAA | — | 100.0 | Intertie |
+| 147.02 | Bear Lake | Bear Lake | K7OGM | K7JL | 100.0 | Intertie |
+| 147.12 | Salt Lake | Farnsworth Peak Fox 13 | K7JL | — | 100.0 | Intertie |
+| 147.12 | Castledale | Cedar Mtn | WX7Y | — | 100.0 | Intertie |
+| 147.18 | Snowbird | Hidden Peak | K7JL | — | 100.0 | Intertie |
+| 147.20 | Tod's Junction | Bryce Woodland | WA7VHF | UVHFS | 100.0 | Intertie |
+| 447.225 | Malad | Malad Radio Site | WA7FDR | UVHFS | 100.0 | Intertie |
+| 449.575 | Orem | Orem | N7FOC | — | 100.0 | Intertie |
+| 145.23 | Provo | Lake Mtn North end Forest Service site | K7UCS | UTCOARES | 131.8 | ARES |
+| 145.41 | Provo | Mouth of Provo Canyon | K7UCS | UTCOARES | 100.0 | ARES |
+| 146.70 | Salt Lake | Ensign Peak | KC7IIB | SLCOARES | 100.0 | ARES |
+| 146.84 | Salt Lake | Jordan Valley Hospital | N7PCE | SLCOARES | — | ARES |
+| 147.28 | Provo | Lake Mtn Co site south end | K7UCS | UTCOARES | 141.3 | ARES |
+| 147.34 | Payson | West Mtn | K7UCS | UTCOARES | 100.0 | ARES |
+| 447.125 | Provo | Utah Valley Hospital | K7UCS | UTCOARES | 100.0 | ARES |
+| 448.450 | Salt Lake | Ensign Peak | KC7IIB | SLCOARES | 100.0 | ARES |
+| 449.325 | Provo | Utah Valley Hospital | K7UCS | UTCOARES | 100.0 | ARES |
+| 449.675 | Provo | Lake Mtn Co site south end | K7UCS | UTCOARES | 173.8 | ARES |
+| 449.975 | Lake Mtn | Lake Mtn South End | K7UCS | UTCOARES | 131.8 | ARES |
+
 
 ## Establishing Interoperability (POPULATED — State PACE Plan 2026 — Oct 24, 2026)
 
@@ -1276,6 +1318,226 @@ On a wildland incident, overhead and position requests go to Ordering via ICS-21
 
 **Currency note.** Radio Guide 2025 edition; NIFC cache figures from the August 2024 visit. Verify before operational use.
 
+---
+
+## Nationwide Interop Channel Capabilities (CARRIED FORWARD FROM V3.0 — VERIFY — Oct 24, 2026)
+
+**Source:** Utah Interoperable Communications Field Operations Guide Ver 3.0 (November 2022), Nationwide Interop Channel Capabilities matrix (pages 69–73). Carried forward at the band-family level (see note on transcription). This section is controlled content (see cover distribution).
+
+### What this section is
+
+This section is not a channel list. It is a capability matrix: which Utah agencies have which nationwide/federal channels available. Rows are counties and agencies grouped by region; columns are the nationwide/federal channel families. An X in v3.0 means that agency was recorded as having that capability. Channel definitions live in National Interoperability Channels (NIFOG); Utah's own channels live in Statewide Interop Channel Capabilities; the trunked fleet lives in 700 MHz Interop Talkgroups and Channels.
+
+The v3.0 columns as printed (left to right): VHF LO interop, VHF nationwide, VHF TAC repeater, VHF mutual aid, VHF federal, UHF MED, UHF national interop, UHF federal, 700 MHz interop, 8CALL90, 8TAC91, 8TAC92, 8TAC93, 8TAC94, 8CALL90D. The table below collapses those columns into four band families (VHF, UHF, 700 MHz, 800 MHz) for readability; confirm column-level detail against the v3.0 PDF before operational use.
+
+| County | Agency | VHF | UHF | 700 MHz | 800 MHz |
+| --- | --- | --- | --- | --- | --- |
+| Statewide | Board of Education | — | — | — | — |
+| Statewide | Division of Emergency Mgt. | ✓ | ✓ | ✓ | ✓ |
+| Statewide | Dept. of Transportation | ✓ | — | — | ✓ |
+| Statewide | DPS – Cedar Communications | ✓ | ✓ | — | — |
+| Statewide | DPS – Salt Lake City Communications | — | — | — | ✓ |
+| Box Elder | — | — | — | — | — |
+| Cache | — | — | — | — | — |
+| Davis | — | — | — | — | — |
+| Morgan | — | — | — | — | — |
+| Rich | — | — | — | — | — |
+| Weber | Weber Area Dispatch 911 | — | — | — | ✓ |
+| Salt Lake | Salt Lake City 911 Communications | ✓ | ✓ | ✓ | ✓ |
+| Summit | Summit Co Public Safety Dispatch | — | — | — | — |
+| Tooele | — | — | — | — | — |
+| Utah | — | — | — | — | — |
+| Wasatch | — | — | — | — | — |
+| Daggett | — | — | — | — | — |
+| Duchesne | — | — | — | — | — |
+| Uintah | — | — | — | — | — |
+| Juab | — | — | — | — | — |
+| Millard | — | — | — | — | — |
+| Piute | — | — | — | — | — |
+| Utah | — | — | — | — | — |
+| Carbon | — | — | — | — | — |
+| Emery | — | — | — | — | — |
+| Grand | — | — | — | — | — |
+| San Juan | — | — | — | — | — |
+| Beaver | Beaver Co SO Dispatch | ✓ | — | — | ✓ |
+| Garfield | — | — | — | — | — |
+| Iron | — | — | — | — | — |
+| Kane | Kane Co SO Dispatch | ✓ | — | — | ✓ |
+| Washington | — | — | — | — | — |
+
+**Reading the matrix.** A blank (—) means no capability was recorded for that agency in v3.0 — it is not proof the agency lacks the capability. Most counties show no agency and no marks in v3.0: the survey was largely unfilled. Salt Lake City 911 Communications shows marks across all families, with one column blank as printed in v3.0. Division of Emergency Management shows marks in every column.
+
+**Currency note.** v3.0 (November 2022) — VERIFY. Capabilities have changed since 2022, notably with the 700 MHz system and the 800 MHz migration reflected elsewhere in this guide. Refresh this matrix from an agency survey or codeplug audit before operational use; do not treat the v3.0 marks as current.
+
+---
+
+## Transportable Repeaters (POPULATED — wildland portable/SOA + Comms truck — Oct 24, 2026)
+
+**Sources:** 2025 Utah & Great Basin Radio Guide (portable repeater channels, Scene of Action channels); National Interagency Fire Center (NIFC) visit notes, Boise, August 27 (portable repeater cache); ICS-213 overhead-ordering template; UT FOG v3.0 Transportable Repeaters table (one Utah entry, carried with VERIFY flag). This section is controlled content (see cover distribution).
+
+### What "transportable" means here
+
+A transportable repeater is a repeater brought to an incident and set up on site, as opposed to a fixed repeater on a permanent site. Transportable repeaters extend coverage where fixed infrastructure does not reach or has failed, and they are ordered per event, deployed, and demobilized with the incident. Fixed repeaters live in Interoperable Repeaters and Statewide Interop Channel Capabilities; this section covers the assets that move.
+
+### National cache: NIFC portable repeaters
+
+The National Interagency Fire Center radio shop oversees over 300 portable repeaters, each with antennas, coax, and mast, as part of its approximately $25 million radio cache (about 11,000 handheld radios). These assets are ordered and sent out as needed by each event; the COMT or COML orders what they think they will use and adjusts those needs as the event progresses. The entire cache is meant to support up to 32,000 firefighters on up to 53 major wildfires or events at a time, with a 4-hour warehouse turnaround on returned equipment before it is ready for the next event. Ordering goes through Ordering via ICS-213 (see Wildland Fire Communications and Communications Unit (COMU)).
+
+### Portable repeater channels (Radio Guide)
+
+The Radio Guide's dispatch zones carry portable repeater channels for deployable units. From Zone 41 (South Central Idaho Dispatch Repeaters):
+
+| Channel | RX | TX | Tone |
+| --- | --- | --- | --- |
+| North Portable | 172.25000 | 164.62500 | 179.9 |
+| Portable Repeater | 168.56250 | 163.07500 | 114.8 |
+
+Program portable repeaters on these channels when deploying in the Great Basin; Utah zones carry their own repeater channels (see Wildland Fire Communications for the Radio Guide's zone structure).
+
+### Scene of Action (SOA) channels
+
+Scene of Action channels are the on-scene channels used at a wildland incident — the channels crews use at the scene itself, alongside any portable repeater deployment. The Radio Guide carries agency SOA channels:
+
+| Channel | Type | RX | TX | Tone |
+| --- | --- | --- | --- | --- |
+| BLM SOA | Simplex | 171.67500 | 171.67500 | 114.8 |
+| BLM SOA RPT | Repeater | 171.67500 | 168.22500 | 123.0 |
+| SOA – FS | Simplex | 168.77500 | 168.77500 | — (Mixed mode) |
+| SOA – NPS | Repeater | 164.77500 | 170.51250 | 192.8 |
+| SOA | Simplex | 171.67500 | 171.67500 | — (Mixed mode) |
+
+BLM SOA is the Bureau of Land Management scene channel; SOA – FS is the Forest Service scene channel; SOA – NPS is the National Park Service scene channel (Zone 33, Moab Dispatch Repeaters). The repeater versions (BLM SOA RPT, SOA – NPS) pair the scene channel with a repeater output for wider on-scene coverage.
+
+### State deployable asset: DPS/DEM communications truck
+
+The DPS/DEM communications truck (state mobile command center) is Utah's deployable communications asset: it brings communications capability to an incident scene when fixed infrastructure is insufficient or unavailable. It operates alongside the mobile gateway procedures in Gateways and the PACE framework in Establishing Interoperability. Details of the truck's onboard channels, gateways, and systems are not in the loaded sources and are to be added from the truck's own inventory — flagged here so the entry is not mistaken for a complete capability list.
+
+### Utah transportable repeater on record (v3.0 — VERIFY)
+
+From v3.0's Transportable Repeaters table (November 2022) — the only Utah entry in that table, carried forward for the record:
+
+| Owning Agency | Location | Band | Channel(s) |
+| --- | --- | --- | --- |
+| Washington County Emergency Services (Sheriff) | Washington Co EOC | VHF | VTAC37 |
+
+Verify currency and availability before operational use. Contact numbers from v3.0 are not reproduced here. The rest of v3.0's Transportable table (owning agency / location / band / channel, by region, plus a state agency resources table) was empty in 2022 — this section is a starting framework, to be filled as agencies report transportable assets.
+
+**Currency note.** Radio Guide 2025 edition; NIFC cache figures from the August 2024 visit; v3.0 entry from November 2022 (VERIFY). Verify before operational use.
+
+---
+
+## Introduction (POPULATED — ESF-2 annex + state EOP — Oct 24, 2026)
+
+**Sources:** State Emergency Operations Plan, ESF #2 – Communications annex (revised November 27, 2018); State of Utah Emergency Operations Plan 2025–2029 (sections revised 2024). This section is controlled content (see cover distribution).
+
+### Purpose
+
+This guide exists to support the organizing, establishing, and maintaining of the telecommunications and information system capabilities that local and state jurisdictions need to respond to and recover from incidents. It is the field companion to the state's emergency communications framework: the channel plans, the asset inventories, the procedures, and the request pathways that responders, dispatchers, and communications unit personnel use when an incident demands more than day-to-day communications.
+
+### Scope
+
+The guide covers common and specialized telecommunications systems supporting emergency management functions in Utah — wireless and non-wireless voice and data transport networks. The Utah Communications Authority (UCA) is responsible for developing, maintaining, and operating the communications systems that collect and disseminate information, receive requests for assistance, and coordinate incident response activities.
+
+### The framework this guide sits in
+
+**ESF #2 – Communications.** The Department of Technology Services (DTS) and UCA serve as co-leads for ESF #2 in the State Emergency Operations Center (SEOC), each providing primary and backup personnel for the EOC on request. UCA determines overall communications requirements for response and short-term recovery, maintains primary and alternate communications systems for contact with local, tribal, state, and federal agencies, and coordinates unmet communications and equipment requirements with state and federal agencies providing communications response support.
+
+**Interoperability coordination.** Under Utah Code 63H Chapter 7a Section 502, all shared public safety communications networks, systems, and operators used in emergency communications coordinate planning and implementation through the UCA Interoperability Division. The Statewide Interoperability Coordinator (SWIC) office is the point of contact for the statewide communications infrastructure database UCA maintains (local and state infrastructure, federal and military resources, volunteer auxiliary resources, licensed frequencies, interoperable technologies and equipment, memorandums of understanding), available to designated communications unit leaders and authorized agency representatives on request.
+
+**The SEOC and resource support.** When the SEOC activates, the Mission and Resource Support (MARS) section coordinates state assets to support local jurisdictions, tribal governments, and other state agencies. Communications assets are requested through the process in Requests for Communications Assets. Telecommunications management decisions are made at the lowest level, with only issues requiring adjudication or additional resources referred to the next higher level — and requirements that cannot be met at the lowest level are escalated upward for resolution.
+
+**Planning documents that shape this guide.** The Statewide Communications Interoperability Plan (SCIP) covers all interoperable communications statewide and is currently under update with CISA technical assistance (see the note in 700 MHz Interop Talkgroups and Channels). The regional Tactical Interoperability Communications Plans (TICPs) carry the regional detail this guide draws on; the Bear River Region TICP update is targeted by end of year 2026. The Statewide Interoperability Executive Committee directs the Statewide Interoperability Coordinator, under whose authority this guide is published.
+
+### Who this guide is for
+
+Dispatch centers, regional liaison officers, fire, EMS, and law enforcement responders, communications unit leaders and technicians, and emergency operations center staff — anyone who needs to know what channel, resource, or contact to use, and how to request support, during an incident or planned event.
+
+### How to use this guide
+
+Sections are organized by what you need: regions and maps; channel plans (national, federal, statewide, and the 700 MHz fleet); the procedures for establishing interoperability (PACE, priority services); the people (Communications Unit); the assets (gateways, caches, repeaters, transportable repeaters, data devices); and how to request them. Cross-references point between sections rather than duplicating content. Where a section carries a VERIFY note, the content is carried from an older source and must be confirmed before operational use.
+
+### Authorities and references
+
+Utah Code 63H Chapter 7a Section 502 (UCA Interoperability Division coordination); Utah Code Section 63F-1-203 (DTS strategic plan for information interchange); Americans with Disabilities Act (effective communication with individuals with disabilities, including auxiliary aids and services); Statewide Communications Interoperability Plan; State Emergency Operations Plan (2025–2029) and its ESF #2 – Communications annex (revised November 27, 2018).
+
+**Currency note.** The ESF #2 annex is dated November 2018: system names and organizations have evolved since (notably the 700 MHz system and the 800 MHz migration reflected elsewhere in this guide). Verify organizational details before operational use.
+
+---
+
+## Requests for Communications Assets (POPULATED — EOP request process + WebEOC — Oct 24, 2026)
+
+**Sources:** State of Utah Emergency Operations Plan 2025–2029 (Mission and Resource Support section, revised 2024; Center Support section); State Emergency Operations Plan, ESF #2 – Communications annex (revised November 27, 2018). This section is controlled content (see cover distribution).
+
+### The principle: lowest level first, then escalate
+
+Communications needs are met at the lowest level that can meet them. Local jurisdictions are responsible for on-scene communications during an incident; on request, the state supports on-scene communications efforts. Requirements that cannot be met at the lowest level are escalated upward for resolution, and telecommunications management decisions are made at the lowest level, with only issues requiring adjudication or additional resources referred higher. When an incident affects multiple agencies, requests for assistance are forwarded to the State Emergency Operations Center (SEOC), which directs the request to the appropriate Mission and Resource Support (MARS) element.
+
+### Who handles a request in the SEOC
+
+**Mission and Resource Support (MARS).** When activated by the SEOC, MARS coordinates state assets to support local jurisdictions, tribal governments, and other state agencies. Within MARS:
+
+- **Mission Assignment (MA) Unit** — coordinates SEOC missions by assigning and tasking SEOC resources, in direct coordination with State Emergency Response Team (SERT) personnel. Complex assignments may require mission plans developed with the Planning Support Section.
+- **Resource Coordination Unit** — identifies operational resource needs (including equipment and personnel) and sources resources to meet them, coordinating with assisting and cooperating agencies and the Finance Unit. The Emergency Management Assistance Compact (EMAC) Coordinator may be activated within this unit as the state lead for incoming and outgoing EMAC requests.
+- **Communications Unit** — provides and supports radio communications and interoperability, and maintains the communications van and other communications equipment and capabilities through deployable equipment. This is the SEOC-side provider for communications assets requested through MARS.
+- **Technical Support and Solutions Unit** — manages the crisis management software (WebEOC) and provides IT hardware, software, and connectivity for SEOC personnel. This unit is typically led by the WebEOC Administrator, supported by Department of Public Safety IT personnel and the Division of Technology Services (DTS).
+
+**ESF #2 co-leads.** DTS and UCA co-lead ESF #2 in the SEOC, providing primary and backup personnel on request. UCA coordinates unmet communications and equipment requirements with state and federal agencies providing communications response support, and requests support of RACES through the Division of Emergency Management (DEM) when needed. Federal and RACES assistance is requested through DEM.
+
+### How to submit a request
+
+Resource requests may be received in writing or verbally, through the process in the Requesting a Resource SOP. Every request should provide the essential information to identify the required resource or capability and the mission intended for it, in the CSALTT format:
+
+| Element | What to provide |
+| --- | --- |
+| C – Capability | What is expected of the resource? What task are you looking to accomplish with it? |
+| S – Size | Physical description / actual size needed |
+| A – Amount | How many are needed? |
+| L – Location | Physical address or geolocation of where the resource is needed, and a point of contact for delivery |
+| T – Type | The resource type or description (using the FEMA Resource Typing Library Tool) |
+| T – Time | When is the resource needed, and for how long? |
+
+### Approval, denial, and allocation
+
+Resource requests are directed to the MARS Section Chief or designee (for example, the Mission Assignment Unit Leader) for review, and should provide all required CSALTT information. If a request is denied or requires additional information, the MARS Section Chief or designee follows up with the requestor. Resources in high demand are communicated to the MARS Section Chief, the SEOC Manager, and the SEOC Policy Group, who determine where resources will be allocated.
+
+### Sourcing order
+
+Resources are sourced from wherever can deliver them as soon as needed, and are typically sourced locally. The SEOC seeks to source from the most appropriate of the following, depending on need, locality, and cost:
+
+1. From within state government (SERT)
+2. Purchase, lease, or rent
+3. From other states via EMAC
+4. From the federal government via a FEMA resource request
+
+Procurement is coordinated through the Finance Unit under established agency policies, and may require approval of the MARS Section Chief, the SEOC Manager, or Department of Public Safety purchasing authorities. Once resources move beyond staging areas or SEOC control, the receiving jurisdiction is responsible for their distribution and subsequent costs.
+
+### WebEOC: the system requests live in
+
+The state and several local jurisdictions use WebEOC as their crisis management system, and it is the preferred system during an incident. The WebEOC Resource, Inventory, and Deployment (RID) board carries resource, inventory, and deployment information.
+
+- **Documentation.** The state has identified WebEOC as the primary documentation tool for resource tracking. Costs and supporting documentation associated with an SEOC-assigned resource request are uploaded to the request in WebEOC.
+- **Tracking.** The Resource Coordination Unit tracks a resource deployed through the SEOC — status (in-route, in-progress, and similar) and location — and establishes communication methods for deploying resources to maintain status until demobilization. The owning agency remains responsible for tracking the activities of its own resources. The Resource Coordination Unit provides the requester (for example, a DEM Community Support Liaison on behalf of a local jurisdiction) with request status, estimated arrival time, and related logistical details, tracked in WebEOC.
+- **If WebEOC is unavailable.** The Resource Coordination Unit is responsible for just-in-time training on other methods of resource tracking, and additional tools may be used depending on the nature of the incident.
+
+### What can be requested (communications assets)
+
+The asset sections of this guide describe what exists; the request pathway above is how to get it. Communications assets available through the state and partner system include:
+
+- **SEOC Communications Unit** — radio communications and interoperability support, the communications van, and deployable communications equipment (see Transportable Repeaters for the DPS/DEM communications truck).
+- **Gateway and cache assets** — mobile and fixed gateways (see Gateways) and swap-cache radios (see Radio Caches).
+- **Transportable repeaters** — portable repeaters from the national cache and state holdings (see Transportable Repeaters).
+- **Utah National Guard** — personnel and equipment, including deployable communications interoperability suites and liaison teams capable of communicating independently with National Guard headquarters, deployed troops, and local or state authorities.
+- **Department of Public Safety, Aero Bureau** — transport of personnel to mountaintop communications sites by helicopter, and flyovers to check the status of a communications site as requested.
+- **Department of Transportation** — road grooming to communications sites, equipment to help access mountaintop sites, and transport of communications equipment as requested.
+- **Civil Air Patrol** — auxiliary emergency radio communications support, and a mobile command post on request and availability.
+- **RACES, ARES, and MARS** — auxiliary emergency radio communications personnel and equipment (requested through DEM).
+- **AT&T / FirstNet** — broadband communications support, including Cell on Light Truck (COLT) and Cell on Wheels/Wings (COW) deployable assets (72 assets, deployable within no more than 14 hours, typical response 2–3 hours), and priority services as needed.
+- **FEMA** — short-term restoration support for state, tribal, and local government communications in the event of a failure, and communications support to first responders; through the Regional Emergency Communications Coordination Working Group (RECCWG), FEMA Region VIII, help locating alternate auxiliary channels.
+
+The full support-agency roster, including private-sector and volunteer organizations, is in the ESF #2 annex; this section lists the communications-relevant providers.
+
+**Procedure note.** The step-by-step Requesting a Resource SOP is referenced by the EOP but is not reproduced in the EOP itself. Obtain that SOP for the full click-by-click WebEOC procedure; the flow, format, approval, sourcing, and tracking rules above are the EOP's own content.
+
 ## What we know (filled in) vs. what still needs verification
 
 **Filled in from known information:**
@@ -1285,17 +1547,21 @@ On a wildland incident, overhead and position requests go to Ordering via ICS-21
 - 700 MHz talkgroup governance and stewardship (from the governance program, per SWIC direction Oct 24)
 - National Interoperability Channels (NIFOG) (CISA NIFOG v2.01, public source)
 - Statewide Interop Channel Capabilities (Utah 8TAC sites + VHF SRS repeaters)
-- State Maps (Bear River region outline + Carbon County map, from TICP covers)
+- State Maps (Bear River region outline + Carbon County map, from TICP covers; Great Basin dispatch map + UHP patrol sections map added)
 - Gateways (gateway systems + Carbon gateway radios + mobile gateway procedures, from TICP sources)
 - Radio Caches (swap-cache procedures + Salt Lake appendix inventory + Carbon caches, from TICP sources)
 - PSAP Information (2024 PSAP directory + continuity concepts, from contact list + TTX talking points)
-- Interoperable Repeaters (regional VHF repeaters + Bear River amateur/RACES repeaters + county inventory summary, from TICP sources)
+- Interoperable Repeaters (regional VHF repeaters + Bear River amateur/RACES repeaters + county inventory summary, from TICP sources; UVHFS amateur directory — Intertie + ARES)
 - Establishing Interoperability (State PACE Plan 2026: PACE table, reference frequencies, gateway + GETS/WPS priority services)
 - Federal Interoperability Channel Plan (FED_OPS talkgroups + UHF IR note + NAWAS/SHARES/FNARS programs)
 - Communications Unit (COMU) (ESF #2 vs COML roles, COMU positions, history, Utah program note)
 - Data Communications Devices (Satellite phones: Iridium operation, dialing, monthly test, troubleshooting, inventory scope)
 - Interoperability and Incident Management (RECCWG regional coordination, IPAWS statewide communications, NORS/DIRS participation)
 - Wildland Fire Communications (2025 UT & GB Radio Guide, NIFC radio cache, IRAWS weather, ICS-213 overhead ordering)
+- Nationwide Interop Channel Capabilities (v3.0 agency×nationwide-channel matrix, band-family level — VERIFY)
+- Transportable Repeaters (NIFC portable cache, Radio Guide portable + SOA channels, DPS/DEM Comms truck, v3.0 Washington Co entry — VERIFY)
+- Introduction (ESF-2 annex purpose/scope, DTS+UCA co-leads, SWIC database, SCIP/TICP framework, authorities)
+- Requests for Communications Assets (EOP MARS/MA/Resource Coordination/Communications Units, CSALTT format, approval + sourcing order, WebEOC + RID board, ESF-2 provider list)
 - Radio Template Programming Requirements (carried forward from v3.0, marked VERIFY — SWIC update over winter 2026-27)
 
 **Still to verify / fill:**
@@ -1307,9 +1573,8 @@ On a wildland incident, overhead and position requests go to Ordering via ICS-21
 - Blank-field cleanup (455 missing talkgroup IDs, 3 missing aliases,
   2 missing restricted flags)
 - Restricted-row handling under CUI (include as CUI vs. hold back)
-- Currency of the remaining placeholder sections (repeaters, gateways,
-  transportable repeaters, radio caches, data devices, templates,
-  capabilities) — carried forward only after review, not assumed current
+- WebEOC procedure detail: the EOP gives the request flow, CSALTT format, and WebEOC as the documentation tool; the step-by-step Requesting a Resource SOP is referenced but not reproduced — obtain it for the full click-by-click procedure
+- ESF-2 annex currency (November 2018): system names and organizations have evolved since (notably the 700 MHz system); verify organizational details before operational use
 
 ---
 
