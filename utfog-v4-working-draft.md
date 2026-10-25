@@ -19,12 +19,11 @@ on Oct 24, 2026; content is being filled in as it is confirmed.
 **Section status:** Populated below = Utah Regions, 700 MHz Interop
 Talkgroups and Channels (summary + companion file), Radio Template
 Programming Requirements (carried forward from v3.0 — VERIFY, to be
-updated by the SWIC over winter 2026-27), National Interoperability Channels (NIFOG) (CISA public source), Statewide Interop Channel Capabilities (Utah-specific), State Maps (regional maps), Gateways (TICP sources), Radio Caches (TICP sources), PSAP Information (2024 contact list). All other sections
+updated by the SWIC over winter 2026-27), National Interoperability Channels (NIFOG) (CISA public source), Statewide Interop Channel Capabilities (Utah-specific), State Maps (regional maps), Gateways (TICP sources), Radio Caches (TICP sources), PSAP Information (2024 contact list), Interoperable Repeaters (TICP sources), Establishing Interoperability (State PACE Plan 2026), Federal Interoperability Channel Plan (FED_OPS + federal programs). All other sections
 from the v3.0 table of contents remain placeholders pending content
-review: Establishing Interoperability, Introduction, Interoperability and Incident Management, Communications Unit (COMU),
-Requests for Communications Assets, Federal Interoperability Channel Plan, Nationwide Interop Channel
-Capabilities, Interoperable
-Repeaters, Transportable Repeaters, Data
+review: Introduction, Interoperability and Incident Management, Communications Unit (COMU),
+Requests for Communications Assets, Nationwide Interop Channel
+Capabilities, Transportable Repeaters, Data
 Communications Devices.
 
 ---
@@ -68,18 +67,18 @@ Radio Top Display Alias, Motorola Talk Group ID, Encryption, Agency
 Restricted Talk Group.
 
 **Summary counts (from the source file):**
-- Total talkgroups: 2,102
+- Total talkgroups: 2,092
 - Prefix groups: 150
-- Encryption: Secure 141; Clear 1,961
-- Agency restricted: YES 986 (about 47%); NO 1,114; blank 2
-- Data-quality notes: 463 rows have a blank Motorola Talk Group ID;
+- Encryption: Secure 131; Clear 1,961
+- Agency restricted: YES 976 (about 47%); NO 1,114; blank 2
+- Data-quality notes: 455 rows have a blank Motorola Talk Group ID;
   3 rows have a blank display alias; 2 rows have a blank restricted
   flag. These need cleanup before any distribution.
 
 **Organization method:** Grouped by the leading element of the talk
 group name, sorted alphabetically. No region mapping has been inferred:
 prefixes resembling region codes appear in the data, but they have NOT
-been assigned to regions — that mapping needs SWIC confirmation.
+been assigned to regions — that mapping needs SWIC confirmation. FED_OPS talkgroups (10 rows) were moved to the Federal Interoperability Channel Plan section; the companion files are utfog-v4-700mhz-talkgroups-organized.csv (2,092 rows, this section) and utfog-v4-fedops-talkgroups.csv (10 rows, Federal section). Together they account for the full 2,102-row fleet organization.
 
 **Control flag (important):** About 47% of the listed talkgroups are
 marked agency-restricted. Under a Controlled (CUI) edition, how those
@@ -716,7 +715,7 @@ Bear River region outline from the Bear River TICP cover. The source image itsel
 
 Carbon County and surrounding counties (Sanpete, Utah, Duchesne, Uintah, Emery, Grand) from the Carbon County TICP, showing terrain, communities including Price, and county boundaries.
 
-**Note.** Other TICP documents in the set contain cover graphics that are not maps (for example, a tribal seal on the Eastern Utah cover and a repeater-system diagram in the Carbon County plan). Those were not placed here; the repeater diagram is a candidate illustration for the Interoperable Repeaters section later.
+**Note.** Other TICP documents in the set contain cover graphics that are not maps (for example, a tribal seal on the Eastern Utah cover and a repeater-system diagram in the Carbon County plan). Those were not placed here; the repeater diagram is used as the illustration in the Interoperable Repeaters section.
 
 ---
 
@@ -868,6 +867,164 @@ Concepts from the Utah PSAP tabletop exercise planning material (exercise planni
 
 **Currency note.** The directory comes from the 2024 contact list. PSAP numbers and assignments change — verify before operational use.
 
+---
+
+## Interoperable Repeaters (POPULATED — TICP sources — Oct 24, 2026)
+
+**Sources:** Carbon County TICP, Uintah County TICP, Bear River TICP, Wasatch Front TICP (2011), Eastern Utah TICP. This section is controlled content (see cover distribution).
+
+![Repeater system diagram](utfog-v4-repeater-diagram.png)
+
+Repeaters extend coverage by receiving on one frequency and retransmitting on another, linked to dispatch through microwave or other backhaul (diagram from the Carbon County plan). This section covers shared regional repeaters and amateur/RACES repeaters that support emergency communications. The statewide SRS repeaters (22) and 8TAC repeater sites (38) are tabulated in Statewide Interop Channel Capabilities and are not repeated here.
+
+### Regional VHF repeaters — Uintah Basin / Carbon area
+
+Shared regional resources table, appearing in both the Carbon County and Uintah County plans. Frequencies are reproduced with the source table's TX/RX labeling.
+
+| Name | Transmit (TX) | Receive (RX) | Tone |
+|---|---|---|---|
+| STATEWIDE ONE | 155.505 | 155.505 | 162.2 |
+| LT MOUNTAIN EAST | 151.4675 | 155.670 | 179.9 |
+| LT MOUNTAIN WEST | 155.325 | 158.9250 | 162.2 |
+| STEAMBOAT | 151.130 | 155.370 | 162.2 |
+| DUTCH JOHN | 155.700 | 151.0250 | 203.5 |
+| EAST PARK | 159.015 | 156.2400 | 114.8 |
+| GOSLIN REPEATER | 159.015 | 155.805 | 114.8 |
+| SRS ASPHALT RIDGE | 159.1650 | 155.730 | 203.5 |
+| TABBY MT REPEATER | 159.2400 | 155.100 | 151.4 |
+| BOOK CLIFFS | 151.4675 | 154.3700 | 179.9 |
+| BRUIN | 151.130 | 155.880 | 162.2 |
+| HOY | 159.015 | 156.0825 | 114.8 |
+
+**Note.** SRS Asphalt Ridge also appears in the statewide SRS table (RX 155.73 / TX 159.165, tone 203.5) — the same repeater pair, listed in both sets.
+
+### Amateur / RACES repeaters — Bear River (Cache County Radio Resource)
+
+Amateur-band repeaters listed in the Bear River plan's radio resource section. These support emergency communications through ARES/RACES but are not shared public-safety infrastructure. Autopatch and link control codes from the source plan are not carried here.
+
+| Repeater | Frequency | Tone | Coverage / Use |
+|---|---|---|---|
+| Valley Floor Repeater | 146.640 | none | Cache County valley floor; Command net #1 (swappable with Mt. Logan) |
+| Mt. Logan Repeater | 146.720 | 103.5 | Cache Valley, Logan Canyon, 100-mile radius; Command net #2 (swappable with Valley Floor); emergency power |
+| EOC Intercom | 147.520 simplex | none | Cache EOC to Logan EOC |
+| TAC #1, #2, #3 | 146.460, 146.560, 146.520 simplex | none | Assigned as necessary |
+| IRLP Repeater (node 3381) | 147.200 | 103.5 | Cache Valley; statewide VHF RACES net; Cache County to Box Elder County |
+| Portable Repeater | 145.410 | 103.5 | As assigned; about 25-mile coverage |
+| Sedgwick Repeater | 146.800 | 88.5 | Cache Valley, SE Idaho, SW Wyoming |
+| BARC Promontory | 147.260 | 103.5 | South to Utah County, north to Box Elder County, West Desert; backup for RACES net; emergency power |
+| Red Spur | 145.310 | 103.5 | Bear Lake County, Rich County, Logan Canyon, Blacksmith Fork Canyon, SW Wyoming; solar power |
+| Wellsville | 449.800 | 103.5 | Mt. Sterling; Cache County, Blacksmith Fork Canyon; emergency power |
+
+### County repeater-site inventories (summarized, not tabulated)
+
+- **Eastern Utah TICP appendices** list repeater sites by county (for example, Emery County Sheriff's Office, Roads, Local Government, school district, and special service district repeaters, with site coordinates in the source). Site coordinates are deliberately not carried here; see the source plan for site details.
+- **Wasatch Front TICP Table 8 (Communications Repeater Sites)** lists Davis County area sites including a public works repeater, an 800 MHz link into UCAN channels, Davis County Sheriff's Office 800 MHz and VHF pairs, and amateur pairs; **Table 28** lists Weber County repeater sites. Site coordinates and county trunked pairs are not carried here; see the source plan for site details.
+
+**Currency note.** TICP sources span multiple years (Wasatch Front 2011, Carbon draft, Eastern Utah, Bear River). Repeater status, frequencies, and tones should be verified as current before operational use.
+
+---
+
+## Establishing Interoperability (POPULATED — State PACE Plan 2026 — Oct 24, 2026)
+
+**Source:** State PACE Plan 2026 (State PACE Plan Update). This section is controlled content (see cover distribution).
+
+PACE — Primary, Alternate, Contingency, Emergency — is the framework for keeping state communications working as systems degrade. The table below is the State PACE Plan.
+
+### State PACE table
+
+| Component | Primary | Alternate | Contingency | Emergency |
+|---|---|---|---|---|
+| Voice | Resource Desk: 801-538-1100; Comms Room: 801-538-3700 | Public Safety Radio (LMR): ST_EOC_1 (External Coordination); ST_DEM_OPS_1, ST_DEM_OPS_2, ST_DEM_OPS_3 (Statewide Ops) | State HF Voice (see frequency list below); SEOC Analog: 801-359-7653; ECC Analog: 801-968-3019 | SHARES (HF): Regional/Federal Voice; FNARS Phone: 801-968-3920; Fixed Sat Phone: 480-822-2383 |
+| Data / Messaging | Email: utahdem@utah.gov / Microsoft Teams; Winlink State: w7des@winlink.org | Cellular Data: FirstNet / Verizon; WPS/GETS: Priority voice/data during congestion | MT63 1KL: Primary Digital Data (centered at 1500 on the HF waterfall) | SHARES (Data): Regional Winlink Relay; Winlink Federal: wgy998@winlink.org |
+
+### Reference frequencies and assets
+
+**State HF designated channels.** The four specific channels for state-level contingency. All State HF frequencies use the USB mode, unless otherwise stated.
+
+| Channel | Frequency | Use |
+|---|---|---|
+| STATE HF 1 | 3.2870 MHz | Night/Winter/NVIS |
+| STATE HF 2 | 5.8000 MHz | Grey-Line/Transition |
+| STATE HF 3 | 12.1700 MHz | Day/Summer/Long Range |
+| STATE HF 4 | 24.8700 MHz | Data Primary/Solar Peak |
+
+**Analog line reference.**
+
+- SEOC (State Capitol): 801-359-7653 (maintained on a copper circuit for hardened fallback).
+- ECC (Taylorsville TSOB): 801-968-3019 (analog fallback line).
+
+**Strategic talkgroup updates.**
+
+- ST_DEM_ADMIN replaces the former "DES 2" for internal administrative and command coordination.
+- Statewide BAT L Call: reminder that all local dispatch centers maintain access to state radio pathways through these mutual aid channels.
+
+**Federal / national backups.**
+
+- FNARS: the 801-968-3920 line is the dedicated FNARS (Federal National Radio System) terminal in the Comms Room.
+- SHARES: move to SHARES only if State HF channels are saturated or if reaching federal/inter-state partners is the priority.
+
+**SHARES scanning frequencies (center frequencies).** To obtain the USB dial frequency, subtract 1.5 kHz from each center frequency.
+
+| Center | Dial (USB) |
+|---|---|
+| 4015.50 | 4014.00 |
+| 5020.00 | 5018.50 |
+| 6801.5 | — (apply the 1.5 kHz rule) |
+| 7795 | — (apply the 1.5 kHz rule) |
+| 10225 | — (apply the 1.5 kHz rule) |
+| 14478.5 | — (apply the 1.5 kHz rule) |
+
+### Gateway details and location
+
+The gateway provides infrastructure-independent communication for the State of Utah and regional partners during commercial grid failures. While initial records listed Salt Lake City, the gateway was successfully established and tested in Smithfield. This site was selected for its Starlink networking redundancies and generator backup.
+
+### State–federal VHF PACE element
+
+ST_EOC on the VHF side is part of the PACE plan with Camp Williams, Draper HQ, Roland Wright Air Base, HAFB, UTTR, and Dugway.
+
+**Currency note.** The State PACE Plan is a 2026 update. Numbers, frequencies, and assignments change — verify before operational use.
+
+---
+
+## Federal Interoperability Channel Plan (POPULATED — FED_OPS + federal programs — Oct 24, 2026)
+
+**Sources:** UCA fleet map (FED_OPS talkgroups, moved from the 700 MHz section per SWIC direction, October 2026); CISA NIFOG (UHF IR channels); CISA SHARES Operations Handbook v1.0 (October 2026); State PACE Plan 2026. This section is controlled content (see cover distribution).
+
+### FED_OPS talkgroups
+
+Moved from the 700 MHz Interop Talkgroups and Channels section. All 10 are encrypted (Secure) and agency-restricted. Values preserved verbatim from the source file; blank fields shown as —. Companion file: utfog-v4-fedops-talkgroups.csv. Together with the 700 MHz listing (2,092 rows), this accounts for the full 2,102-row fleet organization.
+
+| Talk Group Name | Display Alias | Motorola Talk Group ID | Encryption | Agency Restricted |
+|---|---|---|---|---|
+| FED_OPS1 | FED_OPS1 | NEW | Secure | YES |
+| FED_OPS10 | FED_OP10 | — | Secure | YES |
+| FED_OPS2 | FED_OPS2 | NEW | Secure | YES |
+| FED_OPS3 | FED_OP3 | — | Secure | YES |
+| FED_OPS4 | FED_OP4 | — | Secure | YES |
+| FED_OPS5 | FED_OP5 | — | Secure | YES |
+| FED_OPS6 | FED_OP6 | — | Secure | YES |
+| FED_OPS7 | FED_OP7 | — | Secure | YES |
+| FED_OPS8 | FED_OP8 | — | Secure | YES |
+| FED_OPS9 | FED_OP9 | — | Secure | YES |
+
+### UHF IR channels (NIFOG)
+
+Utah will also use the UHF IR (Incident Response) channels outlined in the NIFOG for federal interoperability. Channel details are in the full NIFOG; consistent with the NIFOG section of this guide, federal IR/LE channels are referenced, not tabulated, here. Federal tone conventions from the NIFOG: analog channels transmit CTCSS 167.9 Hz with carrier squelch receive; P25 channels use NAC $68F.
+
+### State–federal VHF PACE element
+
+The state–federal VHF PACE element (ST_EOC) is described in Establishing Interoperability.
+
+### Federal programs
+
+**NAWAS — National Warning System.** FEMA-operated dedicated warning network linking federal warning points, state warning points, the National Weather Service, and military installations. Used to disseminate warnings for attack, natural disaster, and other emergencies. Utah participates through the state warning point.
+
+**SHARES — Shared Resources HF Radio Program.** Operated by CISA's Emergency Communications Division. SHARES provides a backup capability to exchange critical national security and emergency preparedness (NS/EP) information among federal entities and partners by HF radio in crisis situations, using existing HF resources of government, critical infrastructure, and key partner organizations. Participation is voluntary; the program is available 24 hours a day with no prior coordination or activation required, and participants consult the SHARES Directory for stations, frequencies, and ALE addresses. Program objectives: extended HF coverage at no added cost, an enduring backup to vulnerable telecommunications, the SHARES flag word to expedite emergency traffic, standardized message procedures, and a workaround to jamming through allocated frequencies. Authority: Executive Orders 12472 and 13961, and 47 CFR 216 (NCS Directive 3-3). Source: CISA SHARES Operations Handbook v1.0 (October 2026, effective October 12, 2026). Utah use, per the State PACE Plan: Emergency voice (HF) and Emergency data (Winlink relay); move to SHARES when State HF channels are saturated or reaching federal/inter-state partners is the priority. SHARES directory materials marked FOUO/SBU are safeguarded and are not reproduced in this guide.
+
+**FNARS — FEMA National Radio System.** FEMA's HF radio network for emergency communications, providing continuity when other systems fail. Utah use, per the State PACE Plan: Emergency voice backup, via the dedicated FNARS terminal in the Comms Room.
+
+**Currency note.** Talkgroup assignments, program details, and directory materials change — verify before operational use.
+
 ## What we know (filled in) vs. what still needs verification
 
 **Filled in from known information:**
@@ -881,6 +1038,9 @@ Concepts from the Utah PSAP tabletop exercise planning material (exercise planni
 - Gateways (gateway systems + Carbon gateway radios + mobile gateway procedures, from TICP sources)
 - Radio Caches (swap-cache procedures + Salt Lake appendix inventory + Carbon caches, from TICP sources)
 - PSAP Information (2024 PSAP directory + continuity concepts, from contact list + TTX talking points)
+- Interoperable Repeaters (regional VHF repeaters + Bear River amateur/RACES repeaters + county inventory summary, from TICP sources)
+- Establishing Interoperability (State PACE Plan 2026: PACE table, reference frequencies, gateway)
+- Federal Interoperability Channel Plan (FED_OPS talkgroups + UHF IR note + NAWAS/SHARES/FNARS programs)
 - Radio Template Programming Requirements (carried forward from v3.0, marked VERIFY — SWIC update over winter 2026-27)
 
 **Still to verify / fill:**
@@ -889,7 +1049,7 @@ Concepts from the Utah PSAP tabletop exercise planning material (exercise planni
 - Other 800 MHz references throughout the guide (review individually)
 - Region-code prefix mapping for the talkgroup listing (confirm or
   correct; do not assume)
-- Blank-field cleanup (463 missing talkgroup IDs, 3 missing aliases,
+- Blank-field cleanup (455 missing talkgroup IDs, 3 missing aliases,
   2 missing restricted flags)
 - Restricted-row handling under CUI (include as CUI vs. hold back)
 - Currency of the remaining placeholder sections (repeaters, gateways,
