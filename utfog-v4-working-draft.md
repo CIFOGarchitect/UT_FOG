@@ -19,12 +19,12 @@ on Oct 24, 2026; content is being filled in as it is confirmed.
 **Section status:** Populated below = Utah Regions, 700 MHz Interop
 Talkgroups and Channels (summary + companion file), Radio Template
 Programming Requirements (carried forward from v3.0 — VERIFY, to be
-updated by the SWIC over winter 2026-27), National Interoperability Channels (NIFOG) (CISA public source), Statewide Interop Channel Capabilities (Utah-specific), State Maps (regional maps). All other sections
+updated by the SWIC over winter 2026-27), National Interoperability Channels (NIFOG) (CISA public source), Statewide Interop Channel Capabilities (Utah-specific), State Maps (regional maps), Gateways (TICP sources), Radio Caches (TICP sources), PSAP Information (2024 contact list). All other sections
 from the v3.0 table of contents remain placeholders pending content
 review: Establishing Interoperability, Introduction, Interoperability and Incident Management, Communications Unit (COMU),
-Requests for Communications Assets, Federal Interoperability Channel Plan, PSAP Information, Nationwide Interop Channel
+Requests for Communications Assets, Federal Interoperability Channel Plan, Nationwide Interop Channel
 Capabilities, Interoperable
-Repeaters, Gateways, Transportable Repeaters, Radio Caches, Data
+Repeaters, Transportable Repeaters, Data
 Communications Devices.
 
 ---
@@ -718,6 +718,156 @@ Carbon County and surrounding counties (Sanpete, Utah, Duchesne, Uintah, Emery, 
 
 **Note.** Other TICP documents in the set contain cover graphics that are not maps (for example, a tribal seal on the Eastern Utah cover and a repeater-system diagram in the Carbon County plan). Those were not placed here; the repeater diagram is a candidate illustration for the Interoperable Repeaters section later.
 
+---
+
+## Gateways (POPULATED — TICP sources — Oct 24, 2026)
+
+**Sources:** Wasatch Front TICP (2011), Salt Lake Urban Area TICP (2008), Carbon County TICP, Uintah County TICP. This section is controlled content (see cover distribution).
+
+A gateway bridges otherwise incompatible radio systems by interconnecting radios or networks through a gateway device, letting agencies on different systems talk during an incident. In every source TICP, gateway channels are **assigned at time of request** — the plans do not publish a pre-programmed gateway channel list.
+
+### Gateway systems in the source plans
+
+| Gateway | Type | Notes |
+|---|---|---|
+| Utah DPS / Division of Emergency Management Gateway | Fixed — OmniLink | Three SmartZones. Listed as "DPS/HLS" in the older Salt Lake plan. |
+| Utah Communications Agency Network / UCAN (Mobile) | Mobile — JPS ACU-1000 | 6 networks, 12 active channels, 7 interconnects. Listed in both the Wasatch Front and Salt Lake plans. |
+| Salt Lake City Fire Department (Mobile) | Mobile — JPS ACU-1000 | 6 networks, 12 active channels, 7 interconnects. |
+| Salt Lake County Sheriff's Office (Mobile) | Mobile — JPS ACU-1000 | 6 networks, 12 active channels, 7 interconnects. |
+| FBI (Mobile) | Mobile — JPS ACU-1000 | 6 networks, 12 active channels, 7 interconnects. |
+
+### Gateway radios — Carbon County area (from the Carbon County TICP)
+
+| Jurisdiction | Agency | Type | Qty | Fixed / Mobile |
+|---|---|---|---|---|
+| Emery County | Sheriff | Link Communications TCB-4 First Responder | 2 | Mobile |
+| San Juan County | Sheriff | Link Communications TCB-4 First Responder | 1 | Mobile |
+| Carbon County | Sheriff | Link Communications TCB-4 First Responder | 1 | Mobile |
+| Grand County | Sheriff | Link Communications TCB-4 First Responder | 1 | Mobile |
+| Emery County | Sheriff Dispatch | JPS ACU-1000 | 1 | Fixed |
+| San Juan County | Sheriff Dispatch | JPS ACU-1000 | 1 | Fixed |
+| Price Dispatch | DPS | JPS ACU-1000 | 1 | Fixed |
+| — (jurisdiction truncated in source) | Public Safety | Link Communications TCB-4 First Responder | 1 | Fixed |
+
+### Mobile gateway procedures
+
+**Request.** The requestor contacts the on-call gateway operator/technician. The request includes: equipment required, expected duration, location and access information, incident point of contact, and user/requestor and servicing dispatch contact. The mobile gateway agency coordinates deployment by providing gateway contact information to the Incident Commander or designee.
+
+**Deployment.** The operator responds with an estimated time to retrieve the gateway and to arrive on scene, drives the dedicated vehicle and gateway to the incident, and reports to the Incident Commander on arrival.
+
+**Activation.** Mobile gateways may not carry agency radios before the event, so participating agencies may need to bring a portable radio and charger (and a remote speaker/microphone if available) to connect for the operation — note the speaker/microphone may be damaged by the radio interface. The gateway agency provides an estimated response/activation time to the dispatch center of the agency having jurisdiction and to the Incident Commander. A knowledgeable technician deploys with the gateway and supports it.
+
+- Communications Unit Leader: requires participating agencies to check in at the command post (or designated location) and provide the frequency/talkgroup channels available; agencies not preconfigured in the gateway may need to provide a preprogrammed radio; confirms or assigns radio call signs/designators; instructs the operator where to set up; informs the operator which agencies are participating; confers with the operator on which command-level or specific talkgroups to program.
+- Gateway operator: obtains agency radios and connects them with associated cables; selects the channel or talkgroup assigned by the agency; assigns the requested unit/agency to that channel/talkgroup as designated by the Incident Commander or Communications Unit Leader.
+
+**Deactivation.** Announce on the command channel to all commanders that the gateway is being deactivated; contact the operator to shut it down; participating agencies retrieve their portable radios; the operator inventories equipment, notes anything needing repair or replacement, returns to the pre-response location, and makes the gateway ready for service.
+
+**Problem resolution.** During an incident, report problems to the Communications Unit Leader, Logistics Section Chief, or the deployed technician. After the incident or during debriefing, report problems to the appropriate agency point of contact.
+
+**Currency note.** The procedure text is identical in the Wasatch Front (2011) and Salt Lake (2008, with an April 2006 footer) plans, and the system inventory dates to those plans. Gateway fleet, models, and contacts should be verified as current before operational use. Contact numbers and individual names from the source plans are deliberately not carried here.
+
+---
+
+## Radio Caches (POPULATED — TICP sources — Oct 24, 2026)
+
+**Sources:** Wasatch Front TICP (2011), Salt Lake Urban Area TICP (2008, Appendix B), Carbon County TICP. This section is controlled content (see cover distribution).
+
+A radio cache — also called "swap radios" — is a stock of standby radios that can be deployed to an incident so all responders use a common, compatible set of radios, whether the radios come from a regional cache or from a participating agency.
+
+### Cache procedures
+
+**Request.** The request includes equipment required, expected duration, location and access information, incident point of contact, and user/requestor and servicing dispatch contact. The Radio Cache Agency determines what regional interoperability resources are available, identifies a specific resource, activates it, and coordinates deployment by providing cache contact information to the Incident Commander or designee.
+
+**Activation.** The agency point of contact provides an estimated response/activation time, relayed to the dispatch center of the agency having jurisdiction and to the Incident Commander. The cache and a knowledgeable technician are sent to the incident scene; the technician supports the radios. Each cache radio carries a unique identification number for inventory tracking, and the technician keeps a record of each user issued a radio and accessories. Each user or agency issued a radio is responsible for returning it and its accessories at the end of the incident.
+
+**Deactivation.** The Incident Commander determines when the asset is no longer required. The Incident Commander (or designee) or Logistics Section Chief coordinates return of cache equipment to the on-scene technician or Communications Unit Leader. The technician or Communications Unit Leader inventories all returned equipment, determines before leaving the scene whether anything is missing, logs the user or agency each item was issued to, and provides that log to the Incident Commander or Logistics Section Chief. Equipment that cannot be recovered at the scene is reported to the Communications Unit Leader for resolution.
+
+**Problem resolution.** Initial problems go to the Communications Unit Leader or Logistics Section Chief; during deployment, individual radio problems go to the dispatched technician where practical. After the incident or during debriefing, agencies report cache problems to the appropriate agency point of contact, who is responsible for resolution; the supplying agency informs the using agency of any missing or damaged equipment.
+
+### Cache inventory — Salt Lake Urban Area TICP, Appendix B
+
+| Cache | Radios | Notes |
+|---|---|---|
+| Utah DHS VHF | 24 Kenwood radios | Fully charged battery spares; programmed with mutual aid channels. |
+| Utah DHS UHF | 24 UHF Kenwood portables | 24 fully charged battery spares; programmed with local, state, and national mutual aid channels. |
+| SLPD Spares | 25 800 MHz Motorola MTS-2000 portables | 25 fully charged battery spares; weather-sealed. |
+| SLFD 800 MHz Spares | 25 800 MHz Motorola MTS-2000 portables | 25 fully charged battery spares; weather-sealed. |
+| UTNG VHF | 40 Kenwood TK 2189 portables | 40 fully charged battery spares plus AA battery packs. |
+| UTNG 800 MHz | 10 EFJohnson portables | 10 fully charged battery spares; weather-sealed. |
+| UCAN 800 MHz | 50 800 MHz Motorola MTS-2000 portables | 50 fully charged battery spares and chargers; weather-sealed. |
+| UANG UHF | 20 UHF Motorola XTS-3000 portables | 20 fully charged battery spares. |
+| UDC EOC VHF | 100 EFJ 5100 Model III radios | 100 fully charged battery spares; weather-sealed. See inconsistency note below. |
+| UDC EOC UHF | 25 UHF HT-1000 and MT-2000 portables | Fully charged battery spares; weather-sealed. |
+| UDC EOC 800 MHz | 25 800 MHz MTS-2000 portables | Fully charged battery spares; weather-sealed. |
+| SLCOSO 800 MHz Mobiles | 150 800 MHz Motorola MCS-2000 mobiles (uninstalled) | Programmed with mutual aid talkgroups. |
+| SLCOSO 800 MHz Portables | 60 800 MHz Motorola MTS-2000 portables | Spare batteries; programmed with mutual aid talkgroups. |
+| SLCOSO VHF | 20 VHF Motorola MT2000 portables | Backup batteries; programmed with state and national channels. |
+
+Cache programming in the source plans follows the mutual aid channels and talkgroups in the NIFOG and statewide sections of this guide; the source programming tables are not repeated here.
+
+**Source inconsistency (UDC EOC VHF).** The Salt Lake appendix section is titled VHF, but its cache description lists the 100 EFJ 5100 radios as 800 MHz. Verify the band before operational use.
+
+### Other cache listings
+
+- **Wasatch Front swap-radio tables** list caches by county with cache name, jurisdiction, agency, units, and description (detailed information in the county sections). Example row from the Davis County table: Bountiful Police, citywide, Police, 4 units, Motorola MTS 2000 handhelds.
+- **Carbon County plan** lists a Utah DEM UHF cache (24 Kenwood portables) and the UCAN 800 MHz cache (50 Motorola MTS-2000 portables), consistent with the Salt Lake appendix inventory above.
+
+**Currency note.** The Salt Lake appendix dates to 2008 (with an April 2006 footer) and the Wasatch Front tables to 2011. Cache quantities, models, and contacts should be verified as current before operational use. Cache storage locations and individual contacts from the source plans are deliberately not carried here.
+
+---
+
+## PSAP Information (POPULATED — 2024 contact list — Oct 24, 2026)
+
+**Sources:** Utah PSAP Contact List 2024; Utah PSAP tabletop exercise (TTX) initial planning meeting talking points. This section is controlled content (see cover distribution).
+
+### Utah PSAP directory
+
+| PSAP | Dispatch | Office | City |
+|---|---|---|---|
+| Beaver County Sheriff | (435) 438-2862 | (435) 438-6433 | Beaver |
+| Bountiful City | (801) 298-6000 | (801) 298-6256 | Bountiful |
+| Box Elder Communications (DPS) | (435) 734-3800 | (435) 734-3820 | Brigham City |
+| Cedar Communications (DPS) | (435) 586-9445 | (435) 867-6790 | Cedar City |
+| Central Utah 911 | (801) 794-4000 | (801) 794-4006 | Spanish Fork |
+| Davis County | (801) 451-4141 | (801) 451-4184 | Farmington |
+| Emery County Sheriff | (435) 381-2111 | (435) 381-2404 | Castle Dale |
+| Garfield County Sheriff | (435) 676-1134 | (435) 676-1123 | Panguitch |
+| Grand County Sheriff | (435) 259-8115 | (435) 259-4321 | Moab |
+| Hill Emergency Communications | — | (801) 586-4165 | HAFB |
+| Kane County Sheriff | (435) 644-2349 | — | Kanab |
+| Layton City Police | (801) 497-8300 | (801) 336-3507 | Layton |
+| Logan City Communications | (435) 753-7555 | (435) 716-9429 | Logan |
+| Metro Emergency Communications | (801) 852-6210 | (801) 852-7203 | Provo |
+| Millard County Sheriff | (435) 743-5302 | (435) 743-1011 | Fillmore |
+| Price Communications (DPS) | (435) 637-0890 | (435) 637-1856 | Price |
+| Rich County Sheriff | (435) 793-2285 | — | Randolph |
+| Richfield Communications (DPS) | (435) 896-6471 | (435) 896-1696 | Richfield |
+| Salt Lake City 911 | (801) 799-3000 | (801) 799-3593 | Salt Lake City |
+| Sanpete County Sheriff | (435) 835-2345 | (435) 835-2192 | Manti |
+| SLVECC | (801) 840-4000 | (801) 840-4203 | West Valley City |
+| Springville City Police | (801) 489-9421 | (801) 491-5553 | Springville |
+| St. George Police | (435) 627-4300 | — | St. George |
+| Summit County Sheriff | (435) 615-3600 | (435) 615-3618 | Park City |
+| Tooele County Sheriff | (435) 882-5600 option 1 | (435) 833-8320 | Tooele |
+| Uintah Basin Communications (DPS) | (435) 789-4222 | (435) 781-6737 | Vernal |
+| Wasatch County Sheriff | (435) 654-1411 | — | Heber City |
+| Weber Area Dispatch 911 & Emergency Services District | (801) 629-8221 | (801) 395-8222 | Ogden |
+
+"—" means the source list did not include that number for that PSAP. Only dispatch and office numbers are carried here; personal names, cell numbers, email addresses, street addresses, and fax numbers from the source list are deliberately not included in this guide. The full 2024 contact list remains the reference for those details.
+
+### PSAP continuity
+
+Concepts from the Utah PSAP tabletop exercise planning material (exercise planning, not an operational procedure — adapt to the affected PSAP's own continuity plan):
+
+- PSAP outages can degrade or cut off 911 trunks, non-emergency lines, CAD/RMS, radio consoles, and fire paging — from fiber cuts, carrier outages, or system failures.
+- Response: evacuate the affected PSAP and roll over operations to a designated backup PSAP, using a rollover checklist; the backup PSAP manages the call surge and prioritizes calls when demand exceeds capacity.
+- Radio continuity: field units may still talk radio-to-radio when consoles are down; alternate consoles or backup locations can be activated; field units must be informed of changed radio procedures.
+- Manual procedures: manual logging and dispatch, manual fire paging, and paper processes when CAD/RMS are unavailable; incident tracking must avoid duplication or loss.
+- Public notification: IPAWS messaging can advise the public of a 911 outage; coordinate messaging with state and local partners.
+- Restoration is phased (for example, CAD first, then telephony); vendor and IT coordination runs through a single point of contact.
+
+**Currency note.** The directory comes from the 2024 contact list. PSAP numbers and assignments change — verify before operational use.
+
 ## What we know (filled in) vs. what still needs verification
 
 **Filled in from known information:**
@@ -728,10 +878,13 @@ Carbon County and surrounding counties (Sanpete, Utah, Duchesne, Uintah, Emery, 
 - National Interoperability Channels (NIFOG) (CISA NIFOG v2.01, public source)
 - Statewide Interop Channel Capabilities (Utah 8TAC sites + VHF SRS repeaters)
 - State Maps (Bear River region outline + Carbon County map, from TICP covers)
+- Gateways (gateway systems + Carbon gateway radios + mobile gateway procedures, from TICP sources)
+- Radio Caches (swap-cache procedures + Salt Lake appendix inventory + Carbon caches, from TICP sources)
+- PSAP Information (2024 PSAP directory + continuity concepts, from contact list + TTX talking points)
 - Radio Template Programming Requirements (carried forward from v3.0, marked VERIFY — SWIC update over winter 2026-27)
 
 **Still to verify / fill:**
-- PSAP Information currency and contact details
+- PSAP Information: populated from the 2024 contact list; re-verify currency before operational use (directory numbers change)
 - SWIC contact block update (v3.0 names a prior holder)
 - Other 800 MHz references throughout the guide (review individually)
 - Region-code prefix mapping for the talkgroup listing (confirm or
