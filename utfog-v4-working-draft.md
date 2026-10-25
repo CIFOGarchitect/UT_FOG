@@ -19,10 +19,9 @@ on Oct 24, 2026; content is being filled in as it is confirmed.
 **Section status:** Populated below = Utah Regions, 700 MHz Interop
 Talkgroups and Channels (summary + companion file), Radio Template
 Programming Requirements (carried forward from v3.0 — VERIFY, to be
-updated by the SWIC over winter 2026-27), National Interoperability Channels (NIFOG) (CISA public source), Statewide Interop Channel Capabilities (Utah-specific). All other sections
+updated by the SWIC over winter 2026-27), National Interoperability Channels (NIFOG) (CISA public source), Statewide Interop Channel Capabilities (Utah-specific), State Maps (regional maps). All other sections
 from the v3.0 table of contents remain placeholders pending content
-review: Establishing Interoperability, Introduction, State Maps,
-Interoperability and Incident Management, Communications Unit (COMU),
+review: Establishing Interoperability, Introduction, Interoperability and Incident Management, Communications Unit (COMU),
 Requests for Communications Assets, Federal Interoperability Channel Plan, PSAP Information, Nationwide Interop Channel
 Capabilities, Interoperable
 Repeaters, Gateways, Transportable Repeaters, Radio Caches, Data
@@ -693,6 +692,32 @@ Source sheet: VHF interop (SRS). Receive/transmit shown as listed in the source;
 
 **Not included here (by design).** The source workbook also contains an 800 MHz frequency inventory, trunked site control frequencies, site coordinates, and a VHF license inventory. Those are system and license records, not field-guide channel content, so they were not tabulated in this section.
 
+---
+
+## State Maps (POPULATED — regional maps — Oct 24, 2026)
+
+**Sources:** Statewide 8-region map (as provided by the SWIC), Bear River TICP (cover map), and Carbon County TICP (county map). Maps below are embedded in the preview; the image files travel with this draft (utfog-v4-map-utah-regions.png, utfog-v4-map-bear-river.png, utfog-v4-map-carbon.png). This section is controlled content (see cover distribution).
+
+### Utah Emergency Management Regions
+
+![Utah regions map](utfog-v4-map-utah-regions.png)
+
+The statewide 8-region map: Bear River (BR), Wasatch Front (WF), Oquirrh (OQ), Mountain (MT), Northeast (NE), Central (CN), Southwest (SW), and Southeast (SE). Matches the region table in the Utah Regions section, including Juab in Mountain.
+
+### Bear River region
+
+![Bear River region map](utfog-v4-map-bear-river.png)
+
+Bear River region outline from the Bear River TICP cover. The source image itself is unlabeled; counties west to east are Box Elder, Cache, and Rich — matching the region table in the Utah Regions section.
+
+### Carbon County and vicinity
+
+![Carbon County map](utfog-v4-map-carbon.png)
+
+Carbon County and surrounding counties (Sanpete, Utah, Duchesne, Uintah, Emery, Grand) from the Carbon County TICP, showing terrain, communities including Price, and county boundaries.
+
+**Note.** Other TICP documents in the set contain cover graphics that are not maps (for example, a tribal seal on the Eastern Utah cover and a repeater-system diagram in the Carbon County plan). Those were not placed here; the repeater diagram is a candidate illustration for the Interoperable Repeaters section later.
+
 ## What we know (filled in) vs. what still needs verification
 
 **Filled in from known information:**
@@ -702,6 +727,7 @@ Source sheet: VHF interop (SRS). Receive/transmit shown as listed in the source;
 - 700 MHz talkgroup governance and stewardship (from the governance program, per SWIC direction Oct 24)
 - National Interoperability Channels (NIFOG) (CISA NIFOG v2.01, public source)
 - Statewide Interop Channel Capabilities (Utah 8TAC sites + VHF SRS repeaters)
+- State Maps (Bear River region outline + Carbon County map, from TICP covers)
 - Radio Template Programming Requirements (carried forward from v3.0, marked VERIFY — SWIC update over winter 2026-27)
 
 **Still to verify / fill:**
