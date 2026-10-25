@@ -91,6 +91,29 @@ distributed edition.
 
 ---
 
+### Talkgroup governance and stewardship
+
+**Source:** Statewide Talkgroup Governance & Interoperability Stewardship Program (SWIC office), incorporated per SWIC direction, Oct 24, 2026.
+
+**Roles.** UCA System Administration owns network infrastructure: network health, microwave backhaul, tower sites, core routing, system capacity, RF performance, and hardware maintenance. The SWIC office owns talkgroup policy and governance: operational stewardship, agency access criteria, Statewide Communication Plan (SCIP) alignment, regional TICP templates, codeplug standardization, and mutual-aid talkgroup allocation. The separation lets engineering focus on core performance while assignments reflect the statewide operational interop strategy.
+
+**Authorization and gatekeeping.** The SWIC office is the review and approval authority for all local, regional, and statewide talkgroup allocation and modification requests. Requests use a standardized form covering operational need, subscriber counts, coverage footprint, and talkgroup longevity. Criteria distinguish local single-site talkgroups from wide-area roaming talkgroups, preventing talkgroup sprawl and protecting core capacity and site loading.
+
+**SCIP and TICP alignment.** All provisioning aligns with the Statewide Communication Plan and the regional Tactical Interoperability Communications Plans. The SWIC office maintains the standardized statewide interop zone templates across the eight Emergency Management Regions (per the region map).
+
+**Tactical and event management.** The SWIC office oversees allocation, reservation, and real-time management of statewide and regional event talkgroups during major multi-jurisdictional incidents, wildland fires, or planned events, including rules for console-to-console patching, radio-to-radio patching, and inter-system gateways to prevent audio feedback loops and system congestion.
+
+**Master directory stewardship and auditing.** The Utah Master Talkgroup Directory is the single authoritative source of truth for talkgroup assignments statewide. Periodic utilization audits, alongside UCA system performance reports, identify dormant or inactive talkgroups for decommissioning.
+
+**Provisioning workflow (5 steps).**
+1. Request submission — the requesting agency submits the standardized form.
+2. Operational review — the SWIC office audits the request against SCIP/TICP standards, naming conventions, and encryption rules, and approves, modifies, or denies it.
+3. Technical review — UCA engineering reviews the approved request for core capacity, bandwidth impact, site licensing, and system ID availability.
+4. Core provisioning — UCA provisions the approved talkgroup in the P25 core.
+5. Documentation — the SWIC office logs the assignment in the Master Talkgroup Directory and notifies the agency.
+
+Codeplug standardization, naming conventions, and encryption strapping policy are covered under Radio Template Programming Requirements.
+
 ---
 
 ## Radio Template Programming Requirements (CARRIED FORWARD FROM V3.0 — VERIFY)
@@ -477,6 +500,7 @@ November 2022
 - Cover, version, authority, publisher, distribution (Controlled/CUI)
 - Utah Regions section (8-region structure)
 - 700 MHz section rename + organized fleet listing + summary counts
+- 700 MHz talkgroup governance and stewardship (from the governance program, per SWIC direction Oct 24)
 - Radio Template Programming Requirements (carried forward from v3.0, marked VERIFY — SWIC update over winter 2026-27)
 
 **Still to verify / fill:**

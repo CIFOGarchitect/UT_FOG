@@ -67,7 +67,7 @@
     <a href="#sec-nifog">National Interoperability Channels (NIFOG) <small>Pending review</small></a>
     <a href="#sec-federal-plan">Federal Interoperability Channel Plan <small>Pending review</small></a>
     <a href="#sec-psap">PSAP Information <small>Pending review</small></a>
-    <a href="#sec-700-mhz">700 MHz Interop Talkgroups and Channels <small>Populated — full listing</small></a>
+    <a href="#sec-700-mhz">700 MHz Interop Talkgroups and Channels <small>Populated — full listing + governance</small></a>
     <a href="#radio-templates">Radio Template Programming Requirements <small>Carried forward — verify</small></a>
     <a href="#sec-nationwide">Nationwide Interop Channel Capabilities <small>Pending review</small></a>
     <a href="#sec-statewide">Statewide Interop Channel Capabilities <small>Pending review</small></a>
@@ -96,6 +96,23 @@
   <p class="note"><a href="#index" style="color:#c9a227;">↑ Back to index</a></p>
 <h2 id="sec-700-mhz">700 MHz Interop Talkgroups and Channels</h2>
   <p class="note">Renamed from the v3.0 "800 MHz Interop Talkgroups and Channels" section, per SWIC direction, October 2026. The full organized listing is embedded below. Values are preserved verbatim from the source file; blank fields are shown as —.</p>
+<h3>Talkgroup governance and stewardship</h3>
+<p class="note">Per the Statewide Talkgroup Governance &amp; Interoperability Stewardship Program, incorporated per SWIC direction, October 2026.</p>
+<p><strong>Roles.</strong> UCA System Administration owns network infrastructure: network health, microwave backhaul, tower sites, core routing, system capacity, RF performance, and hardware maintenance. The SWIC office owns talkgroup policy and governance: operational stewardship, agency access criteria, Statewide Communication Plan (SCIP) alignment, regional TICP templates, codeplug standardization, and mutual-aid talkgroup allocation. The separation lets engineering focus on core performance while assignments reflect the statewide operational interop strategy.</p>
+<p><strong>Authorization and gatekeeping.</strong> The SWIC office is the review and approval authority for all local, regional, and statewide talkgroup allocation and modification requests. Requests use a standardized form covering operational need, subscriber counts, coverage footprint, and talkgroup longevity. Criteria distinguish local single-site talkgroups from wide-area roaming talkgroups, preventing talkgroup sprawl and protecting core capacity and site loading.</p>
+<p><strong>SCIP and TICP alignment.</strong> All provisioning aligns with the Statewide Communication Plan and the regional Tactical Interoperability Communications Plans. The SWIC office maintains the standardized statewide interop zone templates across the eight Emergency Management Regions (per the region map).</p>
+<p><strong>Tactical and event management.</strong> The SWIC office oversees allocation, reservation, and real-time management of statewide and regional event talkgroups during major multi-jurisdictional incidents, wildland fires, or planned events, including rules for console-to-console patching, radio-to-radio patching, and inter-system gateways to prevent audio feedback loops and system congestion.</p>
+<p><strong>Master directory stewardship and auditing.</strong> The Utah Master Talkgroup Directory is the single authoritative source of truth for talkgroup assignments statewide. Periodic utilization audits, alongside UCA system performance reports, identify dormant or inactive talkgroups for decommissioning.</p>
+<p><strong>Provisioning workflow (5 steps).</strong></p>
+<ol>
+<li>Request submission — the requesting agency submits the standardized form.</li>
+<li>Operational review — the SWIC office audits the request against SCIP/TICP standards, naming conventions, and encryption rules, and approves, modifies, or denies it.</li>
+<li>Technical review — UCA engineering reviews the approved request for core capacity, bandwidth impact, site licensing, and system ID availability.</li>
+<li>Core provisioning — UCA provisions the approved talkgroup in the P25 core.</li>
+<li>Documentation — the SWIC office logs the assignment in the Master Talkgroup Directory and notifies the agency.</li>
+</ol>
+<p>Codeplug standardization, naming conventions, and encryption strapping policy are covered under Radio Template Programming Requirements.</p>
+
   <div class="stats">
     <div class="stat"><div class="num">2,102</div><div class="lbl">Talkgroups</div></div>
     <div class="stat"><div class="num">150</div><div class="lbl">Prefix groups</div></div>
