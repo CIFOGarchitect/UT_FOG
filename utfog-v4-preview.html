@@ -68,7 +68,7 @@
     <a href="#sec-federal-plan">Federal Interoperability Channel Plan <small>Populated — FED_OPS + federal programs</small></a>
     <a href="#sec-psap">PSAP Information <small>Populated — 2024 contact list</small></a>
     <a href="#sec-700-mhz">700 MHz Interop Talkgroups and Channels <small>Populated — full listing + governance</small></a>
-    <a href="#radio-templates">Radio Template Programming Requirements <small>Carried forward — verify</small></a>
+    <a href="#radio-templates">Radio Template Programming Requirements <small>Populated — programs + templates</small></a>
     <a href="#sec-nationwide">Nationwide Interop Channel Capabilities <small>Carried forward — verify</small></a>
     <a href="#sec-statewide">Statewide Interop Channel Capabilities <small>Populated — Utah-specific</small></a>
     <a href="#sec-repeaters">Interoperable Repeaters <small>Populated — TICP + amateur directory</small></a>
@@ -154,165 +154,80 @@
 
   <p class="note"><a href="#index" style="color:#c9a227;">↑ Back to index</a></p>
 <h2 id="radio-templates">Radio Template Programming Requirements</h2>
-<p class="note"><strong>Carried forward from v3.0 — VERIFY:</strong> starting draft, to be updated by the SWIC over winter 2026-27. Do not treat as current until verified. v3.0 page footers have been stripped; content is otherwise verbatim.</p>
-<p>Requirements LICENSING DISCLAIMER</p>
-<p>RA FT</p>
+<p class="note"><strong>Status:</strong> Rebuilt from the Statewide Talkgroup Governance &amp; Interoperability Stewardship Program and the Statewide End-User Radio Operations &amp; Interoperability Training Program proposal (both treated as approved for guide purposes per SWIC direction, Oct 24, 2026), plus the v3.0 programming templates. The template tables at the end of this section are v3.0 (November 2022) — VERIFY. Program material reflects the governance implementation target (November 2026 – Q1 2027) and the training delivery plan (Q1–Q3 2027).</p>
+<h3>What a codeplug is</h3>
+<p>A codeplug is the programming file in a radio that defines what the user can select. Codeplugs organize channels into Zones (folders) and Talkgroups/Channels (files). Two modes: Trunked (repeater/system) — computer-controlled shared frequencies that rely on active network control towers; and Direct/Talkaround (simplex) — radio-to-radio direct RF paths that bypass network infrastructure (canyons, basements, shadow zones). Phase 1 (FDMA) vs. Phase 2 (TDMA): dynamic voice-slot assignments; a mismatched configuration causes silent key-ups during site transitions. Encryption: Clear vs. Strapped Secure channels, Key Management (KMM), Key-Fill operations; avoid accidental transmission on muted keys.</p>
+<h3>Statewide zone templates and regional alignment</h3>
+<p>The SWIC office manages and maintains the standardized statewide interop zone templates across Utah's 8 Emergency Management Regions (see Utah Regions for the region structure). Zone templates map interop channels to regions so a responder moving across regions finds the same interop structure. Statewide interop talkgroup stewardship covers authorization, request procedures, and operational rules for UT-INTEROP, ST_EOC, ST_HOSP, and NIFOG channels. Note: the training proposal's region list places Juab in Central; this guide follows the statewide region map, which places Juab in Mountain (see Utah Regions).</p>
+<h3>Naming conventions</h3>
+<p>Statewide radio alias and talkgroup naming standards apply across all multi-vendor platforms (Motorola APX, L3Harris XL, Kenwood/BK Technologies). Names must be consistent and must fit the shortest display in the fleet — display truncation or confusion in field operations is the failure this standard prevents. The SWIC office audits provisioning requests against naming conventions (see the 5-step workflow in 700 MHz Interop Talkgroups and Channels).</p>
+<h3>Encryption strapping policy</h3>
+<p>Encryption strapping defines which talkgroups MUST remain strapped secure versus which MUST remain clear for interoperability:</p>
+<ul>
+<li>MUST remain strapped secure: tactical and SWAT talkgroups and other sensitive operations.</li>
+<li>MUST remain clear: dispatch, mutual aid, and hospital patches — any channel where interoperability depends on any responder being able to hear and join.</li>
+</ul>
+<p>Clear vs. strapped vs. selectable: a strapped-secure channel always transmits encrypted; a clear channel always transmits in the clear; a selectable channel lets the user choose — and choosing wrong (transmitting in the clear on a sensitive operation, or encrypted where partners cannot hear) is an operational failure. Key management (KMM) and key-fill operations keep the fleet's keys current; a radio with a muted or missing key must not be used for a secure operation. EMS note: secure vs. clear strapping balances patient privacy against emergency scene coordination during mass-casualty incidents — the scene coordination requirement governs on scene.</p>
+<h3>Phase 1 / Phase 2 configuration rules</h3>
+<p>Phase 1 (FDMA) vs. Phase 2 (TDMA) talkgroup configuration rules are defined in coordination with UCA engineers to eliminate subscriber codeplug mismatches. A codeplug mismatch (radio configured for one phase, talkgroup/system for the other) produces silent key-ups — the user transmits, nothing is heard, and no error is shown. Programmers must confirm the phase configuration for each talkgroup against the system configuration before issuing a codeplug.</p>
+<h3>Multi-vendor programming reference</h3>
+<p>Standard templates must work across the three hardware platforms on the UCA network. The same function is reached differently on each platform — programmers and users must know the mapping:</p>
+<table>
+<tr><th>Operational feature</th><th>Motorola APX Series</th><th>L3Harris XL Series</th><th>Kenwood / BK Technologies</th></tr>
+<tr><td>Direct / Talkaround</td><td>Side Button / Front Menu (DIR)</td><td>Front Menu / Top Toggle Switch</td><td>Front Menu / Programmable Orange Key</td></tr>
+<tr><td>Site Display &amp; Search</td><td>Top Button / Front Menu (SITE)</td><td>Short Press Top Switch / Menu (SYS)</td><td>Front Menu (SITE) / Softkey</td></tr>
+<tr><td>Zone / Talkgroup Navigation</td><td>16-Position Top Knob + Bank Switch</td><td>Dual Concentric Knobs / Touchscreen</td><td>Top Knob + Front Zone Softkeys</td></tr>
+<tr><td>Emergency Activation</td><td>Orange Top Button (Hold 1–2 sec)</td><td>Red Top Button (Hold 1–2 sec)</td><td>Orange Top Button (Hold 1–2 sec)</td></tr>
+<tr><td>Site Lock / Unlock</td><td>Front Menu (SLOCK) / Side Switch</td><td>Front Menu (SITE LOCK)</td><td>Front Menu (SITE LOCK)</td></tr>
+</table>
+<h3>Discipline programming notes</h3>
+<ul>
+<li>Search and Rescue: dual-band codeplugs — conventional VHF repeaters alongside 700/800 MHz trunked channels (backcountry, terrain shadows, inter-county mutual aid); direct/talkaround transition when trunking drops.</li>
+<li>EMS: hospital and air-medical patching (statewide hospital talkgroups, air-medical patches, county EMS channels); secure vs. clear strapping per the policy above.</li>
+<li>Law Enforcement: emergency button protocol (activation, console sidetone/audio revert channels, manual reset); encryption selection (clear dispatch to strapped or selectable encrypted channels); silent key-up mitigation during mixed Phase 1 / Phase 2 site handoffs.</li>
+<li>Emergency Management / EOC: regional and state EOC talkgroup mapping (ST_EOC, state ops, regional TICP channels); event talkgroup stewardship (request, reserve, manage temporary event talkgroups); federal interop (HAFB, Utah National Guard, federal response assets).</li>
+</ul>
+<h3>How a new channel gets into a codeplug</h3>
+<p>A new talkgroup or channel enters the fleet through the standardized request process: the agency submits a Talkgroup Request Form justifying operational need, subscriber counts, coverage footprint, and longevity; the SWIC office audits it against SCIP/TICP standards, naming conventions, and encryption rules and approves, modifies, or denies it; UCA engineering reviews it for core capacity, bandwidth, site licensing, and system ID availability; UCA operations provisions the talkgroup ID in the P25 core; the SWIC office logs it in the Utah Master Talkgroup Directory and notifies the agency. (Full 5-step workflow: see 700 MHz Interop Talkgroups and Channels. Criteria that prevent talkgroup sprawl — local single-site vs. wide-area roaming — protect P25 core capacity and prevent unnecessary site loading.)</p>
+<h3>Proficiency check</h3>
+<p>The standard template is validated by use under stress: the 60-Second Blind Challenge (from the training program) times a user performing blind channel switches — home zone to UT-INTEROP, to a local simplex/talkaround channel, and back to the home dispatch channel — without looking at the radio. A template a user cannot navigate blind, in the dark, or with gloves is a template that will fail on scene.</p>
+<h3>v3.0 programming templates (VERIFY — November 2022)</h3>
+<h4>Licensing disclaimer</h4>
 <p>Nothing in this document shall be construed to serve as authorization for any agency or individual to operate equipment on radio channels without the proper authorization or licensing by the Federal Communications Commission (FCC).</p>
-<h3>MINIMUM RECOMMENDED CHANNELS</h3>
+<h4>Minimum recommended channels</h4>
 <p>The channels listed in the following tables consist of the minimum recommended radio channels to provide for public safety interoperable communications.</p>
-<p>Utah Minimum Recommended VHF Channels</p>
-<p>Table 19: VHF Programming Template - All Disciplines</p>
-<p>MINIMUM RECOMMENDED CHANNELS – All Disciplines</p>
-<p>CHANNEL NAME</p>
-<h3>MOB RECV</h3>
-<h3>MOB XMIT</h3>
-<h3>FREQ</h3>
-<h3>FREQ</h3>
-<p>A D</p>
-<h3>NOTES</h3>
-<p>Page | 63 70 -</p>
-<p>​</p>
-<h3>TONE</h3>
-<p>​</p>
-<h3>TONE</h3>
-<p>Utah Interoperable Communications Field Operations Guide Ver 3.0​</p>
-<p>November 2022</p>
-<p>MINIMUM RECOMMENDED CHANNELS – All Disciplines MOB RECV</p>
-<h3>MOB XMIT</h3>
-<p>A D</p>
-<h3>NOTES</h3>
-<p>RA FT</p>
-<p>CHANNEL NAME</p>
-<p>All channels are Narrowband, Analog, Conventional</p>
-<p>Table 20: VHF Programming Template – Law Enforcement</p>
-<p>MINIMUM RECOMMENDED CHANNELS – Law Enforcement</p>
-<p>CHANNEL NAME</p>
-<h3>MOB RECV</h3>
-<h3>MOB XMIT</h3>
-<h3>FREQ</h3>
-<h3>FREQ</h3>
-<h3>TONE</h3>
-<h3>TONE</h3>
-<p>A D</p>
-<h3>NOTES</h3>
-<p>All channels are Narrowband, Analog, Conventional Channels listed above are in addition to those listed in the ALL-DISCIPLINES programming table</p>
-<p>Table 21: VHF Programming Template – Fire/EMA/First Responder</p>
-<p>MINIMUM RECOMMENDED CHANNELS – Fire/EMA/First Responder</p>
-<p>CHANNEL NAME</p>
-<h3>MOB RECV</h3>
-<h3>MOB XMIT</h3>
-<h3>FREQ</h3>
-<h3>FREQ</h3>
-<p>A D</p>
-<h3>NOTES</h3>
-<p>Page | 64 70 -</p>
-<p>​</p>
-<h3>TONE</h3>
-<p>​</p>
-<h3>TONE</h3>
-<p>Utah Interoperable Communications Field Operations Guide Ver 3.0​</p>
-<p>November 2022</p>
-<p>MINIMUM RECOMMENDED CHANNELS – Fire/EMA/First Responder CHANNEL NAME</p>
-<h3>MOB RECV</h3>
-<h3>MOB XMIT</h3>
-<p>A D</p>
-<h3>NOTES</h3>
-<p>RA FT</p>
-<p>All channels are Narrowband, Analog, Conventional Channels listed above are in addition to those listed in the ALL-DISCIPLINES programming table</p>
-<p>Table 22: Programming Template - EMS</p>
-<h3>MINIMUM RECOMMENDED CHANNELS – EMS</h3>
-<p>CHANNEL NAME</p>
-<h3>MOB RECV</h3>
-<h3>MOB XMIT</h3>
-<h3>FREQ</h3>
-<h3>FREQ</h3>
-<h3>TONE</h3>
-<h3>TONE</h3>
-<p>A D</p>
-<h3>NOTES</h3>
-<p>– VMED28 formerly known as Hospital Emergency Ambulance Radio (HEAR)</p>
-<p>All channels are Narrowband, Analog, Conventional Channels listed above are in addition to those listed in the ALL-DISCIPLINES programming table</p>
-<p>Utah Minimum Recommended UHF Channels</p>
-<p>Table 23: UHF Programming Template - All Disciplines</p>
-<p>MINIMUM RECOMMENDED CHANNELS – All Disciplines</p>
-<p>CHANNEL NAME</p>
-<h3>MOB RECV</h3>
-<h3>MOB XMIT</h3>
-<h3>FREQ</h3>
-<h3>FREQ</h3>
-<p>A D</p>
-<h3>NOTES</h3>
-<p>Page | 65 70 -</p>
-<p>​</p>
-<h3>TONE</h3>
-<p>​</p>
-<h3>TONE</h3>
-<p>Utah Interoperable Communications Field Operations Guide Ver 3.0​</p>
-<p>November 2022</p>
-<p>MINIMUM RECOMMENDED CHANNELS – All Disciplines CHANNEL NAME UTAC43D</p>
-<h3>MOB RECV</h3>
-<p>453.8625</p>
-<p>156.7</p>
-<h3>MOB XMIT</h3>
-<p>453.8625</p>
-<p>A D</p>
-<p>156.7</p>
-<p>NOTES A</p>
-<p>Incident Coordination</p>
-<p>RA FT</p>
-<p>●​ Base station channel use requires an FCC license. ●​ Mobile/portable use under blanket authorization by the FCC. ●​ All channels are Narrowband, Analog, Conventional</p>
-<p>Table 24: UHF Programming Template</p>
-<p>MINIMUM RECOMMENDED CHANNELS – All Disciplines</p>
-<p>CHANNEL NAME</p>
-<h3>MOB RECV</h3>
-<h3>MOB XMIT</h3>
-<h3>FREQ</h3>
-<h3>FREQ</h3>
-<p>A D</p>
-<h3>NOTES</h3>
-<p>Page | 66 70 -</p>
-<p>​</p>
-<h3>TONE</h3>
-<p>​</p>
-<h3>TONE</h3>
-<p>Utah Interoperable Communications Field Operations Guide Ver 3.0​</p>
-<p>November 2022</p>
-<p>Utah Minimum Recommended 700 MHz Channels Table 25: 700 MHz Programming Template - All Disciplines</p>
-<p>MINIMUM RECOMMENDED CHANNELS – All Disciplines MOB RECV</p>
-<h3>MOB XMIT</h3>
-<h3>FREQ</h3>
-<h3>FREQ</h3>
-<h3>TONE</h3>
-<h3>TONE</h3>
-<p>A D</p>
-<h3>NOTES</h3>
-<p>RA FT</p>
-<p>CHANNEL NAME</p>
-<p>●​ Base station channel use requires an FCC license. ●​ Mobile/portable use under blanket authorization by the FCC. ●​ All channels are Narrowband, Digital P-25 Phase I Conventional ●​ Refer to FCC Region 3 700 MHz Plan for additional details and frequency listings</p>
-<p>​</p>
-<p>​</p>
-<p>Page | 67 70 -</p>
-<p>Utah Interoperable Communications Field Operations Guide Ver 3.0​</p>
-<p>November 2022</p>
-<p>Utah Minimum Recommended 800 MHz Channels Table 26: 800 MHz Programming Template - All Disciplines</p>
-<p>MINIMUM RECOMMENDED CHANNELS – All Disciplines MOB RECV</p>
-<h3>MOB XMIT</h3>
-<h3>FREQ</h3>
-<h3>FREQ</h3>
-<h3>TONE</h3>
-<h3>TONE</h3>
-<p>A D</p>
-<h3>NOTES</h3>
-<p>RA FT</p>
-<p>CHANNEL NAME</p>
-<p>●​ Base station channel use requires an FCC license. ●​ Mobile/portable use under blanket authorization by the FCC. ●​ All channels are Wideband, Analog, Conventional</p>
-<p>​</p>
-<p>​</p>
-<p>Page | 68 70 -</p>
-<p>Utah Interoperable Communications Field Operations Guide Ver 3.0​</p>
-<p>November 2022</p>
+<p>Template columns (all tables): Channel Name; Mobile Receive (frequency + tone); Mobile Transmit (frequency + tone); A/D; Notes.</p>
+<p><strong>Utah Minimum Recommended VHF Channels</strong> — all channels Narrowband, Analog, Conventional.</p>
+<ul>
+<li>Table 19: VHF Programming Template — All Disciplines (blank in v3.0)</li>
+<li>Table 20: VHF Programming Template — Law Enforcement (blank in v3.0; channels in addition to the All-Disciplines table)</li>
+<li>Table 21: VHF Programming Template — Fire/EMA/First Responder (blank in v3.0; channels in addition to the All-Disciplines table)</li>
+<li>Table 22: Programming Template — EMS (blank in v3.0; channels in addition to the All-Disciplines table). Note: VMED28 formerly known as Hospital Emergency Ambulance Radio (HEAR).</li>
+</ul>
+<p><strong>Utah Minimum Recommended UHF Channels</strong> — all channels Narrowband, Analog, Conventional.</p>
+<ul>
+<li>Table 23: UHF Programming Template — All Disciplines. One entry filled in v3.0:</li>
+</ul>
+<table>
+<tr><th>Channel</th><th>Mobile Receive</th><th>Receive Tone</th><th>Mobile Transmit</th><th>Transmit Tone</th><th>A/D</th><th>Notes</th></tr>
+<tr><td>UTAC43D</td><td>453.8625</td><td>156.7</td><td>453.8625</td><td>156.7</td><td>A</td><td>Incident Coordination</td></tr>
+</table>
+<ul>
+<li>Table 24: UHF Programming Template (blank in v3.0)</li>
+<li>Notes: Base station channel use requires an FCC license. Mobile/portable use under blanket authorization by the FCC.</li>
+</ul>
+<p><strong>Utah Minimum Recommended 700 MHz Channels</strong> — all channels Narrowband, Digital P-25 Phase I Conventional.</p>
+<ul>
+<li>Table 25: 700 MHz Programming Template — All Disciplines (blank in v3.0)</li>
+<li>Notes: Base station channel use requires an FCC license. Mobile/portable use under blanket authorization by the FCC. Refer to FCC Region 3 700 MHz Plan for additional details and frequency listings.</li>
+</ul>
+<p><strong>Utah Minimum Recommended 800 MHz Channels</strong> — all channels Wideband, Analog, Conventional.</p>
+<ul>
+<li>Table 26: 800 MHz Programming Template — All Disciplines (blank in v3.0)</li>
+<li>Notes: Base station channel use requires an FCC license. Mobile/portable use under blanket authorization by the FCC.</li>
+</ul>
+<p class="note"><strong>Note on the templates.</strong> The v3.0 template tables were blank forms for agencies to fill with their programmed channels; only the UTAC43D entry and the VMED28 note were filled in v3.0.</p>
 
-<p class="note"><a href="#index" style="color:#c9a227;">↑ Back to index</a></p>
 <h2 id="sec-nifog">National Interoperability Channels (NIFOG)</h2>
 <p class="note"><strong>Source:</strong> CISA, National Interoperability Field Operations Guide (NIFOG) v2.01 (public). Channel names follow the ANSI/APCO/NPSTC standard channel nomenclature. This section covers the non-federal national interoperability channels. Federal Incident Response (IR) and Law Enforcement (LE) channels are in the full NIFOG; as a convention, analog federal channels transmit CTCSS 167.9 Hz with carrier squelch receive, and P25 federal channels use NAC $68F.</p>
 <p class="note"><strong>Conventions.</strong> A "D" suffix means direct (simplex) operation on the repeater output frequency. Calling channels are for initial contact — move to a tactical channel after contact. Use requires proper FCC authorization/licensing (see cover licensing note).</p>
